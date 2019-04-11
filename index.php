@@ -1,6 +1,11 @@
 <?php 
 ini_set('display_errors', 1);
 include_once "model/urlhandler.php";
+
+//set database
+include_once "database/Database.php";
+include_once "database/SiteDatabase.php";
+$db = new SiteDatabase();
 ?>
 <!DOCTYPE html>
 <html>
@@ -48,6 +53,7 @@ include_once "model/urlhandler.php";
 			}
 			include_once "views/site/footer.php";
 		} else {
+			include_once "model/functions.php";
 			if ($_SERVER['REQUEST_URI'] == "/admin") {
 				include_once "views/admin/admin.php";
 			} else {
