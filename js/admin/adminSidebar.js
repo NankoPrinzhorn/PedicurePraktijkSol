@@ -6,13 +6,9 @@ $(".accordion").on("click", function() {
 
         $('.panel').each(function(){
             if ($(this).attr('class').split(" ")[1] == className) {
-                if ($(this).css("display") == "block") {
-                    $(this).css("display", "none");
-                } else {
-                    $(this).css("display", "block");
-                }
+                $(this).slideDown('slow');
             } else {
-                $(this).css("display", "none");
+                $(this).slideUp('slow');
             }
         });
     }
