@@ -1,28 +1,21 @@
 <link rel="stylesheet" type="text/css" href="/css/admin/adminSidebar.css">
 <div id="sidebar">
 	<h1>CMS</h1>
+    <?php 
+    $pages = ['homepagina', 'tips'];
 
-	<button class="accordion" id="homepagina">Section 1</button>
-	<div class="panel homepagina">
+    foreach ($pages as $page) {
+    ?>
+    <button class="accordion" id="<?=$page?>"><?=$page?></button>
+	<div class="panel <?=$page?>">
         <?php 
-            $data = $db->getPageInfoForCMS("homepagina");
-            
+            $data = $db->getPageInfo($page);
             $db->generateCMSHTML($data);
-            // var_dump($data);
         ?>
 	</div>
-
-	<button class="accordion" id="achmed">Section 1</button>
-	<div class="panel achmed">
-	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-	</div>
-
-	<button class="accordion" id="test2">Section 1</button>
-	<div class="panel test2">
-	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-	</div>
-
-
+    <?
+    }
+    ?>
 </div>
 <script type="text/javascript" src="/js/admin/adminSidebar.js"></script>
 
