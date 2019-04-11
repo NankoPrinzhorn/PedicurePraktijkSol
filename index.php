@@ -49,7 +49,7 @@ include_once "model/urlhandler.php";
 			include_once "views/site/footer.php";
 		} else {
 			if ($_SERVER['REQUEST_URI'] == "/admin") {
-				//admin home
+				include_once "views/admin/admin.php";
 			} else {
 				if(file_exists("views".$_SERVER['REQUEST_URI'].".php")) {
 					include_once "views".$_SERVER['REQUEST_URI'].".php";
