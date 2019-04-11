@@ -1,0 +1,54 @@
+<?php 
+
+include_once "model/urlhandler.php";
+
+?>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Stumpel</title>
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="/css/framework.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+		<?php 
+		if (file_exists($_SERVER['DOCUMENT_ROOT']."/css".$_SERVER['REQUEST_URI'].".css")) {
+			echo "<link rel='stylesheet' type='text/css' href='/css".$_SERVER['REQUEST_URI'].".css'>";
+		} else if ($page_url2 == "books" && $page_url3 != "") {
+			echo "<link rel='stylesheet' type='text/css' href='/css/producten/books-item.css'>";
+		}
+		?>
+		<!-- END CSS -->
+
+		<!-- Javascript -->
+		<script src="/js/framework.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<?php 
+		if (file_exists($_SERVER['DOCUMENT_ROOT']."/js".$_SERVER['REQUEST_URI'].".js")) {
+			echo "<script src='/js".$_SERVER['REQUEST_URI'].".js'></script>";
+		}
+		?>
+		<!-- END JAVASCRIPT -->
+	</head>
+	<body>
+		<?php 
+		if (file_exists("views".$_SERVER['REQUEST_URI'].".php")) {
+			include_once "views/header.php";
+			include_once "views".$_SERVER['REQUEST_URI'].".php";
+		} else {
+			if ($_SERVER['REQUEST_URI'] == "/") {
+				//home pagina
+				include_once "views/home.php";
+			} else {
+			//404
+				include_once "views/header.php";
+				include_once "views/404.php";
+			}
+		}
+		include_once "views/footer.php";
+		?>
+		</div>
+	</body>
+</html>
