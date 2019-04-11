@@ -1,16 +1,18 @@
-
-$( document ).ready(function() {
-	var acc = document.getElementsByClassName("accordion");
-	var i;
-	for (i = 0; i < acc.length; i++) {
-	  acc[i].addEventListener("click", function() {
-	    this.classList.toggle("active");
-	    var panel = this.nextElementSibling;
-	    if (panel.style.display === "block") {
-	      panel.style.display = "none";
-	    } else {
-	      panel.style.display = "block";
-	    }
-	  });
-	}
+$(".accordion").on("click", function() {
+    toggleSideBar(this);
 });
+    function toggleSideBar(el) {
+        var className = $(el).attr("id");
+
+        $('.panel').each(function(){
+            if ($(this).attr('class').split(" ")[1] == className) {
+                if ($(this).css("display") == "block") {
+                    $(this).css("display", "none");
+                } else {
+                    $(this).css("display", "block");
+                }
+            } else {
+                $(this).css("display", "none");
+            }
+        });
+    }
