@@ -1,7 +1,6 @@
 <?php 
-
+ini_set('display_errors', 1);
 include_once "model/urlhandler.php";
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -15,8 +14,6 @@ include_once "model/urlhandler.php";
 		<?php 
 		if (file_exists($_SERVER['DOCUMENT_ROOT']."/css".$_SERVER['REQUEST_URI'].".css")) {
 			echo "<link rel='stylesheet' type='text/css' href='/css".$_SERVER['REQUEST_URI'].".css'>";
-		} else if ($page_url2 == "books" && $page_url3 != "") {
-			echo "<link rel='stylesheet' type='text/css' href='/css/producten/books-item.css'>";
 		}
 		?>
 		<!-- END CSS -->
@@ -34,20 +31,33 @@ include_once "model/urlhandler.php";
 	</head>
 	<body>
 		<?php 
-		if (file_exists("views".$_SERVER['REQUEST_URI'].".php")) {
-			include_once "views/header.php";
-			include_once "views".$_SERVER['REQUEST_URI'].".php";
+		if ($Structure == "/site") {
+			include_once "views/site/header.php";
+
+			if (file_exists("views".$Structure.$_SERVER['REQUEST_URI'].".php")) {
+				//dynamic load of pages
+				include_once "views".$Structure.$_SERVER['REQUEST_URI'].".php";
+			} else {	
+				if ($_SERVER['REQUEST_URI'] == "/") {
+					//home pagina
+					include_once "views/site/home.php";
+				} else {
+					//404
+					include_once "views/404.php";
+				}
+			}
+			include_once "views/site/footer.php";
 		} else {
-			if ($_SERVER['REQUEST_URI'] == "/") {
-				//home pagina
-				include_once "views/home.php";
+			if ($_SERVER['REQUEST_URI'] == "/admin") {
+				//admin home
 			} else {
-			//404
-				include_once "views/header.php";
-				include_once "views/404.php";
+				if(file_exists("views".$_SERVER['REQUEST_URI'].".php")) {
+					include_once "views".$_SERVER['REQUEST_URI'].".php";
+				} else {
+					include_once "views/admin/404.php";
+				}
 			}
 		}
-		include_once "views/footer.php";
 		?>
 		</div>
 	</body>
