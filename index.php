@@ -1,4 +1,6 @@
 <?php 
+session_start();
+var_dump($_SESSION);
 ini_set('display_errors', 1);
 include_once "model/urlhandler.php";
 
@@ -54,6 +56,11 @@ $db = new SiteDatabase();
 			include_once "views/site/footer.php";
 		} else {
 			include_once "model/functions.php";
+
+			if ($_SERVER['REQUEST_URI'] != "/admin/login") {
+				checkLogin();
+			}
+
 			if ($_SERVER['REQUEST_URI'] == "/admin") {
 				include_once "views/admin/admin.php";
 			} else {
