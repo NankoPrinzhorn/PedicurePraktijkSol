@@ -1,4 +1,9 @@
 <link rel="stylesheet" type="text/css" href="/css/admin/adminSidebar.css">
+
+<script type="text/javascript">
+    var ajaxListRequest;
+</script>
+
 <div id="sidebar">
 	<h1>CMS</h1>
     <?php 
@@ -17,6 +22,10 @@
     }
     ?>
 </div>
+
+
+<!-- here comes the pages || for now its static! -->
+<p id="Siteyeet1"></p>
 <script type="text/javascript" src="/js/admin/adminSidebar.js"></script>
 
 

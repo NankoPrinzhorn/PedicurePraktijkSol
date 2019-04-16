@@ -38,13 +38,35 @@ class SiteDatabase extends Database {
             $currentType = "";
             switch ($item["inputType"]) {
                 case "text":
-                    echo "<textarea style='width: 100%;'>".$item["content"]."</textarea>";
+                    echo "<textarea id='".$item["htmlID"].$item["id"]."' style='width: 100%;'>".$item["content"]."</textarea>";
                     break;
                 case "varchar":
-                    echo "<input style='width: 100%;' type='text' value='".$item["content"]."'>";
+                    echo "<input id='".$item["htmlID"].$item["id"]."' style='width: 100%;' type='text' value='".$item["content"]."'>";
                     break;
             }
+            echo "
+            <script>
+                $('#".$item["htmlID"].$item["id"]."').on('keyup', function() {
+                    $('#Siteyeet1').text($(this).val());
+                    console.log(ajaxListRequest);
+                    if(ajaxListRequest) {
+                        ajaxListRequest.abort();
+                        ajaxListRequest = null;
+                    }
 
+                    ajaxListRequest = $.ajax({
+                        url:'/model/requests/updateConcept.php',
+                        data: {
+                            method:'POST',
+                            id:".$item["id"].",
+                            value:$(this).val(),
+                        },
+                        success: function() {
+                        }
+                    });
+                });
+            </script>
+            ";
             // echo ($item["htmlID"]);
         }
     }
