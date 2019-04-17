@@ -8,12 +8,9 @@ function toggleSideBar(el) {
     $('.panel').each(function(){
         var currentClass = $(this).attr('class').split(' ')[1];
         if ($(this).hasClass(className)) {
-            if ($('#'+className).hasClass('active')) {
-                // removeActive(this, currentClass);
-                toggleEdit(this, currentClass);
-            }
-            makeActive(this, currentClass);            
+            makeActive(this, currentClass);                        
 
+            toggleEdit(this, currentClass);
         } else {
             removeActive(this, currentClass);
         }
@@ -22,19 +19,26 @@ function toggleSideBar(el) {
 
 function makeActive(current, className) {
     $('#'+className).addClass('active');
+    $('.fake_body.'+className).addClass('active_panel');
 }
 
 function removeActive(current, className) {
     $(current).removeClass('active_panel');
     $('#'+className).removeClass('active');
+    $('.fake_body.'+className).removeClass('active_panel');
+    $('.fake_body.'+className).removeClass('full');
+    $('#'+className).find('i').css('transform', 'rotate(0deg)');
 }
 
-function toggleEdit(current, className) {
-    if ($('.'+className).hasClass('active_panel')) {
-        $(current).removeClass('active_panel');
+function toggleEdit(current, className, bool = true) {
+    if ($('.panel.'+className).hasClass('active_panel') || bool == false) {
+        $('.fake_body.'+className).addClass('full');
+        $('.'+className).removeClass('active_panel');
         $('#'+className).find('i').css('transform', 'rotate(0deg)');
+
     } else {
-        $(current).addClass('active_panel');
+        $('.panel.'+className).addClass('active_panel');
+        $('.fake_body.'+className).removeClass('full');
         $('#'+className).find('i').css('transform', 'rotate(45deg)');
     }
 }

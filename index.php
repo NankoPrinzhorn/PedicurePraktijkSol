@@ -11,7 +11,7 @@ $db = new SiteDatabase();
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Stumpel</title>
+		<title>Pedicure Praktijk Sol</title>
 		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="/css/framework.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">

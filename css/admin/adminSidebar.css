@@ -59,11 +59,11 @@ body {
     transition: .5s;
 }
 
-.active_panel {
+.panel.active_panel {
     left: 350px;
 }
 
-.active {
+.page.active {
     color: #EEEEEE;
 }
 
