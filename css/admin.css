@@ -1,5 +1,5 @@
 .fake_body {
-    width: calc(100vw - 1050px);
+    width: calc(100vw);
     height: 100vh;
     left: 350px;
     position: absolute;
