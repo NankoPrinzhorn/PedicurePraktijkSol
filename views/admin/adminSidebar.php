@@ -5,27 +5,37 @@
 </script>
 
 <div id="sidebar">
-	<h1>CMS</h1>
+    <div class="header">
+        <h3>Dashboard</h3>
+        <a href="#">Uitloggen</a>
+    </div>
+	<div class="pages">
     <?php 
-    $pages = ['homepagina', 'tips'];
+    $pages = ['homepagina', 'Over_mij', 'Behandelingen', 'Tips', 'Tarieven', 'Contact'];
 
     foreach ($pages as $page) {
-    ?>
-    <button class="accordion" id="<?=$page?>"><?=$page?></button>
-	<div class="panel <?=$page?>">
-        <?php 
-            $data = $db->getPageInfo($page);
-            $db->generateCMSHTML($data);
         ?>
-	</div>
-    <?
+        <p class="page" id="<?=$page?>"><?=$page?><i class="fas fa-plus"></i></p>
+        <?
     }
     ?>
+    </div>
+    <div class="saveChanges">
+        <h3>Opslaan</h3>
+    </div>
 </div>
-
+<?php 
+foreach ($pages as $page) {
+    ?>
+    <div class="panel <?=$page?>">
+        <h1><?=$page?></h1>
+    </div>
+    <?
+}
+?>
 
 <!-- here comes the pages || for now its static! -->
-<p id="Siteyeet1"></p>
+<!-- <p id="Siteyeet1"></p> -->
 <script type="text/javascript" src="/js/admin/adminSidebar.js"></script>
 
 
