@@ -30,7 +30,7 @@ body{
 	padding-bottom: 1em;
 }
 
-.loginInput{
+.loginInput, .emailInput{
 	width: 95%;
 	height: 50px;
 	margin-bottom: 1em;
@@ -49,10 +49,17 @@ body{
 	text-align: center;
 }
 
-.loginSubmit p {
-	padding-top: 15px;
-	margin: 0 auto;
+.loginSubmit:hover, #iGotIt:hover{
+	background-color: #9CD1BE;
+}
+
+.loginSubmit p, #iGotIt p{
 	color: #ffffff;
+	padding-top: 17px;
+}
+
+#forgotPasswordText{
+	color: black;
 }
 
 #forgotPassword{

@@ -20,8 +20,8 @@ if (isset($_SESSION['user_id'])) {
 <div id="forgotPasswordForm">
     <form id="forgotPassword_form">
         <h1>Wachtwoord vergeten</h1>
-        <h3>Er is een mail verstuurd naar uw email</h3>
-
+        <p id="forgotPasswordText">Vul hier uw e-mail adres in</p>
+        <input class="emailInput" type="email" placeholder="e-mail" name="email" required>
         <div id="iGotIt">
             <p>Dat heb ik begrepen!</p>
         </div>
