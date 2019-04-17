@@ -19,12 +19,12 @@ body{
 }
 
 
-.login_form{
+#login_form{
 	width: 80%;
 	margin-left: 10%;
 }
 
-.login_form h1{
+#login_form h1{
 	text-align: center;
 	padding-top: 1em;
 	padding-bottom: 1em;
