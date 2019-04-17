@@ -15,7 +15,7 @@ body {
 }
 
 #sidebar .header {
-    background-color: #00A077;
+    background-color: #79A7A4;
     width: 100%;
     height: 180px;
     color: white;
@@ -25,11 +25,12 @@ body {
 #sidebar .pages {
     cursor: pointer;
     padding: 0 30px;
+    height: calc(100% - 250px);
+    overflow: auto;
 }
 
 #sidebar .pages i {
-    right: 30px;
-    position: absolute;
+    float: right;
     transition:  .5s;
 }
 
@@ -40,7 +41,7 @@ body {
 }
 
 #sidebar .saveChanges {
-    background-color: #00A077;
+    background-color: #79A7A4;
     width: 100%;
     height: 70px;
     color: #EEEEEE;
@@ -48,6 +49,18 @@ body {
     position: absolute;
     bottom: 0;
     padding-top: 20px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+#sidebar .saveChanges:hover {
+    background-color: rgb(235, 235, 235);
+    color: #00A077;
+}
+
+#sidebar .saveChanges h3 {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 22px;
 }
 
 .panel {
@@ -64,7 +77,7 @@ body {
 }
 
 .page.active {
-    color: #EEEEEE;
+    color: #F1F1F1;
 }
 
 /* .accordion {
