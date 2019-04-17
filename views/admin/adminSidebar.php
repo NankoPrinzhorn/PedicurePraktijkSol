@@ -15,7 +15,7 @@
     foreach ($pages as $pageName => $page) {
         ?>
         <p class="page" id="<?=$page?>"><?=$pageName?><i class="fas fa-plus"></i></p>
-        <?
+        <?php
     }
     ?>
     </div>
@@ -29,7 +29,7 @@ foreach ($pages as $page) {
     <div class="panel <?=$page?>">
         <h1><?=$page?></h1>
     </div>
-    <?
+    <?php
 }
 ?>
 <script type="text/javascript" src="/js/admin/adminSidebar.js"></script>
