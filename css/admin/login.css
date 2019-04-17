@@ -3,7 +3,7 @@ body{
 	overflow: hidden;
 }
 
-#loginForm, #forgotPasswordForm{
+#loginForm, #forgotPasswordForm {
 	position: absolute;
 	left: calc(50vw - 325px);
 	width: 650px;
@@ -19,12 +19,12 @@ body{
 }
 
 
-.login_form{
+#login_form, #forgotPassword_form {
 	width: 80%;
 	margin-left: 10%;
 }
 
-.login_form h1{
+#login_form h1, #forgotPassword_form h1{
 	text-align: center;
 	padding-top: 1em;
 	padding-bottom: 1em;
