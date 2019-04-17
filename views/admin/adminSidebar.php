@@ -1,5 +1,4 @@
 <link rel="stylesheet" type="text/css" href="/css/admin/adminSidebar.css">
-
 <script type="text/javascript">
     var ajaxListRequest;
 </script>
@@ -11,11 +10,11 @@
     </div>
 	<div class="pages">
     <?php 
-    $pages = ['homepagina', 'Over_mij', 'Behandelingen', 'Tips', 'Tarieven', 'Contact'];
+    $pages = ['Home' => "home", 'Over mij' => "over-mij", 'Behandelingen' => "behandelingen", 'Tips' => "tips", 'Tarieven' => "tarieven", 'Contact' => "contact"];
 
-    foreach ($pages as $page) {
+    foreach ($pages as $pageName => $page) {
         ?>
-        <p class="page" id="<?=$page?>"><?=$page?><i class="fas fa-plus"></i></p>
+        <p class="page" id="<?=$page?>"><?=$pageName?><i class="fas fa-plus"></i></p>
         <?
     }
     ?>
@@ -33,9 +32,6 @@ foreach ($pages as $page) {
     <?
 }
 ?>
-
-<!-- here comes the pages || for now its static! -->
-<!-- <p id="Siteyeet1"></p> -->
 <script type="text/javascript" src="/js/admin/adminSidebar.js"></script>
 
 

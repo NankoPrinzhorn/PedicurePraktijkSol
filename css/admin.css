@@ -1,8 +1,22 @@
 .fake_body {
-    width: calc(100vw - 350px);
+    width: calc(100vw - 1050px);
     height: 100vh;
     left: 350px;
     position: absolute;
     top: 0;
     left: 350px;
+}
+
+.fake_body {
+    left: 100%;
+    transition: .5s;
+}
+
+.fake_body.active_panel {
+    left: 1050px;
+}
+
+.fake_body.full {
+    left: 350px;
+    width: calc(100vw - 350px);
 }

@@ -26,3 +26,5 @@
 </body>
 <div>html</div>
 <script type="text/javascript" src="/js/site/home.js"></script>
+
+HOME
