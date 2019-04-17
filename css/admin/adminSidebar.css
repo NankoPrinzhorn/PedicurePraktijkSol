@@ -15,7 +15,7 @@ body {
 }
 
 #sidebar .header {
-    background-color: #00A077;
+    background-color: #79A7A4;
     width: 100%;
     height: 180px;
     color: white;
@@ -41,7 +41,7 @@ body {
 }
 
 #sidebar .saveChanges {
-    background-color: #00A077;
+    background-color: #79A7A4;
     width: 100%;
     height: 70px;
     color: #EEEEEE;
@@ -66,7 +66,7 @@ body {
 }
 
 .page.active {
-    color: #EEEEEE;
+    color: #F1F1F1;
 }
 
 /* .accordion {
