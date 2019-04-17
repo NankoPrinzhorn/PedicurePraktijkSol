@@ -25,11 +25,12 @@ body {
 #sidebar .pages {
     cursor: pointer;
     padding: 0 30px;
+    height: calc(100% - 250px);
+    overflow: auto;
 }
 
 #sidebar .pages i {
-    right: 30px;
-    position: absolute;
+    float: right;
     transition:  .5s;
 }
 
@@ -47,7 +48,8 @@ body {
     text-align: center;
     position: absolute;
     bottom: 0;
-    padding-top: 20px;
+    padding-top: 10px;
+    cursor: pointer;
 }
 
 .panel {
