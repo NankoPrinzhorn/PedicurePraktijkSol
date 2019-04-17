@@ -1,6 +1,5 @@
 <?php 
 session_start();
-var_dump($_SESSION);
 ini_set('display_errors', 1);
 include_once "model/urlhandler.php";
 
@@ -17,6 +16,7 @@ $db = new SiteDatabase();
 		<link rel="stylesheet" type="text/css" href="/css/framework.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display:400,700" rel="stylesheet">
 
 		<?php 
 		if (file_exists($_SERVER['DOCUMENT_ROOT']."/css".$_SERVER['REQUEST_URI'].".css")) {
