@@ -57,7 +57,7 @@ $db = new SiteDatabase();
 		} else {
 			include_once "model/functions.php";
 
-			if ($_SERVER['REQUEST_URI'] != "/admin/login") {
+			if ($_SERVER['REQUEST_URI'] != "/admin/login" && $_SERVER['REQUEST_URI'] != "/admin/forgotPassword"  ) {
 				checkLogin();
 			}
 
