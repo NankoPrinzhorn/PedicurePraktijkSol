@@ -28,6 +28,16 @@ if (isset($_SESSION['user_id'])) {
     </form>    
 </div>
 
+<div id="emailSends">
+        <form class="email_sends">
+        <h1>Logo</h1>
+        <p id="forgotPasswordText">Er is succesvol een email verstuurd naar iemand@example.nl</p>
+        <div id="confirmButton">
+            <p>E-mail verzonden.</p>
+        </div>
+    </form> 
+</div>
+
 <script>
 $('#login_form').on('submit', function() {
     $.ajax({
