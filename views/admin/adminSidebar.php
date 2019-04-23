@@ -6,7 +6,7 @@
 <div id="sidebar">
     <div class="header">
         <h3>Dashboard</h3>
-        <a href="#">Uitloggen</a>
+        <p id="logout">Uitloggen</p>
     </div>
 	<div class="pages">
     <?php 
@@ -33,5 +33,22 @@ foreach ($pages as $page) {
 }
 ?>
 <script type="text/javascript" src="/js/admin/adminSidebar.js"></script>
+<script type="text/javascript" >
+$('#logout').on('click', function() {
+    $.ajax({
+        url:'/model/requests/logoutSubmit.php',
+        method:'GET',
+        data: {
+            value:'logout'  
+        },
+        success: function(data) {
+            console.log(data);
+            if(data == "true") {
+                window.location.href = "/admin";
+            }
+        }
+    })
+});
+</script>
 
 

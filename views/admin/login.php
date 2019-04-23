@@ -5,11 +5,12 @@ if (isset($_SESSION['user_id'])) {
 ?>
 <link rel="stylesheet" type="text/css" href="/css/admin/login.css">
 <div id="loginForm">
-    <form class="login_form">
+    <form id="login_form">
         <h1>Logo</h1>
-        <p id="loginText">Login</p>
-        <input class="loginInput" type="text" class="username" placeholder="Gebruikersnaam" name="username" required>
-        <input class="loginInput" type="password" class="password" placeholder="Wachtwoord" name="password" required>
+
+        <input class="loginInput username" type="text" placeholder="Gebruikersnaam" name="username" required>
+        <input class="loginInput password" type="password" placeholder="Wachtwoord" name="password" required>
+        <input type="submit">
         <div class="loginSubmit">
             <p>Inloggen</p>
         </div>
