@@ -10,7 +10,7 @@
     </div>
 	<div class="pages">
     <?php 
-    $pages = ['Home' => "home", 'Over mij' => "over-mij", 'Behandelingen' => "behandelingen", 'Tips' => "tips", 'Tarieven' => "tarieven", 'Contact' => "contact"];
+    $pages = ['Home' => "Home", 'Over mij' => "over-mij", 'Behandelingen' => "behandelingen", 'Tips' => "tips", 'Tarieven' => "tarieven", 'Contact' => "contact"];
 
     foreach ($pages as $pageName => $page) {
         ?>
