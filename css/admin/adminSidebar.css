@@ -115,6 +115,12 @@ body {
     padding: 20px;
 }
 
+#logout {
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
 .page.active {
     color: #F1F1F1;
 }
