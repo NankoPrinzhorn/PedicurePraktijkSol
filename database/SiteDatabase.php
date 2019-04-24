@@ -80,8 +80,6 @@ class SiteDatabase extends Database {
                             method:'POST',
                             id:".$item["id"].",
                             value:$(this).val(),
-                        },
-                        success: function() {
                         }
                     });
                 });
