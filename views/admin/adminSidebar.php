@@ -20,7 +20,7 @@
     ?>
     </div>
     <div class="saveChanges">
-        <h3>Opslaan</h3>
+        <h3>Publiceren</h3>
     </div>
 </div>
 <?php 
