@@ -14,8 +14,29 @@ class SiteDatabase extends Database {
     //     }
     // }
 
+    public function getPageData($page, $admin) {
+        if(!$admin) {
+            //actual pagina
+            $sql = "SELECT * FROM concept WHERE page = ? ORDER BY pageOrder ASC";
+            $params = array($page);
+        } else {
+            //concept
+            $sql = "SELECT * FROM concept WHERE page = ? ORDER BY pageOrder ASC";
+            $params = array($page);
+        }
+
+        try {
+            $stmt = $this->db->prepare($sql);
+            $stmt->execute($params);
+            
+            return $stmt->fetchAll();
+        } catch (PDOException $e) {
+            echo $e;
+        }
+    }
+
     public function getPageInfo($page) {
-        $sql = "SELECT * FROM concept WHERE page = ?";
+        $sql = "SELECT * FROM concept WHERE page = ? ORDER BY pageOrder ASC";
         $params = array($page);
 
         try {
@@ -38,17 +59,16 @@ class SiteDatabase extends Database {
             $currentType = "";
             switch ($item["inputType"]) {
                 case "text":
-                    echo "<textarea id='".$item["htmlID"].$item["id"]."' style='width: 100%;'>".$item["content"]."</textarea>";
+                    echo "<textarea id='".$item["id"]."-".$item["htmlID"]."' style='width: 100%;'>".$item["content"]."</textarea>";
                     break;
                 case "varchar":
-                    echo "<input id='".$item["htmlID"].$item["id"]."' style='width: 100%;' type='text' value='".$item["content"]."'>";
+                    echo "<input id='".$item["id"]."-".$item["htmlID"]."' style='width: 100%;' type='text' value='".$item["content"]."'>";
                     break;
             }
             echo "
             <script>
-                $('#".$item["htmlID"].$item["id"]."').on('keyup', function() {
-                    $('#Siteyeet1').text($(this).val());
-                    console.log(ajaxListRequest);
+                $('#".$item["id"]."-".$item["htmlID"]."').on('keyup', function() {
+                    $('.".$item["id"]."-".$item["htmlID"]."').text($(this).val());
                     if(ajaxListRequest) {
                         ajaxListRequest.abort();
                         ajaxListRequest = null;

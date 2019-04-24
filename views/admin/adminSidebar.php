@@ -28,6 +28,9 @@ foreach ($pages as $page) {
     ?>
     <div class="panel <?=$page?>">
         <h1><?=$page?></h1>
+        <?php 
+        $db->generateCMSHTML($db->getPageInfo($page));
+        ?>
     </div>
     <?php
 }
