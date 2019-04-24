@@ -19,7 +19,7 @@ if (isset($_SESSION['user_id'])) {
     <form class="forgotPassword_form">
     <img src="/images/logo.svg" alt="Pedicure Praktijk Sol" class="logo">
         <p id="forgotPasswordText">Vul hier uw e-mail adres in</p>
-        <input class="emailInput" type="email" placeholder="e-mail" name="email" required="required">
+        <input class="emailInput" type="email" placeholder="e-mail" name="email" required>
         <input type="submit" id="iGotIt" value="Verstuur e-mail">
     </form>    
 </div>
