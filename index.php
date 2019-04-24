@@ -39,6 +39,7 @@ $db = new SiteDatabase();
 	<body>
 		<?php 
 		if ($Structure == "/site") {
+			$admin = false;
 			include_once "views/site/header.php";
 
 			if (file_exists("views".$Structure.$_SERVER['REQUEST_URI'].".php")) {
@@ -55,9 +56,10 @@ $db = new SiteDatabase();
 			}
 			include_once "views/site/footer.php";
 		} else {
+			$admin = true;
 			include_once "model/functions.php";
 
-			if ($_SERVER['REQUEST_URI'] != "/admin/login" && $_SERVER['REQUEST_URI'] != "/admin/forgotPassword"  ) {
+			if ($_SERVER['REQUEST_URI'] != "/admin/login" && $_SERVER['REQUEST_URI'] != "/admin/forgotPassword") {
 				checkLogin();
 			}
 

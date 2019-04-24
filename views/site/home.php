@@ -1,10 +1,13 @@
+<?php 
+include_once $_SERVER['DOCUMENT_ROOT']."/model/site/home.php";
+?>
 <link rel="stylesheet" type="text/css" href="/css/site/home.css">
 <body>
   <nav class="navbar">
     <span class="navbar-toggle" id="js-navbar-toggle">
             <i class="fas fa-bars"></i>
         </span>
-    <a href="#" class="logo">logo</a>
+    <a href="#" class="logo <?=$data[0]['id']."-".$data[0]['htmlID']?>"><?=$data[0]['content']?></a>
     <ul class="main-nav" id="js-menu">
       <li>
         <a href="#" class="nav-links">Home</a>
@@ -27,4 +30,4 @@
 <div>html</div>
 <script type="text/javascript" src="/js/site/home.js"></script>
 
-HOME
+<p class="<?=$data[1]['id']."-".$data[1]['htmlID']?>"><?=$data[1]['content']?></p>
