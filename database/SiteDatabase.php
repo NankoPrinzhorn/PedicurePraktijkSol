@@ -59,10 +59,10 @@ class SiteDatabase extends Database {
             $currentType = "";
             switch ($item["inputType"]) {
                 case "text":
-                    echo "<textarea id='".$item["id"]."-".$item["htmlID"]."' style='width: 100%;'>".$item["content"]."</textarea>";
+                    echo "<label for=".$item["id"]."-".$item["htmlID"]." >".$item["htmlID"]."</label><textarea id='".$item["id"]."-".$item["htmlID"]."' style='width: 100%;'>".$item["content"]."</textarea>";
                     break;
                 case "varchar":
-                    echo "<input id='".$item["id"]."-".$item["htmlID"]."' style='width: 100%;' type='text' value='".$item["content"]."'>";
+                    echo "<label for=".$item["id"]."-".$item["htmlID"]." >".$item["htmlID"]."</label><input id='".$item["id"]."-".$item["htmlID"]."' style='width: 100%;' type='text' value='".$item["content"]."'>";
                     break;
             }
             echo "

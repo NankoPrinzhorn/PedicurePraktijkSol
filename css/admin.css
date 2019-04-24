@@ -14,6 +14,7 @@
 
 .fake_body.active_panel {
     left: 1050px;
+    height: 100%;
 }
 
 .fake_body.full {
