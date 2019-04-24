@@ -24,10 +24,10 @@
     </div>
 </div>
 <?php 
-foreach ($pages as $page) {
+foreach ($pages as $pageName => $page) {
     ?>
     <div class="panel <?=$page?>">
-        <h1><?=$page?></h1>
+        <h1><?=$pageName?></h1>
         <?php 
         $db->generateCMSHTML($db->getPageInfo($page));
         ?>

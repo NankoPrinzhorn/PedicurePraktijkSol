@@ -59,16 +59,16 @@ class SiteDatabase extends Database {
             $currentType = "";
             switch ($item["inputType"]) {
                 case "text":
-                    echo "<label for=".$item["id"]."-".$item["htmlID"]." >".$item["htmlID"]."</label><textarea id='".$item["id"]."-".$item["htmlID"]."' style='width: 100%;'>".$item["content"]."</textarea>";
+                    echo "<label for=".$item["id"]."-".str_replace(" ", "_", $item["htmlID"])." >".$item["htmlID"]."</label><textarea id='".$item["id"]."-".str_replace(" ", "_", $item["htmlID"])."' style='width: 100%;'>".$item["content"]."</textarea>";
                     break;
                 case "varchar":
-                    echo "<label for=".$item["id"]."-".$item["htmlID"]." >".$item["htmlID"]."</label><input id='".$item["id"]."-".$item["htmlID"]."' style='width: 100%;' type='text' value='".$item["content"]."'>";
+                    echo "<label for=".$item["id"]."-".str_replace(" ", "_", $item["htmlID"])." >".$item["htmlID"]."</label><input id='".$item["id"]."-".str_replace(" ", "_", $item["htmlID"])."' style='width: 100%;' type='text' value='".$item["content"]."'>";
                     break;
             }
             echo "
             <script>
-                $('#".$item["id"]."-".$item["htmlID"]."').on('keyup', function() {
-                    $('.".$item["id"]."-".$item["htmlID"]."').text($(this).val());
+                $('#".$item["id"]."-".str_replace(" ", "_", $item["htmlID"])."').on('keyup', function() {
+                    $('.".$item["id"]."-".str_replace(" ", "_", $item["htmlID"])."').text($(this).val());
                     if(ajaxListRequest) {
                         ajaxListRequest.abort();
                         ajaxListRequest = null;
