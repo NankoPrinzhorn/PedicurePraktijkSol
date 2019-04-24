@@ -24,13 +24,13 @@ body{
 }
 
 
-.login_form, .forgotPassword_form, .email_sends{
+#login_form, .forgotPassword_form, .email_sends{
 	width: 80%;
 	margin-left: 10%;
 }
 
 
-.login_form h1, .forgotPassword_form h1, .email_sends h1{
+#login_form h1, .forgotPassword_form h1, .email_sends h1{
 
 	text-align: center;
 	padding-top: 1em;
