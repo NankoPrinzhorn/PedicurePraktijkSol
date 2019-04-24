@@ -29,4 +29,4 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/home.php";
 </body>
 <script type="text/javascript" src="/js/site/home.js"></script>
 
-<p class="<?=$data[1]['id']."-".$data[1]['htmlID']?>"><?=$data[1]['content']?></p>
+<p style="white-space: pre-wrap;" class="<?=$data[1]['id']."-".$data[1]['htmlID']?>"><?=$data[1]['content']?></p>
