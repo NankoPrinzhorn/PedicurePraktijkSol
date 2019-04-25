@@ -15,4 +15,3 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/home.php";
 
 
 <p style="white-space: pre-wrap;" class="<?=$data[1]['id']."-".str_replace(" ", "_", $data[1]['htmlID'])?>"><?=$data[1]['content']?></p>
-<script type="text/javascript" src="/js/site/home.js"></script>
