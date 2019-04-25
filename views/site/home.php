@@ -2,14 +2,17 @@
 include_once $_SERVER['DOCUMENT_ROOT']."/model/site/home.php";
 ?>
 <link rel="stylesheet" type="text/css" href="/css/site/home.css">
-<div class="container">
+
+<div id="header">
+  <div class="container">
     <div class="row">
-        <div class="bootstrap-test col-md-6">col-md-6</div>
-        <div class="bootstrap-test col-md-4">col-md-4</div>
-        <div class="bootstrap-test col-md-1">col-md-1</div>
-        <div class="bootstrap-test col-md-1">col-md-1</div>
+      <div class="col-md-12">
+        <h1>Test</h1>
+      </div>
     </div>
+  </div>
 </div>
+
 
 </body>
 

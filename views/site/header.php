@@ -35,6 +35,8 @@
                     <!-- link naar de home -->
                 </div>
                 <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
+
+                
                     <ul id="desktop-menu">
                         <li><a href="">Over mij</a></li>
                         <!-- geef class="menu-item-active" voor active statement aan de <a> -->
@@ -43,8 +45,10 @@
                         <li><a href="">Prijslijst</a></li>
                         <li><a href="">Contact</a></li>
                     </ul>
+
+
+                    <!-- start menu btn -->
                     <div id="mobile-nav-btn">
-                        <!-- start menu btn -->
                         <div id="line-1" class="line"></div>
                         <div id="line-2" class="line"></div>
                         <div id="line-3" class="line"></div>
