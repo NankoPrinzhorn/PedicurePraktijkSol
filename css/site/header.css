@@ -166,7 +166,7 @@
 	visibility: none;
 	opacity: 0;
 	transition: all 0.5s ease;
-	display: none;
+	visibility: none;
 	text-align: center;
 }
 
