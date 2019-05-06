@@ -15,7 +15,7 @@ body {
 }
 
 #sidebar .header {
-    background-color: #79A7A4;
+    background-color: #9CD1BE;
     width: 100%;
     height: 180px;
     color: white;
@@ -41,7 +41,7 @@ body {
 }
 
 #sidebar .saveChanges {
-    background-color: #79A7A4;
+    background-color: #9CD1BE;
     width: 100%;
     height: 70px;
     color: #EEEEEE;
@@ -66,14 +66,60 @@ body {
 .panel {
     position: absolute;
     width: 700px;
-    background-color: grey;
+    background-color: rgb(243, 243, 243);
     z-index: 1;
     left: -350px;
     transition: .5s;
+    height: 100%;
+    padding: 20px 40px;
+    overflow-y: auto;
+}
+
+.panel h1 {
+    font-size: 38px;
+    color: #79A7A4;
+    border-bottom: 1px solid rgb(161, 161, 161);
+    padding-bottom: 10px;
+    margin-bottom: 40px;
 }
 
 .panel.active_panel {
     left: 350px;
+    height: 100%;
+    padding: 20px 40px;
+}
+
+.panel input {
+    height: 50px;
+    border: none;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.panel label {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 18px;
+    color: rgb(83, 83, 83);
+}
+
+.panel textarea {
+    min-height: 300px;
+    border: none;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 18px;
+    padding: 20px;
+    resize: none;
+}
+
+#logout {
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
 }
 
 .page.active {

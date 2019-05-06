@@ -10,7 +10,7 @@
     </div>
 	<div class="pages">
     <?php 
-    $pages = ['Home' => "home", 'Over mij' => "over-mij", 'Behandelingen' => "behandelingen", 'Tips' => "tips", 'Tarieven' => "tarieven", 'Contact' => "contact"];
+    $pages = ['Home' => "Home", 'Over mij' => "over-mij", 'Behandelingen' => "behandelingen", 'Tips' => "tips", 'Tarieven' => "tarieven", 'Contact' => "contact"];
 
     foreach ($pages as $pageName => $page) {
         ?>
@@ -20,14 +20,17 @@
     ?>
     </div>
     <div class="saveChanges">
-        <h3>Opslaan</h3>
+        <h3>Publiceren</h3>
     </div>
 </div>
 <?php 
-foreach ($pages as $page) {
+foreach ($pages as $pageName => $page) {
     ?>
     <div class="panel <?=$page?>">
-        <h1><?=$page?></h1>
+        <h1><?=$pageName?></h1>
+        <?php 
+        $db->generateCMSHTML($db->getPageInfo($page));
+        ?>
     </div>
     <?php
 }

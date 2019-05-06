@@ -23,17 +23,19 @@ body{
 }
 
 
-.login_form, .forgotPassword_form, .email_sends{
+#login_form, .forgotPassword_form, .email_sends{
 	width: 80%;
 	margin-left: 10%;
 }
 
 
-.login_form h1, .forgotPassword_form h1, .email_sends h1{
-
+#login_form img, .forgotPassword_form img, .email_sends img{
+	height: 80px;
 	text-align: center;
-	padding-top: 1em;
-	padding-bottom: 1em;
+	padding-top: 2.5em;
+	padding-bottom: 2.5em;
+	display: block;
+	margin: 0 auto;
 }
 
 .loginInput, .emailInput{
@@ -53,15 +55,13 @@ body{
 	background-color: #79A7A4;
 	margin-bottom: 1em;
 	text-align: center;
+	border: 0;
+	color: #ffffff;
+	/* padding-top: 17px; */
 }
 
 .loginSubmit:hover, #iGotIt:hover, #confirmButton:hover{
 	background-color: #9CD1BE;
-}
-
-.loginSubmit p, #iGotIt p, #confirmButton p{
-	color: #ffffff;
-	padding-top: 17px;
 }
 
 #forgotPasswordText, #loginText{
