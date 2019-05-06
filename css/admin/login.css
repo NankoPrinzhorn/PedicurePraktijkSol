@@ -3,7 +3,6 @@ body{
 	overflow: hidden;
 }
 
-
 #loginForm, #forgotPasswordForm, #emailSends{
 	position: absolute;
 	left: calc(50vw - 325px);

@@ -7,7 +7,6 @@ if (isset($_SESSION['user_id'])) {
 <div id="loginForm">
     <form id="login_form">
         <h1>Logo</h1>
-
         <input class="loginInput username" type="text" placeholder="Gebruikersnaam" name="username" required>
         <input class="loginInput password" type="password" placeholder="Wachtwoord" name="password" required>
         <input type="submit">
