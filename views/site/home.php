@@ -3,7 +3,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/home.php";
 ?>
 <link rel="stylesheet" type="text/css" href="/css/site/home.css">
 
-<div id="header">
+<div id="header" class="header">
   <div class="container">
     <div class="row">
       <div class="col-md-12">

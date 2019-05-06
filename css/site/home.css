@@ -10,10 +10,7 @@ body {
   background: #eee;
 }
 
-.bootstrap-test {
-  background: lightblue;
-  border: 1px solid rgb(125, 151, 189);
-  height: 80px;
-  margin-top: 20px;
+.header {
+  padding-top: 200px;
 }
 

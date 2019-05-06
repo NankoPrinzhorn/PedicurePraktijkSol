@@ -62,7 +62,7 @@
 #desktop-menu li{
 	float: left;
 	list-style: none;
-	padding-left: 20px;
+	padding-left: 40px;
 	margin-top: 15px;
 }
 
@@ -173,7 +173,6 @@
 .mobile-overlay-active{
 	opacity: 1 !important;
 	visibility: visible !important;
-
 }
 
 #mobile-menu li a{
