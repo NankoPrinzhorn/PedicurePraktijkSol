@@ -8,8 +8,8 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/home.php";
     <div class="row">
       <div class="intro col-md-12">
         <div class="col-md-12">
-        <h1>Voor iedereen die verzorgde voeten wil</h1>
-        <p>Medisch pedicure en beoefen mijn vak met hart en ziel in Alkmaar West en 1 dag per week in Castricum. Of het nu om een ontspannende en cosmetisch verzorgende behandeling gaat of om een behandeling die gericht is op het verlichten van pijnlijke ongemakken aan de voeten. Vakkundig in het wegnemen van pijn door ingroeiende nagels, likdoorns of kloven. Nauwkeurig en zorgzaam in de behandeling van alle voeten die zorg vragen.</p>
+        <h1 class="<?=$data[0]['editID']?>"><?=$data[0]['text']?></h1>
+        <p class="<?=$data[1]['editID']?>"><?=$data[1]['text']?></p>
         <button>Meer informatie</button>
         <button>Neem contact op</button>
         </div>
