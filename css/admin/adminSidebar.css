@@ -23,7 +23,6 @@ body {
 }
 
 #sidebar .pages {
-    cursor: pointer;
     padding: 0 30px;
     height: calc(100% - 250px);
     overflow: auto;
@@ -35,6 +34,7 @@ body {
 }
 
 #sidebar .pages .page {
+    cursor: pointer;
     border-bottom: 1px solid #B5BBBF;
     padding: 15px 0;
 
