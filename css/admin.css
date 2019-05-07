@@ -4,12 +4,9 @@
     left: 350px;
     position: absolute;
     top: 0;
-    left: 350px;
-}
-
-.fake_body {
     left: 100%;
     transition: .5s;
+    overflow-y: auto;
 }
 
 .fake_body.active_panel {
@@ -20,4 +17,16 @@
 .fake_body.full {
     left: 350px;
     width: calc(100vw - 350px);
+}
+
+.innerCMSBlok label {
+    display: none !important;
+}
+
+.innerCMSBlok input, .innerCMSBlok textarea {
+    margin-bottom: 0 !important;
+}
+
+.innerCMSBlok h1 {
+    margin-bottom: 0 !important;
 }
