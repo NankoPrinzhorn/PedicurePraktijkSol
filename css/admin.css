@@ -18,3 +18,15 @@
     left: 350px;
     width: calc(100vw - 350px);
 }
+
+.innerCMSBlok label {
+    display: none !important;
+}
+
+.innerCMSBlok input, .innerCMSBlok textarea {
+    margin-bottom: 0 !important;
+}
+
+.innerCMSBlok h1 {
+    margin-bottom: 0 !important;
+}
