@@ -10,7 +10,57 @@ body {
   background: #eee;
 }
 
-.header {
-  padding-top: 200px;
+.home-hero {
+  width: 100%;
+  min-height: 90vh;
+  background: url(../../images/home-background.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
 }
 
+.home-hero .intro {
+  /* background: red; */
+
+}
+
+.home-hero .intro h1 {
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 60px;
+  max-width: 600px;
+}
+
+.home-hero .intro h1::before{
+  content: '“';
+  font-size: 400px;
+  position: absolute;
+  top: -140px;
+  opacity: 0.2;
+  left: -50px;
+}
+
+
+.home-hero .intro p {
+  margin: 40px 0 0 0;
+  max-width: 880px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.home-blocks {
+  padding-top: 50px; 
+  padding-bottom: 50px; 
+  margin-top: -120px;
+}
+
+.home-blocks .case {
+  background: white; 
+  padding-top: 20px; 
+  padding-bottom: 20px;
+}
