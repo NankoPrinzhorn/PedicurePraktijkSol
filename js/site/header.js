@@ -1,3 +1,12 @@
+anime({
+    targets: '#desktop-menu li',
+    translateX: [100, 0],
+    opacity: [0,1],
+    delay: anime.stagger(100),
+});
+
+
+
 $('#mobile-nav-btn').on("click", function () {
     $(this).toggleClass('mobile-nav-btn-active');
     $('#mobile-overlay').toggleClass('mobile-overlay-active');
@@ -25,3 +34,5 @@ $('a').click(function (event) {
         window.location.href = url;
     }, 500);
 })
+
+
