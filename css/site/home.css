@@ -13,7 +13,7 @@ body {
 /* Hero Section */
 .home-hero {
   width: 100%;
-  min-height: 100vh;
+  min-height: 90vh;
   background: url(../../images/home-background.png);
   background-size: cover;
   background-position: center center;
@@ -75,7 +75,7 @@ body {
   padding: 50px 20px;
   text-align: center;
   min-height: 300px;
-  border-bottom: 2px solid #9CD1BE;
+  border-bottom: 3px solid #9CD1BE;
 }
 
 .home-blocks .case img {
@@ -93,7 +93,6 @@ body {
 
 /* Behandelingen Section */
 .home-behandelingen {
-  /* padding: 100px 0; */
 }
 
 .home-behandelingen h2 {
@@ -103,4 +102,57 @@ body {
   font-weight: bold;
   color: #67ABA4;
   margin: 100px 0;
+}
+
+.home-behandelingen .behandeling {
+  height: auto;
+  background: white;
+  border-bottom: 3px solid #9CD1BE;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.home-behandelingen .behandeling-text {
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  padding: 0 80px;
+}
+
+.home-behandelingen .behandeling-text h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  color: #67ABA4;
+  z-index: 2;
+  position: relative;
+}
+
+.home-behandelingen .behandeling-text:before {
+  content: "1";
+  font-family: 'Playfair Display', serif;
+  position: absolute;
+  color: #E9F9F1;
+  font-size: 250px;
+  top: -80px;
+  left: 40px;
+  z-index: 0;
+}
+
+.home-behandelingen .behandeling-text p {
+  font-family: 'Playfair Display', serif;
+  margin-top: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  z-index: 2;
+  position: relative;
+}
+
+.home-behandelingen .behandeling-img {
+  background: url(../../images/behandeling.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 350px;
+  height: 100%;
 }

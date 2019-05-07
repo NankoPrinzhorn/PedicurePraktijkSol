@@ -49,10 +49,64 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/home.php";
 </section>
 
 <section class="home-behandelingen">
-  <div class="row">
-    <div class="col-md-12">
-      <h2>Behandelingen</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Behandelingen</h2>
 
+        <div class="col-md-12">
+          <div class="behandeling col-md-12">
+            <div class="behandeling-text col-md-7">
+              <div class="content">
+                <h3>Behandeling met intake</h3>
+                <p>Doel van het voetonderzoek is te inventariseren wat uw voetklachten zijn en waar deze uit voort kunnen komen/mee samenhangen; of er sprake is van een risicovoet; met welke behandeling uw klachten verlicht kunnen worden.</p>
+              </div>
+            </div>
+            <div class="behandeling-img col-md-5">
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-12">
+          <div class="behandeling col-md-12">
+            <div class="behandeling-text col-md-7">
+              <div class="content">
+                <h3>Behandeling met intake</h3>
+                <p>Doel van het voetonderzoek is te inventariseren wat uw voetklachten zijn en waar deze uit voort kunnen komen/mee samenhangen; of er sprake is van een risicovoet; met welke behandeling uw klachten verlicht kunnen worden.</p>
+              </div>
+            </div>
+            <div class="behandeling-img col-md-5">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <div class="behandeling col-md-12">
+            <div class="behandeling-text col-md-7">
+              <div class="content">
+                <h3>Behandeling met intake</h3>
+                <p>Doel van het voetonderzoek is te inventariseren wat uw voetklachten zijn en waar deze uit voort kunnen komen/mee samenhangen; of er sprake is van een risicovoet; met welke behandeling uw klachten verlicht kunnen worden.</p>
+              </div>
+            </div>
+            <div class="behandeling-img col-md-5">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <div class="behandeling col-md-12">
+            <div class="behandeling-text col-md-7">
+              <div class="content">
+                <h3>Behandeling met intake</h3>
+                <p>Doel van het voetonderzoek is te inventariseren wat uw voetklachten zijn en waar deze uit voort kunnen komen/mee samenhangen; of er sprake is van een risicovoet; met welke behandeling uw klachten verlicht kunnen worden.</p>
+              </div>
+            </div>
+            <div class="behandeling-img col-md-5">
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
 </section>
