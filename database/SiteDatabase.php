@@ -17,11 +17,19 @@ class SiteDatabase extends Database {
     public function getPageData($page, $admin) {
         if(!$admin) {
             //actual pagina
-            $sql = "SELECT * FROM concept WHERE page = ? ORDER BY pageOrder ASC";
+            $sql = "SELECT
+                    `page`,
+                    `content` as text,
+                    CONCAT(`id`, '-', Replace(`htmlID`, ' ', '_')) as editID
+                    FROM concept WHERE page = ? ORDER BY pageOrder ASC";
             $params = array($page);
         } else {
             //concept
-            $sql = "SELECT * FROM concept WHERE page = ? ORDER BY pageOrder ASC";
+            $sql = "SELECT
+                    `page`,
+                    `content` as text,
+                    CONCAT(`id`, '-', Replace(`htmlID`, ' ', '_')) as editID
+                    FROM concept WHERE page = ? ORDER BY pageOrder ASC";
             $params = array($page);
         }
 
@@ -36,7 +44,14 @@ class SiteDatabase extends Database {
     }
 
     public function getPageInfo($page) {
-        $sql = "SELECT * FROM concept WHERE page = ? ORDER BY pageOrder ASC";
+        $sql = "SELECT
+            `id`,
+            `inputType`,
+            `page`,
+            `content` as text,
+            CONCAT(`id`, '-', Replace(`htmlID`, ' ', '_')) as editID,
+            `htmlID`
+            FROM concept WHERE page = ? ORDER BY pageOrder ASC";
         $params = array($page);
 
         try {
@@ -59,16 +74,16 @@ class SiteDatabase extends Database {
             $currentType = "";
             switch ($item["inputType"]) {
                 case "text":
-                    echo "<label for=".$item["id"]."-".str_replace(" ", "_", $item["htmlID"])." >".$item["htmlID"]."</label><textarea id='".$item["id"]."-".str_replace(" ", "_", $item["htmlID"])."' style='width: 100%;'>".$item["content"]."</textarea>";
+                    echo "<label for=".$item["editID"]." >".$item["htmlID"]."</label><textarea id='".$item["editID"]."' style='width: 100%;'>".$item["text"]."</textarea>";
                     break;
                 case "varchar":
-                    echo "<label for=".$item["id"]."-".str_replace(" ", "_", $item["htmlID"])." >".$item["htmlID"]."</label><input id='".$item["id"]."-".str_replace(" ", "_", $item["htmlID"])."' style='width: 100%;' type='text' value='".$item["content"]."'>";
+                    echo "<label for=".$item["editID"]." >".$item["htmlID"]."</label><input id='".$item["editID"]."' style='width: 100%;' type='text' value='".$item["text"]."'>";
                     break;
             }
             echo "
             <script>
-                $('#".$item["id"]."-".str_replace(" ", "_", $item["htmlID"])."').on('keyup', function() {
-                    $('.".$item["id"]."-".str_replace(" ", "_", $item["htmlID"])."').text($(this).val());
+                $('#".$item["editID"]."').on('keyup', function() {
+                    $('.".$item["editID"]."').text($(this).val());
                     if(ajaxListRequest) {
                         ajaxListRequest.abort();
                         ajaxListRequest = null;
