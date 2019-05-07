@@ -1,6 +1,6 @@
 anime({
     targets: '#desktop-menu li',
-    translateX: [100, 0],
+    translateY: [100, 0],
     opacity: [0,1],
     delay: anime.stagger(100),
 });
