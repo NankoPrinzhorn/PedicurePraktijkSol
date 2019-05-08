@@ -22,6 +22,10 @@ body {
     text-align: center;
 }
 
+#sidebar .header h3, .saveChanges h3 {
+    margin-top: 0;
+}
+
 #sidebar .pages {
     padding: 0 30px;
     height: calc(100% - 250px);
@@ -37,7 +41,7 @@ body {
     cursor: pointer;
     border-bottom: 1px solid #B5BBBF;
     padding: 15px 0;
-
+    margin: 0;
 }
 
 #sidebar .saveChanges {
@@ -125,28 +129,3 @@ body {
 .page.active {
     color: #F1F1F1;
 }
-
-/* .accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-}
-
-.active, .accordion:hover {
-    background-color: #ccc; 
-}
-
-.panel {
-    padding: 0 18px;
-    display: none;
-    background-color: white;
-    overflow: hidden;
-
-} */
