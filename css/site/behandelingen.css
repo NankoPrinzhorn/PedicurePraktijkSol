@@ -1,0 +1,151 @@
+@charset "UTF-8";
+body {
+  background: #eee; }
+
+section {
+  padding-top: 75px !important;
+  padding-bottom: 75px !important; }
+
+#behandelingen-hero {
+  background: #9CD1BE;
+  padding-top: 200px !important;
+  padding-bottom: 200px !important; }
+  #behandelingen-hero h1 {
+    font-size: 50px;
+    color: white; }
+    #behandelingen-hero h1::before {
+      content: '“';
+      font-size: 250px;
+      position: absolute;
+      top: -100px;
+      left: -20px;
+      opacity: 0.2;
+      color: white; }
+  #behandelingen-hero p {
+    padding-top: 20px;
+    color: white !important; }
+
+#section-2 {
+  text-align: center;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important; }
+  #section-2 .after-header {
+    background: white;
+    top: -100px;
+    padding: 50px;
+    box-shadow: 0px 1px 30px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px #9CD1BE solid; }
+
+#behandelingen--section {
+  outline: 2px #9CD1BE solid;
+  outline-offset: -20px;
+  padding-top: 200px !important;
+  top: 0;
+  margin-top: -205px;
+  background: white; }
+  #behandelingen--section .g-txt {
+    position: absolute !important;
+    font-size: 100px !important;
+    color: #9CD1BE;
+    opacity: 0.2;
+    top: -30px; }
+  #behandelingen--section #behandelingen--items {
+    list-style: none;
+    padding-left: 0px;
+    text-align: center; }
+    #behandelingen--section #behandelingen--items li {
+      transition: all 0.2s ease;
+      padding-top: 20px; }
+      #behandelingen--section #behandelingen--items li:hover {
+        transform: scale(1.02); }
+      #behandelingen--section #behandelingen--items li a {
+        transition: all 0.2s ease;
+        color: black !important;
+        text-decoration: none;
+        font-size: 20px !important;
+        opacity: 0.4;
+        position: relative; }
+        #behandelingen--section #behandelingen--items li a:hover {
+          opacity: 1 !important; }
+          #behandelingen--section #behandelingen--items li a:hover::after {
+            width: 120px !important; }
+        #behandelingen--section #behandelingen--items li a::after {
+          content: '';
+          height: 2px;
+          width: 2px;
+          background: #9CD1BE;
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: -10px;
+          margin: auto;
+          transition: all 0.5s ease; }
+
+.behandeling--case {
+  background: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  transition: all 1s ease;
+  border-bottom: 2px #9CD1BE solid;
+  margin-bottom: 5px;
+  position: relative;
+  margin-bottom: 20px; }
+  .behandeling--case a {
+    color: #9CD1BE !important;
+    font-size: 12px !important;
+    padding-top: 15px !important; }
+  .behandeling--case hr {
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    background: #9CD1BE;
+    border-style: none;
+    margin-left: -20px; }
+  .behandeling--case:hover {
+    transform: scale(1.02) !important;
+    transition: all 0.3s ease; }
+  .behandeling--case p {
+    color: black !important;
+    font-size: 15px !important;
+    z-index: 1;
+    position: relative; }
+  .behandeling--case .behandeling--left {
+    padding: 0px 50px; }
+  .behandeling--case .behandeling--number {
+    font-size: 130px;
+    position: absolute;
+    opacity: 0.3;
+    top: -70px;
+    color: #9CD1BE;
+    font-family: 'playfair';
+    font-weight: bold;
+    z-index: 0 !important; }
+  .behandeling--case h3 {
+    padding-bottom: 10px;
+    color: #9CD1BE;
+    font-weight: lighter;
+    font-size: 20px !important;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1 !important; }
+  .behandeling--case .image--big {
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 15px;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0; }
+    @media screen and (max-width: 992px) {
+      .behandeling--case .image--big {
+        display: none; } }
+  .behandeling--case h4 {
+    z-index: 1;
+    position: relative;
+    font-size: 15px !important;
+    padding-bottom: 10px;
+    color: #9CD1BE;
+    padding-top: 50px; }
+
+/*# sourceMappingURL=behandelingen.css.map */
