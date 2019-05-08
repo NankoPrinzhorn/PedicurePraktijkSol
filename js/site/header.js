@@ -15,7 +15,7 @@ $('#mobile-nav-btn').on("click", function () {
 })
 
 $(window).scroll(function () {
-    if ($(this).scrollTop() > 200) { // this refers to window
+    if ($(this).scrollTop() > 80) { // this refers to window
         $('#navbar').addClass('navbar-scrolled');
     } else {
         $('#navbar').removeClass('navbar-scrolled');

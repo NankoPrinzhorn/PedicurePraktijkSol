@@ -106,10 +106,13 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/home.php";
           </div>
         </div>
 
-        
-
       </div>
     </div>
+  </div>
+</section>
+
+<section class="home-tip">
+  <div class="inner-tip">
   </div>
 </section>
 
