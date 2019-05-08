@@ -162,9 +162,20 @@ body {
 .home-tip {
   height: auto;
   background: white;
-  
+  padding: 20px;
 }
 
 .home-tip .inner-tip {
-  border: 2px solid red;
+  border: 3px solid #9CD1BE;
+  padding: 50px 0;
+}
+
+.home-tip .inner-tip h4 {
+  text-align: center;
+  max-width: 600px;
+  display: block;
+  margin: auto;
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  margin: 0;
 }
