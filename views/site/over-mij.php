@@ -31,9 +31,19 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/over-mij.php";
 	<div class="reviewInline">
 		<div class="container">
 			<div class="col-md-12">
-				<p class="reviewText">Een hele fijne service. xxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
-				<p class="reviewName">- Mevrouw</p>
+				<div class="reviewInformation">
+					<p class="reviewText">Een hele fijne service. xxxxxxx xxxxxxx xxxxxxxx xxxxxxx xxxxx xx xx xxx</p>
+					<p class="reviewName">- Mevrouw</p>
+				</div>		
 			</div>
+		</div>
+	</div>
+</section>
+
+<section class="provoet">
+	<div class="container">
+		<div class="col-md-12">
+			<h2>Aangesloten bij:</h2>
 		</div>
 	</div>
 </section>
