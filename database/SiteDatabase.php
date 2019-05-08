@@ -65,7 +65,6 @@ class SiteDatabase extends Database {
     }
 
     public function generateCMSHTML($data) {
-        // var_dump($data);
         foreach ($data as $item) {
             $item['koppel_tabel'] = 0;
             $item['Field'] = 0;
@@ -73,7 +72,8 @@ class SiteDatabase extends Database {
             //varchar -> text input
             //boolean -> ja nee vraag
             if ($item["inputType"] == "text" || 
-                $item["inputType"] == "varchar(255)") {
+                $item["inputType"] == "varchar(255)" ||
+                $item["inputType"] == "longtext") {
                 $this->showCMSHTML($item);
             } elseif (strpos($item["inputType"], 'koppel_') !== false) {    
                 $this->showKoppelCMSHTML($item);
@@ -82,7 +82,6 @@ class SiteDatabase extends Database {
     }
 
     public function createKoppelCMSHTML($koppel_tabel, $count) {
-        var_dump($koppel_tabel);
         $order = $this->fetchAssoc("SELECT MAX(pageOrder) as nummer FROM `$koppel_tabel` WHERE deleted = 0");
         $order = $order['nummer']+1;
 
@@ -123,7 +122,8 @@ class SiteDatabase extends Database {
         foreach($koppel_columns as $column) {
             if ($column["Type"] == "text" || 
                 $column["Type"] == "varchar(255)" ||
-                $column["Type"] == "int(1)") {
+                $column["Type"] == "int(1)" ||
+                $column["Type"] == "longtext") {
 
                 $array = [
                     'id' => $item['id'],
@@ -186,7 +186,8 @@ class SiteDatabase extends Database {
             foreach($koppel_columns as $column) {
                 if ($column["Type"] == "text" || 
                     $column["Type"] == "varchar(255)" ||
-                    $column["Type"] == "int(1)") {
+                    $column["Type"] == "int(1)" ||
+                    $column["Type"] == "longtext") {
 
                     $array = [
                         'id' => $item['id'],
@@ -321,6 +322,49 @@ class SiteDatabase extends Database {
                 }
                 break;
             
+            case "longtext":
+                echo "<img class='image-".$item['editID']."' style='width: 100%;' src='/images/".$item['text']."'>";
+                echo "<input type='file' name='image' id='image-".$item['editID']."'>";
+
+                echo "
+                    <script>
+                        $('.image-".$item['editID']."').on('click', function () {
+                            $('#image-".$item['editID']."').click();
+                        });
+
+                        $('#image-".$item['editID'].":file').on('change', function() {
+                            if($(this).prop('files').length > 0)
+                            {
+                                var fd = new FormData();
+                                var files = $('#image-".$item['editID']."')[0].files[0];
+                                files['koppel_tabel'] = '".$item['koppel_tabel']."';
+                                files['id'] = ".$item['id'].";
+                                fd.append('id', ".$item['id'].");
+                                fd.append('koppel_tabel', '".$item['koppel_tabel']."');
+                                fd.append('image',files);
+
+                                $.ajax({
+                                    url:'/model/requests/updateConcept.php',
+                                    type: 'post',
+                                    data: fd,
+                                    contentType: false,
+                                    processData: false,
+                                    success: function(response) {
+                                        if (response != 0) {
+                                            $('.image-".$item['editID']."').attr('src', '/images/'+response);
+                                        } else {
+                                            alert('image is niet geupload! probeer het later nog eens');
+                                        }
+                                    }
+                                });
+
+                                return;
+                                
+                            }
+                        });
+                    </script>
+                ";
+                break;
             default:
                 break;
         }
