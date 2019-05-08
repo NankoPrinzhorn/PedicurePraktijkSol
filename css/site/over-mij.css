@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+   height: 3000px; /* <--scroll testen */
+  background: #eee;
+}
+
+/* Hero Section */
+.over-mij-hero {
+  width: 100%;
+  min-height: 90vh;
+  background: url(../../images/home-background.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.over-mij-hero .intro small{
+  color: white;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.over-mij-hero .intro h1 {
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 60px;
+  max-width: 900px;
+}
+
+.over-mij-hero .intro h1::before{
+  content: '“';
+  font-size: 400px;
+  position: absolute;
+  top: -140px;
+  opacity: 0.2;
+  left: -50px;
+}
+
+
+.over-mij-hero .intro p {
+  margin: 40px 0 0 0;
+  max-width: 750px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.over-mij-hero button {
+  margin-top: 40px;
+  margin-right: 40px;
+  background: white;
+  color: #67ABA4;
+  border: none;
+  padding: 16px 50px;
+  border-radius: 100px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  outline: none !important;
+}
+
+.over-mij{
+  margin-top: -100px;
+  height: 500px;
+}
+.test{
+  background-color: #ffffff;
+  min-height: 500px; 
+}
+
+.loopbaanswitch{
+  padding: 50px 0px 50px 50px;
+}
+
+.loopbaanswitch h2{
+  color: #67ABA4;
+  font-family: 'Playfair Display', serif;
+  padding-bottom: 30px;
+}
+
+.loopbaanswitch p{
+  color: #000000;
+  font-size: 15px;
+}
+
+.overmij-image img{
+  width: 95%;
+  margin-left: 2.5%;
+  padding-top: 100px;
+}
