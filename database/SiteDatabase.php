@@ -323,8 +323,9 @@ class SiteDatabase extends Database {
                 break;
             
             case "longtext":
-                echo "<img class='image-".$item['editID']."' style='width: 100%;' src='/images/".$item['text']."'>";
-                echo "<input type='file' name='image' id='image-".$item['editID']."'>";
+                echo "<img class='image-".$item['editID']."' style='width: 100%; margin-bottom: 20px;' src='/images/".$item['text']."'>";
+                echo "<input type='file' name='image' id='image-".$item['editID']."' style='display:none;'>";
+                echo "<br>";
 
                 echo "
                     <script>
