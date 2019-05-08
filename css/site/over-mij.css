@@ -78,6 +78,7 @@ body {
 .test{
   background-color: #ffffff;
   min-height: 500px; 
+  border-bottom: 3px solid #67ABA4;
 }
 
 .loopbaanswitch{
@@ -99,4 +100,15 @@ body {
   width: 95%;
   margin-left: 2.5%;
   padding-top: 100px;
+}
+
+.review{
+  background-color: #ffffff;
+  border: 1px solid red;
+}
+
+.reviewText:before{
+  content: 'Review';
+  font-size: 180px;
+  position: absolute;
 }
