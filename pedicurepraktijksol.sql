@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 08, 2019 at 06:56 AM
+-- Generation Time: May 08, 2019 at 09:40 AM
 -- Server version: 5.7.24-log
 -- PHP Version: 7.2.10
 
@@ -32,11 +32,11 @@ CREATE TABLE `concept` (
   `id` int(11) NOT NULL,
   `page` varchar(255) NOT NULL,
   `pageOrder` int(11) NOT NULL,
-  `content` text NOT NULL,
+  `content` mediumtext NOT NULL,
   `inputType` varchar(255) NOT NULL,
   `htmlID` varchar(255) NOT NULL,
   `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `concept`
@@ -44,7 +44,7 @@ CREATE TABLE `concept` (
 
 INSERT INTO `concept` (`id`, `page`, `pageOrder`, `content`, `inputType`, `htmlID`, `updated_at`) VALUES
 (1, 'home', 2, 'Medisch pedicure en beoefen mijn vak met hart en ziel in Alkmaar West en 1 dag per week in Castricum. Of het nu om een ontspannende en cosmetisch verzorgende behandeling gaat of om een behandeling die gericht is op het verlichten van pijnlijke ongemakken aan de voeten. Vakkundig in het wegnemen van pijn door ingroeiende nagels, likdoorns of kloven. Nauwkeurig en zorgzaam in de behandeling van alle voeten die zorg vragen.', 'text', 'Title onder tekst', '2019-05-07 14:14:02'),
-(2, 'home', 1, 'Voor iedereen die verzorgde voeten wil', 'varchar(255)', 'Title', '2019-05-07 12:54:53'),
+(2, 'home', 1, 'Voor iedereen die verzorgde voeten wil', 'varchar(255)', 'Title', '2019-05-08 07:18:33'),
 (5, 'home', 3, '', 'koppel_concept_behandelingen', 'Behandelingen', '2019-05-07 12:24:43');
 
 -- --------------------------------------------------------
@@ -57,20 +57,20 @@ CREATE TABLE `concept_behandelingen` (
   `id` int(11) NOT NULL,
   `weergeven` int(1) NOT NULL,
   `deleted` int(1) NOT NULL,
-  `title` varchar(255) NOT NULL,
-  `text` text NOT NULL,
-  `image` text NOT NULL,
-  `pageOrder` int(11) NOT NULL,
+  `title` varchar(255) DEFAULT NULL,
+  `text` text,
+  `image` text,
+  `pageOrder` int(11) DEFAULT NULL,
   `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `concept_behandelingen`
 --
 
 INSERT INTO `concept_behandelingen` (`id`, `weergeven`, `deleted`, `title`, `text`, `image`, `pageOrder`, `updated_at`) VALUES
-(1, 1, 0, 'Behandeling met intake', 'Doel van het voetonderzoek is te inventariseren wat uw voetklachten zijn en waar deze uit voort kunnen komen/mee samenhangen; of er sprake is van een risicovoet; met welke behandeling uw klachten verlicht kunnen worden.', '/images/jps', 1, '2019-05-07 15:25:52'),
-(2, 0, 0, 'test tekst', 'ietjse meer test ', '/images/jps', 2, '2019-05-07 15:13:57');
+(1, 1, 0, 'Behandeling met intake', 'Doel van het voetonderzoek is te inventariseren wat uw voetklachten zijn en waar deze uit voort kunnen komen/mee samenhangen; of er sprake is van een risicovoet; met welke behandeling uw klachten verlicht kunnen worden.', '/images/jps', 1, '2019-05-08 08:47:49'),
+(2, 1, 0, 'test tekst', 'ietjse meer test ', '/images/jps?', 2, '2019-05-08 08:53:44');
 
 -- --------------------------------------------------------
 
@@ -129,7 +129,7 @@ ALTER TABLE `concept`
 -- AUTO_INCREMENT for table `concept_behandelingen`
 --
 ALTER TABLE `concept_behandelingen`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `users`
