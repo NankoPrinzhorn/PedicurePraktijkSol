@@ -76,7 +76,6 @@ class SiteDatabase extends Database {
                 $item["inputType"] == "varchar(255)") {
                 $this->showCMSHTML($item);
             } elseif (strpos($item["inputType"], 'koppel_') !== false) {    
-                $koppel_columns = $this->fetchAll("SHOW COLUMNS FROM `$koppel_tabel`");
                 $this->showKoppelCMSHTML($item);
             }
         }
