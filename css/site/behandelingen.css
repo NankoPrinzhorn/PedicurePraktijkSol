@@ -36,40 +36,40 @@ section {
     box-shadow: 0px 1px 30px rgba(0, 0, 0, 0.2);
     border-bottom: 2px #9CD1BE solid; }
 
-#behandelingen {
+#behandelingen--section {
   outline: 2px #9CD1BE solid;
   outline-offset: -20px;
   padding-top: 200px !important;
   top: 0;
   margin-top: -205px;
   background: white; }
-  #behandelingen .g-txt {
+  #behandelingen--section .g-txt {
     position: absolute !important;
     font-size: 100px !important;
     color: #9CD1BE;
     opacity: 0.2;
     top: -30px; }
-  #behandelingen #behandelingen--items {
+  #behandelingen--section #behandelingen--items {
     list-style: none;
     padding-left: 0px;
     text-align: center; }
-    #behandelingen #behandelingen--items li {
+    #behandelingen--section #behandelingen--items li {
       transition: all 0.2s ease;
       padding-top: 20px; }
-      #behandelingen #behandelingen--items li:hover {
+      #behandelingen--section #behandelingen--items li:hover {
         transform: scale(1.02); }
-      #behandelingen #behandelingen--items li a {
+      #behandelingen--section #behandelingen--items li a {
         transition: all 0.2s ease;
         color: black !important;
         text-decoration: none;
         font-size: 20px !important;
         opacity: 0.4;
         position: relative; }
-        #behandelingen #behandelingen--items li a:hover {
+        #behandelingen--section #behandelingen--items li a:hover {
           opacity: 1 !important; }
-          #behandelingen #behandelingen--items li a:hover::after {
+          #behandelingen--section #behandelingen--items li a:hover::after {
             width: 120px !important; }
-        #behandelingen #behandelingen--items li a::after {
+        #behandelingen--section #behandelingen--items li a::after {
           content: '';
           height: 2px;
           width: 2px;
