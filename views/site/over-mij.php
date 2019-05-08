@@ -13,7 +13,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/over-mij.php";
   </div>
 </section>
 
-<section class="over-mij">
+<section class="over-mij-info">
 	<div class="container test">
 		<div class="loopbaanswitch col-md-6">
 			<h2>Loopbaanswitch</h2>
