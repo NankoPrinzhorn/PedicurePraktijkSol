@@ -96,21 +96,41 @@ body {
 .review{
   z-index: 1;
   margin-top: -400px;
-  height: 900px;
+  height: 790px;
   background-color: #ffffff;
+  padding: 20px 20px 20px 20px;
 }
 
 .reviewInline{
-  height: 900px;
-  border: 2px solid #9CD1BE;
-  margin: 20px 20px 20px 20px;
+  height: 750px;
+  border: 3px solid #9CD1BE;
+}
+
+.reviewInformation{
+  margin-top: 520px;
 }
 
 .reviewText:before{
   content: 'Review';
-  font-size: 180px;
+  font-size: 160px;
   position: absolute;
   font-family: 'Playfair Display', serif;
-  color: #88DCB5;
-  opacity: 90%;
+  color: rgba(136,220,181, 0.3);
+  margin-top: -100px;
+  text-align: center;
+  margin-left: -10%;
+}
+
+.reviewText{
+  max-width: 70%;
+  margin-left: 15%;
+  font-size: 30px;
+  color: #000000;
+  text-align: center;
+}
+
+.reviewName{
+  text-align: center;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.3);
 }
