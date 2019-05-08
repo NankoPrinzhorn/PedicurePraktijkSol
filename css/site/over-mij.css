@@ -56,29 +56,20 @@ body {
   font-weight: 300;
 }
 
-.over-mij-hero button {
-  margin-top: 40px;
-  margin-right: 40px;
-  background: white;
-  color: #67ABA4;
-  border: none;
-  padding: 16px 50px;
-  border-radius: 100px;
-  text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  outline: none !important;
-}
-
 .over-mij-info{
   margin-top: -100px;
   height: 500px;
 }
 .test{
+  position: absolute;
+  margin-left: 20%;
+  display: block;
+
+  z-index: 3;
   background-color: #ffffff;
-  min-height: 500px; 
+  min-height: 500px;
   border-bottom: 3px solid #67ABA4;
+  box-shadow: 12px 0 20px -4px rgba(0, 0, 0, 0.1), -12px 0 20px -4px rgba(0, 0, 0, 0.1);
 }
 
 .loopbaanswitch{
@@ -103,12 +94,23 @@ body {
 }
 
 .review{
+  z-index: 1;
+  margin-top: -400px;
+  height: 900px;
   background-color: #ffffff;
-  border: 1px solid red;
+}
+
+.reviewInline{
+  height: 900px;
+  border: 2px solid #9CD1BE;
+  margin: 20px 20px 20px 20px;
 }
 
 .reviewText:before{
   content: 'Review';
   font-size: 180px;
   position: absolute;
+  font-family: 'Playfair Display', serif;
+  color: #88DCB5;
+  opacity: 90%;
 }

@@ -28,10 +28,12 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/over-mij.php";
 </section>
 
 <section class="review">
-	<div class="container">
-		<div class="col-md-12">
-			<p class="reviewText">Een hele fijne service. xxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
-			<p class="reviewName">- Mevrouw</p>
+	<div class="reviewInline">
+		<div class="container">
+			<div class="col-md-12">
+				<p class="reviewText">Een hele fijne service. xxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+				<p class="reviewName">- Mevrouw</p>
+			</div>
 		</div>
 	</div>
 </section>
