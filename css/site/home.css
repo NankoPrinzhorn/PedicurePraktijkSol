@@ -25,9 +25,7 @@ body {
 
 .home-hero .intro h1 {
   color: white;
-  font-family: 'Playfair Display', serif;
-  font-weight: bold;
-  font-size: 60px;
+  /* font-family: 'Playfair Display', serif; */
   max-width: 600px;
 }
 
@@ -45,9 +43,6 @@ body {
   margin: 40px 0 0 0;
   max-width: 880px;
   color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
-  font-weight: 300;
 }
 
 .home-hero button {
@@ -86,9 +81,6 @@ body {
 
 .home-blocks .case p {
   margin-top: 30px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
 }
 
 /* Behandelingen Section */
@@ -98,9 +90,6 @@ body {
 
 .home-behandelingen h2 {
   text-align: center;
-  font-family: 'Playfair Display', serif;
-  font-size: 46px;
-  font-weight: bold;
   color: #67ABA4;
   margin: 100px 0;
 }
@@ -140,11 +129,8 @@ body {
 }
 
 .home-behandelingen .behandeling-text p {
-  font-family: 'Playfair Display', serif;
   margin-top: 30px;
-  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  font-weight: 400;
   z-index: 2;
   position: relative;
 }
