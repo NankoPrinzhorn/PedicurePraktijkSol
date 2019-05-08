@@ -24,21 +24,21 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/home.php";
 
         <div class="col-md-4">
           <div class="col-md-12 case">
-            <img src="../../images/logo-provoet.svg">
+            <img src="/images/logo-provoet.svg">
             <p>Lidmaatschap ProVoet, de brancheorganisatie van pedicures</p>
           </div>
         </div>
 
         <div class="col-md-4">
           <div class="col-md-12 case">
-            <img src="../../images/logo-ham.png">
+            <img src="/images/logo-ham.png">
             <p>In de praktijk wordt gewerkt volgens de HAM-code (normen Hygiëne, Arbo en Milieu)</p>
           </div>
         </div>
 
         <div class="col-md-4">
           <div class="col-md-12 case">
-            <img src="../../images/logo-honk.svg">
+            <img src="/images/logo-honk.svg">
             <p>Aangesloten bij de zorggroep HONK waardoor veel diabetespatiënten verzekerd zijn van vergoeding van behandeling</p>
           </div>
         </div>
@@ -106,8 +106,18 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/home.php";
           </div>
         </div>
 
-        
+      </div>
+    </div>
+  </div>
+</section>
 
+<section class="home-tip">
+  <div class="inner-tip">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h4>kom op schoenen die u al enige tijd heeft/draagt, ze geven informatie over drukpunten en hoe u de voeten belast.</h4>
+        </div>
       </div>
     </div>
   </div>
