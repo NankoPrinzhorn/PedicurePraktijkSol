@@ -29,7 +29,7 @@ if(!empty($_FILES)) {
     $filename = $_POST['id']."-".$_FILES['image']['name'];
 
     /* Location */
-    $location = $_SERVER['DOCUMENT_ROOT']."/images/".$filename;
+    $location = $_SERVER['DOCUMENT_ROOT']."/images/uploads/".$filename;
     $htmlLocation = $filename;
     $uploadOk = 1;
     $imageFileType = pathinfo($location,PATHINFO_EXTENSION);
@@ -48,6 +48,9 @@ if(!empty($_FILES)) {
         if(move_uploaded_file($_FILES['image']['tmp_name'],$location)){
             if(!empty($_POST['koppel_tabel'])) {
                 $db->performQuery("UPDATE `".$_POST['koppel_tabel']."` SET image = '$htmlLocation' WHERE id = ".$_POST['id']);
+            } else {
+                $db->performQuery("UPDATE `concept` SET content = '$htmlLocation' WHERE id = ".$_POST['id']);
+
             }
             echo $htmlLocation;
         }else{

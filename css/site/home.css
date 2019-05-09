@@ -14,7 +14,7 @@ body {
 .home-hero {
   width: 100%;
   min-height: 90vh;
-  background: url(../../images/home-background.png);
+  background-image: url(../../images/home-background.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -136,7 +136,7 @@ body {
 }
 
 .home-behandelingen .behandeling-img {
-  background: url(../../images/behandeling.png);
+  background-image: url(../../images/behandeling.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;

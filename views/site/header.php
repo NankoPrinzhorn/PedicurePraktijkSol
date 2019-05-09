@@ -14,10 +14,10 @@
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <ul id="mobile-menu">
                 <li><a href="/over-mij">Over mij</a></li>
-                <li><a href="">Behandelingen</a></li>
-                <li><a href="">Tips</a></li>
-                <li><a href="">Prijslijst</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="/behandelingen">Behandelingen</a></li>
+                <li><a href="/tips">Tips</a></li>
+                <li><a href="/prijslijst">Prijslijst</a></li>
+                <li><a href="/contact">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -32,7 +32,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
                 <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                    <a href="#"><img id="navbar-brand-logo" src="/images/logo_w.svg" width="200px" alt=""></a>
+                    <a href="/"><img id="navbar-brand-logo" src="/images/logo_w.svg" width="200px" alt=""></a>
 
               
 
@@ -44,10 +44,10 @@
                     <ul id="desktop-menu">
                         <li><a href="/over-mij">Over mij</a></li>
                         <!-- geef class="menu-item-active" voor active statement aan de <a> -->
-                        <li><a href="">Behandelingen</a></li>
-                        <li><a href="">Tips</a></li>
-                        <li><a href="">Prijslijst</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="/behandelingen">Behandelingen</a></li>
+                        <li><a href="/tips">Tips</a></li>
+                        <li><a href="/prijslijst">Prijslijst</a></li>
+                        <li><a href="/contact">Contact</a></li>
                     </ul>
 
 
