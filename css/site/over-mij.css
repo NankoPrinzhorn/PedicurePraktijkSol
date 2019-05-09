@@ -62,7 +62,7 @@ body {
     height: 500px;
 }
 
-.test {
+.overMijBlock {
     display: block;
     z-index: 3;
     background-color: #ffffff;
@@ -106,7 +106,7 @@ body {
 }
 
 .reviewInformation {
-    margin-top: 520px;
+    margin-top: 100px;
 }
 
 .reviewText:before {
@@ -156,6 +156,6 @@ body {
     color: #000000;
 }
 
-.test123456 {
+.avgPrivacy {
     text-align: center;
 }

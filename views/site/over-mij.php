@@ -15,7 +15,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/over-mij.php";
 
 <section class="over-mij-info">
 	<div class="container">
-		<div class="col-md-12 test">
+		<div class="col-md-12 overMijBlock">
 		<div class="col-md-6 loopbaanswitch">
 			<h2>Loopbaanswitch</h2>
 			<p>Na een carriere als loopbaanadviseur ontstond bij mijzelf de behoefte aan verandering.</p><br>
@@ -50,7 +50,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/over-mij.php";
 		<div class="col-md-12">
 			<img src="\images/logo-provoet-brancheorganisatie-voor-de-pedicure.png">
 		</div>
-		<div class="col-md-12 test123456">
+		<div class="col-md-12 avgPrivacy">
 			<a class="blabla" href="">Klik hier voor AVG/privacy</a>
 		</div>
 	</div>
