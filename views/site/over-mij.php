@@ -17,8 +17,8 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/over-mij.php";
 	<div class="container test">
 		<div class="loopbaanswitch col-md-6">
 			<h2>Loopbaanswitch</h2>
-			<p>Na een carriere als loopbaanadviseur ontstond bij mijzelf de behoefte aan verandering.</p>
-			<p>Een praktisch beroep waarbij ik mensen blij kon maken. Zo kwam het pedicurewerk voor mij in beeld: mensen helpen door de druk of pijn die ze aan hun voeten hebben voor een groot deel weg te nemen.</p>
+			<p>Na een carriere als loopbaanadviseur ontstond bij mijzelf de behoefte aan verandering.</p><br>
+			<p>Een praktisch beroep waarbij ik mensen blij kon maken. Zo kwam het pedicurewerk voor mij in beeld: mensen helpen door de druk of pijn die ze aan hun voeten hebben voor een groot deel weg te nemen.</p><br>
 			<p>Tijdens mijn opleiding merkte ik hoe fijn het is om mensen weer op weg te helpen naar gezonde, verzorgde en minder pijnlijke voeten. De keuze om na de branche-opleiding pedicure door te leren voor Medisch Pedicure was dan ook vanzelfsprekend voor mij. Ik hoop nog heel lang mensen te kunnen helpen met goede voetzorg en nieuwe ontwikkelingen in het vakgebied te kunnen volgen en gebruiken voor mijn klanten.</p>			
 		</div>
 		<div class="overmij-image col-md-6">
