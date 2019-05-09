@@ -44,8 +44,12 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/over-mij.php";
 	<div class="container">
 		<div class="col-md-12">
 			<h2 class="affiliatedWith">Aangesloten bij:</h2>
+		</div>
+		<div class="col-md-12">
 			<img src="\images/logo-provoet-brancheorganisatie-voor-de-pedicure.png">
-			<a href="">Klik hier voor AVG/privacy</a>
+		</div>
+		<div class="col-md-12 test123456">
+			<a class="blabla" href="">Klik hier voor AVG/privacy</a>
 		</div>
 	</div>
 </section>
