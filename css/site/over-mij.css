@@ -1,160 +1,164 @@
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
-  font-family: "Josefin Sans", sans-serif;
-   height: 3000px; /* <--scroll testen */
-  background: #eee;
+    font-family: "Josefin Sans", sans-serif;
+    height: 3000px;
+    /* <--scroll testen */
+    background: #eee;
 }
 
 /* Hero Section */
 .over-mij-hero {
-  width: 100%;
-  min-height: 90vh;
-  background: url(../../images/home-background.png);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  padding: 100px 0;
+    width: 100%;
+    min-height: 90vh;
+    background: url(../../images/home-background.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
 }
 
-.over-mij-hero .intro small{
-  color: white;
-  font-size: 18px;
-  font-family: 'Montserrat', sans-serif;
+.over-mij-hero .intro small {
+    color: white;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .over-mij-hero .intro h1 {
-  color: white;
-  font-family: 'Playfair Display', serif;
-  font-weight: bold;
-  font-size: 60px;
-  max-width: 900px;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 60px;
+    max-width: 900px;
 }
 
-.over-mij-hero .intro h1::before{
-  content: '“';
-  font-size: 400px;
-  position: absolute;
-  top: -140px;
-  opacity: 0.2;
-  left: -50px;
+.over-mij-hero .intro h1::before {
+    content: '“';
+    font-size: 400px;
+    position: absolute;
+    top: -140px;
+    opacity: 0.2;
+    left: -50px;
 }
 
 
 .over-mij-hero .intro p {
-  margin: 40px 0 0 0;
-  max-width: 750px;
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 30px;
-  font-weight: 300;
+    margin: 40px 0 0 0;
+    max-width: 750px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
 }
 
-.over-mij-info{
-  margin-top: -100px;
-  height: 500px;
-}
-.test{
-  position: absolute;
-  margin-left: 20%;
-  display: block;
-
-  z-index: 3;
-  background-color: #ffffff;
-  min-height: 500px;
-  border-bottom: 3px solid #67ABA4;
-  box-shadow: 12px 0 20px -4px rgba(0, 0, 0, 0.1), -12px 0 20px -4px rgba(0, 0, 0, 0.1);
+.over-mij-info {
+    margin-top: -100px;
+    height: 500px;
 }
 
-.loopbaanswitch{
-  padding: 50px 0px 50px 50px;
+.test {
+    position: absolute;
+    margin-left: 20%;
+    display: block;
+
+    z-index: 3;
+    background-color: #ffffff;
+    min-height: 500px;
+    border-bottom: 3px solid #67ABA4;
+    box-shadow: 12px 0 20px -4px rgba(0, 0, 0, 0.1), -12px 0 20px -4px rgba(0, 0, 0, 0.1);
 }
 
-.loopbaanswitch h2{
-  color: #67ABA4;
-  font-family: 'Playfair Display', serif;
-  padding-bottom: 30px;
+.loopbaanswitch {
+    padding: 50px 0px 50px 50px;
 }
 
-.loopbaanswitch p{
-  color: #000000;
-  font-size: 15px;
+.loopbaanswitch h2 {
+    color: #67ABA4;
+    font-family: 'Playfair Display', serif;
+    padding-bottom: 30px;
 }
 
-.overmij-image img{
-  width: 95%;
-  margin-left: 2.5%;
-  padding-top: 100px;
+.loopbaanswitch p {
+    color: #000000;
+    font-size: 15px;
 }
 
-.review{
-  z-index: 1;
-  margin-top: -400px;
-  height: 790px;
-  background-color: #ffffff;
-  padding: 20px 20px 20px 20px;
+.overmij-image img {
+    width: 95%;
+    margin-left: 2.5%;
+    padding-top: 100px;
 }
 
-.reviewInline{
-  height: 750px;
-  border: 3px solid #9CD1BE;
+.review {
+    z-index: 1;
+    margin-top: -400px;
+    height: 790px;
+    background-color: #ffffff;
+    padding: 20px 20px 20px 20px;
 }
 
-.reviewInformation{
-  margin-top: 520px;
+.reviewInline {
+    height: 750px;
+    border: 3px solid #9CD1BE;
 }
 
-.reviewText:before{
-  content: 'Review';
-  font-size: 160px;
-  position: absolute;
-  font-family: 'Playfair Display', serif;
-  color: rgba(136,220,181, 0.3);
-  margin-top: -100px;
-  text-align: center;
-  margin-left: -10%;
+.reviewInformation {
+    margin-top: 520px;
 }
 
-.reviewText{
-  max-width: 70%;
-  margin-left: 15%;
-  font-size: 30px;
-  color: #000000;
-  text-align: center;
+.reviewText:before {
+    content: 'Review';
+    font-size: 160px;
+    position: absolute;
+    font-family: 'Playfair Display', serif;
+    color: rgba(136, 220, 181, 0.3);
+    margin-top: -100px;
+    text-align: center;
+    margin-left: -10%;
 }
 
-.reviewName{
-  text-align: center;
-  font-size: 30px;
-  color: rgba(0, 0, 0, 0.3);
+.reviewText {
+    max-width: 70%;
+    margin-left: 15%;
+    font-size: 30px;
+    color: #000000;
+    text-align: center;
 }
 
-.affiliatedWith h2{
-  text-align: center;
-  color: #67ABA4;
-  font-size: 50px;
-  margin-top: 50px; 
+.reviewName {
+    text-align: center;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.3);
 }
 
-.affiliatedWith img{
-  margin: 0 auto;
-  width: 35%;
-  margin-left: 32.5%;
-  margin-top: 50px;
-  margin-bottom: 100px;
+.affiliatedWith h2 {
+    text-align: center;
+    color: #67ABA4;
+    font-size: 50px;
+    margin-top: 50px;
 }
 
-.affiliatedWith a{
-  font-size: 15px;
-  text-align: center;
-  width: 10px;
-  margin-left: 40%;
-  margin-top: 50px;
-  color: #000000;
+.affiliatedWith img {
+    display: block;
+    margin: 0 auto;
+    width: 35%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.affiliatedWith a {
+    font-size: 15px;
+    width: 10px;
+    margin-top: 50px;
+    color: #000000;
+}
+
+.test123456 {
+    text-align: center;
 }
