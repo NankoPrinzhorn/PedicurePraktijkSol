@@ -81,6 +81,42 @@ class SiteDatabase extends Database {
         }
     }
 
+    public function fetchHomeBehandelingen($admin) {
+        $koppel_tabel = "concept_behandelingen";
+
+        $koppel_columns = $this->fetchAll("SHOW COLUMNS FROM `$koppel_tabel`");
+        $koppel_info = $this->fetchAll("SELECT * FROM `$koppel_tabel` WHERE deleted = 0 AND weergeven = 1 ORDER BY pageOrder ASC");
+        
+        $items = [];
+
+        foreach ($koppel_info as $item) {
+            $current_item = [];
+
+            foreach($koppel_columns as $column) {
+                if ($column["Type"] == "text" || 
+                    $column["Type"] == "varchar(255)" ||
+                    $column["Type"] == "int(1)" ||
+                    $column["Type"] == "longtext") {
+
+                    $array = [
+                        'id' => $item['id'],
+                        'inputType' => $column["Type"],
+                        'Field' => $column["Field"],
+                        'editID' => $item['id']."-".$koppel_tabel."-".$column['Field'],
+                        'htmlID' => str_replace("concept_", "", $koppel_tabel),
+                        'text' => $item[$column['Field']],
+                        'koppel_tabel' => $koppel_tabel
+                    ];
+                    array_push($current_item, $array);
+                }
+            }
+
+            array_push($items, $current_item);
+        }
+
+        return $items;
+    }
+
     public function createKoppelCMSHTML($koppel_tabel, $count) {
         $order = $this->fetchAssoc("SELECT MAX(pageOrder) as nummer FROM `$koppel_tabel` WHERE deleted = 0");
         $order = $order['nummer']+1;
@@ -323,6 +359,7 @@ class SiteDatabase extends Database {
                 break;
             
             case "longtext":
+                echo "<label for=".$item["editID"].">".$item["htmlID"]."</label>";
                 echo "<img class='image-".$item['editID']."' style='width: 100%; margin-bottom: 20px;' src='/images/".$item['text']."'>";
                 echo "<input type='file' name='image' id='image-".$item['editID']."' style='display:none;'>";
                 echo "<br>";
@@ -353,6 +390,15 @@ class SiteDatabase extends Database {
                                     success: function(response) {
                                         if (response != 0) {
                                             $('.image-".$item['editID']."').attr('src', '/images/'+response);
+
+                                            console.log($('.".$item['editID']."'));
+
+                                            if ($('.".$item['editID']."').is('div')) {
+                                                console.log(response);
+                                                $('.".$item['editID']."').css('background-image', 'url(/images/'+response.replace(' ', '%20')+')');
+                                            } else {
+                                                $('.".$item['editID']."').attr('src', '/images/'+response.replace(' ', '%20'));
+                                            }
                                         } else {
                                             alert('image is niet geupload! probeer het later nog eens');
                                         }
