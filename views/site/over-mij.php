@@ -14,8 +14,9 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/over-mij.php";
 </section>
 
 <section class="over-mij-info">
-	<div class="container test">
-		<div class="loopbaanswitch col-md-6">
+	<div class="container">
+		<div class="col-md-12 test">
+		<div class="col-md-6 loopbaanswitch">
 			<h2>Loopbaanswitch</h2>
 			<p>Na een carriere als loopbaanadviseur ontstond bij mijzelf de behoefte aan verandering.</p><br>
 			<p>Een praktisch beroep waarbij ik mensen blij kon maken. Zo kwam het pedicurewerk voor mij in beeld: mensen helpen door de druk of pijn die ze aan hun voeten hebben voor een groot deel weg te nemen.</p><br>
@@ -23,6 +24,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/over-mij.php";
 		</div>
 		<div class="overmij-image col-md-6">
 			<img src="\images/over-mij.JPG">
+		</div>
 		</div>
 	</div>
 </section>

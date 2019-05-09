@@ -63,10 +63,7 @@ body {
 }
 
 .test {
-    position: absolute;
-    margin-left: 20%;
     display: block;
-
     z-index: 3;
     background-color: #ffffff;
     min-height: 500px;
