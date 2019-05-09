@@ -67,7 +67,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/home.php";
                                     <p class='".$behandeling[3]['editID']."'>".$behandeling[3]['text']."</p>
                                 </div>
                             </div>
-                            <div class=\"behandeling-img col-md-5 ".$behandeling[4]['editID']."\" style='background-image: url(/images/".str_replace(" ", "%20", $behandeling[4]['text']).")'>
+                            <div class=\"behandeling-img col-md-5 ".$behandeling[4]['editID']."\" style='background-image: url(/images/uploads/".str_replace(" ", "%20", $behandeling[4]['text']).")'>
                             </div>
                         </div>
                     </div>
@@ -84,9 +84,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/home.php";
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h4>Kom op schoenen die u al enige tijd heeft/draagt, ze geven informatie over drukpunten en hoe u
-                        de voeten
-                        belast.</h4>
+                    <h4 class="<?=$data[3]['editID']?>"><?=$data[3]['text']?></h4>
                 </div>
             </div>
         </div>

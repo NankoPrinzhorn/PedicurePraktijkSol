@@ -29,7 +29,7 @@ if(!empty($_FILES)) {
     $filename = $_POST['id']."-".$_FILES['image']['name'];
 
     /* Location */
-    $location = $_SERVER['DOCUMENT_ROOT']."/images/".$filename;
+    $location = $_SERVER['DOCUMENT_ROOT']."/images/uploads/".$filename;
     $htmlLocation = $filename;
     $uploadOk = 1;
     $imageFileType = pathinfo($location,PATHINFO_EXTENSION);

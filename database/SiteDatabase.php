@@ -360,7 +360,7 @@ class SiteDatabase extends Database {
             
             case "longtext":
                 echo "<label for=".$item["editID"].">".$item["htmlID"]."</label>";
-                echo "<img class='image-".$item['editID']."' style='width: 100%; margin-bottom: 20px;' src='/images/".$item['text']."'>";
+                echo "<img class='image-".$item['editID']."' style='width: 100%; margin-bottom: 20px;' src='/images/uploads/".$item['text']."'>";
                 echo "<input type='file' name='image' id='image-".$item['editID']."' style='display:none;'>";
                 echo "<br>";
 
@@ -389,15 +389,15 @@ class SiteDatabase extends Database {
                                     processData: false,
                                     success: function(response) {
                                         if (response != 0) {
-                                            $('.image-".$item['editID']."').attr('src', '/images/'+response);
+                                            $('.image-".$item['editID']."').attr('src', '/images/uploads/'+response);
 
                                             console.log($('.".$item['editID']."'));
 
                                             if ($('.".$item['editID']."').is('div')) {
                                                 console.log(response);
-                                                $('.".$item['editID']."').css('background-image', 'url(/images/'+response.replace(' ', '%20')+')');
+                                                $('.".$item['editID']."').css('background-image', 'url(/images/uploads/'+response.replace(' ', '%20')+')');
                                             } else {
-                                                $('.".$item['editID']."').attr('src', '/images/'+response.replace(' ', '%20'));
+                                                $('.".$item['editID']."').attr('src', '/images/uploads/'+response.replace(' ', '%20'));
                                             }
                                         } else {
                                             alert('image is niet geupload! probeer het later nog eens');
