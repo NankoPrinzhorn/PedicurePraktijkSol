@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   padding: 0;
@@ -13,14 +14,14 @@ body {
 /* Hero Section */
 .home-hero {
   width: 100%;
-  min-height: 90vh;
+  /* min-height: 90vh; */
   background-image: url(../../images/home-background.png);
-  background-size: cover;
-  background-position: center center;
+  /* background-size: cover; */
+  background-position: center;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
-  padding: 100px 0;
+  padding: 200px 0;
 }
 
 .home-hero .intro h1 {
@@ -83,6 +84,12 @@ body {
   margin-top: 30px;
 }
 
+@media only screen and (max-width: 992px) {
+  .home-blocks .case {
+    margin-bottom: 50px;
+  }
+}
+
 /* Behandelingen Section */
 .home-behandelingen {
   padding-bottom: 100px;
@@ -107,6 +114,12 @@ body {
   display: flex;
   align-items: center;
   padding: 0 80px;
+}
+
+@media only screen and (max-width: 992px) {
+  .home-behandelingen .behandeling-text {
+    padding: 20px 20px;
+  }
 }
 
 .home-behandelingen .behandeling-text h3 {
