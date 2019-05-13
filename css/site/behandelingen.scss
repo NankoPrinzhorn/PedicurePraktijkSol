@@ -28,11 +28,17 @@ section{
 			color: white;
 
 		}
+		@media (max-width: 992px) {
+   			font-size: 35px !important;
+  		}	
 	}
 
 	p{
 		padding-top: 20px;
 		color: white !important;
+		@media (max-width: 992px) {
+   			font-size: 12px !important;
+  		}	
 	}
 }
 
@@ -46,6 +52,12 @@ section{
 		padding: 50px;
 		box-shadow: 0px 1px 30px rgba(0,0,0,0.2);
 		border-bottom: 2px $color solid; 
+	}
+
+	p{
+		@media (max-width: 992px) {
+   			font-size: 12px !important;
+  		}
 	}
 }
 
@@ -62,6 +74,10 @@ section{
 		color: $color;
 		opacity: 0.2;
 		top: -30px;
+		@media (max-width: 992px) {
+   			font-size: 40px !important;
+   			left: 50px;
+  		}	
 	} 
 
 	#behandelingen--items{
@@ -84,6 +100,9 @@ section{
 				font-size: 20px !important;
 				opacity: 0.4;
 				position: relative;
+				@media (max-width: 992px) {
+   			font-size: 13px !important;
+  		}
 				&:hover{
 					opacity: 1 !important;
 					&::after{
@@ -141,9 +160,15 @@ section{
 			font-size: 15px !important;
 			z-index: 1;
 			position: relative;
+			@media (max-width: 992px) {
+   			font-size: 12px !important;
+  		}
 		}
 	.behandeling--left{
 		padding: 0px 50px;
+		@media (max-width: 992px) {
+   			padding: 0px 15px !important;
+  		}
 	}
 	.behandeling--number{
 		font-size: 130px;
