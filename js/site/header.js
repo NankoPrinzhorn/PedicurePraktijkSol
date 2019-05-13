@@ -16,12 +16,12 @@ $('#mobile-nav-btn').on("click", function () {
 
 $(window).scroll(function () {
     if ($(this).scrollTop() > 80) { // this refers to window
-        if ($("#navbar-brand-logo").attr("src") != "/images/logo.svg") {
+        if ($("#navbar-brand-logo").attr("src") != "/images/logo.svg") { //fix netwerk issue
             $("#navbar-brand-logo").attr("src","/images/logo.svg");
             $('#navbar').addClass('navbar-scrolled');    
         }      
     } else {
-        if ($("#navbar-brand-logo").attr("src") != "/images/logo_w.svg") {
+        if ($("#navbar-brand-logo").attr("src") != "/images/logo_w.svg") { //fix netwerk issue
             $("#navbar-brand-logo").attr("src","/images/logo_w.svg");
             $('#navbar').removeClass('navbar-scrolled');
         }

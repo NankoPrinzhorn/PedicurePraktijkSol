@@ -7,8 +7,8 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/over-mij.php";
     <div class="row">
       <div class="intro col-md-12">
       	<small>Welkom &mdash;</small>
-        <h1 class="">Uw voeten, in goede handen, daar maak ik graag werk van</h1>
-        <p class="">Mijn naam is Joke Sol, ik ben gediplomeerd medisch pedicure</p>
+        <h1 class="<?=$data[0]['editID']?>"><?=$data[0]['text']?></h1>
+        <p class="<?=$data[1]['editID']?>"><?=$data[1]['text']?></p>
       </div>
   </div>
 </section>
@@ -17,13 +17,11 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/over-mij.php";
 	<div class="container">
 		<div class="col-md-12 overMijBlock">
 		<div class="col-md-6 loopbaanswitch">
-			<h2>Loopbaanswitch</h2>
-			<p>Na een carriere als loopbaanadviseur ontstond bij mijzelf de behoefte aan verandering.</p><br>
-			<p>Een praktisch beroep waarbij ik mensen blij kon maken. Zo kwam het pedicurewerk voor mij in beeld: mensen helpen door de druk of pijn die ze aan hun voeten hebben voor een groot deel weg te nemen.</p><br>
-			<p>Tijdens mijn opleiding merkte ik hoe fijn het is om mensen weer op weg te helpen naar gezonde, verzorgde en minder pijnlijke voeten. De keuze om na de branche-opleiding pedicure door te leren voor Medisch Pedicure was dan ook vanzelfsprekend voor mij. Ik hoop nog heel lang mensen te kunnen helpen met goede voetzorg en nieuwe ontwikkelingen in het vakgebied te kunnen volgen en gebruiken voor mijn klanten.</p>			
+			<h2 class="<?=$data[2]['editID']?>"><?=$data[2]['text']?></h2>
+			<p class="<?=$data[3]['editID']?>"><?=$data[3]['text']?></p>			
 		</div>
 		<div class="overmij-image col-md-6">
-			<img src="\images/over-mij.JPG">
+			<img src="/images/uploads/<?=$data[4]['text']?>" class="<?=$data[4]['editID']?>">
 		</div>
 		</div>
 	</div>
