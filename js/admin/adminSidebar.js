@@ -5,6 +5,17 @@ $(".page").on("click", function() {
 function toggleSideBar(el) {
     var className = $(el).attr("id");
 
+
+    $('.panel').each(function(){ 
+        var currentClass = $(this).attr('class').split(' ')[1];
+        if($(this).hasClass(className)) {
+            makeActive(this, currentClass)
+        } else {
+            removeActive(this, currentClass);
+        }
+    });
+    return;
+
     $('.panel').each(function(){
         var currentClass = $(this).attr('class').split(' ')[1];
         if ($(this).hasClass(className)) {
@@ -18,8 +29,8 @@ function toggleSideBar(el) {
 }
 
 function makeActive(current, className) {
-    $('#'+className).addClass('active');
-    $('.fake_body.'+className).addClass('active_panel');
+    // $('#'+className).addClass('active');
+    $('.fake_body.'+className).addClass('active_panel full');
 }
 
 function removeActive(current, className) {
@@ -30,8 +41,8 @@ function removeActive(current, className) {
     $('#'+className).find('i').css('transform', 'rotate(0deg)');
 }
 
-function toggleEdit(current, className, bool = true) {
-    if ($('.panel.'+className).hasClass('active_panel') || bool == false) {
+function toggleEdit(current, className) {
+    if (!$('.panel.'+className).hasClass('full')) {
         $('.fake_body.'+className).addClass('full');
         $('.'+className).removeClass('active_panel');
         $('#'+className).find('i').css('transform', 'rotate(0deg)');
