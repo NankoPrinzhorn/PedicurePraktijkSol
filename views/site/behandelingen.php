@@ -1,5 +1,5 @@
 <?php 
-include_once $_SERVER['DOCUMENT_ROOT']."/model/site/home.php";
+include_once $_SERVER['DOCUMENT_ROOT']."/model/site/behandelingen.php";
 ?>
 
 
@@ -10,8 +10,8 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/home.php";
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
-					<h1>Uw stap op weg naar verzorgde voeten</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus hic sapiente sed unde repudiandae quaerat eligendi, facilis dolorum molestiae obcaecati.</p>
+					<h1 class="<?=$data[0]['editID']?>"><?=$data[0]['text']?></h1>
+					<p class="<?=$data[1]['editID']?>"><?=$data[1]['text']?></p>
 				</div>
 			</div>
 		</div>
@@ -23,7 +23,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/home.php";
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 after-header col-md-offset-2">
-					<p>Als er sprake is van klachten aan de voeten bijvoorbeeld door diabetes, reuma, bewegingsbeperking, of andere redenen dan wordt voorafgaand aan de behandeling een intake en voetonderzoek bij u afgenomen Zo wordt geïnventariseerd wat verlichting van de klachten zou kunnen brengen. Een behandelplan wordt opgesteld, thuisadvies wordt meegegeven en vervolgafspraken worden gemaakt</p>
+					<p class="<?=$data[2]['editID']?>"><?=$data[2]['text']?></p>
 				</div>
 			</div>
 		</div>
