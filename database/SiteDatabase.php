@@ -87,10 +87,10 @@ class SiteDatabase extends Database {
         $koppel_columns = $this->fetchAll("SHOW COLUMNS FROM `$koppel_tabel`");
         $koppel_info = $this->fetchAll("SELECT * FROM `$koppel_tabel` WHERE deleted = 0 AND weergeven = 1 ORDER BY pageOrder ASC");
         
-        $items = [];
+        $items = array();
 
         foreach ($koppel_info as $item) {
-            $current_item = [];
+            $current_item = array();
 
             foreach($koppel_columns as $column) {
                 if ($column["Type"] == "text" || 
@@ -98,7 +98,7 @@ class SiteDatabase extends Database {
                     $column["Type"] == "int(1)" ||
                     $column["Type"] == "longtext") {
 
-                    $array = [
+                    $array = array(
                         'id' => $item['id'],
                         'inputType' => $column["Type"],
                         'Field' => $column["Field"],
@@ -106,7 +106,7 @@ class SiteDatabase extends Database {
                         'htmlID' => str_replace("concept_", "", $koppel_tabel),
                         'text' => $item[$column['Field']],
                         'koppel_tabel' => $koppel_tabel
-                    ];
+                    );
                     array_push($current_item, $array);
                 }
             }
@@ -125,7 +125,7 @@ class SiteDatabase extends Database {
         $item = $this->fetchAssoc("SELECT * FROM `$koppel_tabel` WHERE id = $id");
         $koppel_columns = $this->fetchAll("SHOW COLUMNS FROM `$koppel_tabel`");
 
-        $current_item = [];
+        $current_item = array();
         echo "<div class='innerCMSBlok ".$koppel_tabel."-".$item['id']."'>";
         echo "<h1>".substr(str_replace("concept_", "", $koppel_tabel), 0, -2) ." ".$count."</h1>";
         echo "<i class='fas fa-times ".$koppel_tabel."-".$item['id']."-delete'></i>";
@@ -161,7 +161,7 @@ class SiteDatabase extends Database {
                 $column["Type"] == "int(1)" ||
                 $column["Type"] == "longtext") {
 
-                $array = [
+                $array = array(
                     'id' => $item['id'],
                     'inputType' => $column["Type"],
                     'Field' => $column["Field"],
@@ -169,7 +169,7 @@ class SiteDatabase extends Database {
                     'htmlID' => str_replace("concept_", "", $koppel_tabel),
                     'text' => $item[$column['Field']],
                     'koppel_tabel' => $koppel_tabel
-                ];
+                );
                 array_push($current_item, $array);
             }
         }
@@ -188,7 +188,7 @@ class SiteDatabase extends Database {
         $count = 0;
         echo "<div class='".$koppel_tabel."'>";
         foreach ($koppel_info as $item) {
-            $current_item = [];
+            $current_item = array();
             echo "<div class='innerCMSBlok ".$koppel_tabel."-".$item['id']."'>";
             $count++;
             echo "<h1>".substr(str_replace("concept_", "", $koppel_tabel), 0, -2) ." ".$count."</h1>";
@@ -225,7 +225,7 @@ class SiteDatabase extends Database {
                     $column["Type"] == "int(1)" ||
                     $column["Type"] == "longtext") {
 
-                    $array = [
+                    $array = array(
                         'id' => $item['id'],
                         'inputType' => $column["Type"],
                         'Field' => $column["Field"],
@@ -233,7 +233,7 @@ class SiteDatabase extends Database {
                         'htmlID' => str_replace("concept_", "", $koppel_tabel),
                         'text' => $item[$column['Field']],
                         'koppel_tabel' => $koppel_tabel
-                    ];
+                    );
                     array_push($current_item, $array);
                 }
             }
