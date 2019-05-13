@@ -168,4 +168,8 @@ body {
   .reviewInline {
     height: 1160px;
   }
+
+  .reviewInformation {
+    margin-top: 900px;
+}
 }
