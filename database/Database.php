@@ -24,7 +24,7 @@ class Database {
 			return;
 		}
 
-		$this->db->exec("SET NAMES utf8mb4, CHARACTER SET utf8mb4");
+		$this->db->exec("SET NAMES utf8, CHARACTER SET utf8");
 
 		
 	}
