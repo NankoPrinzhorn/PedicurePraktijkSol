@@ -34,7 +34,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/behandelingen.php";
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<h2 class="g-txt">Behandelingen</h2>
+				<h2 class="g-txt">Behandelingen test</h2>
 
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
