@@ -1,3 +1,11 @@
+<?php
+/**
+ * TODO lag fix for MAC
+ * TODO image folder creeeren wanneer niet bestaat
+ * TODO Onclick open fake_body full!
+ */
+?>
+
 <link rel="stylesheet" type="text/css" href="/css/admin/adminSidebar.css">
 <script type="text/javascript">
     var ajaxListRequest;
@@ -13,8 +21,12 @@
     $pages = array('Home' => "Home", 'Over mij' => "over-mij", 'Behandelingen' => "behandelingen", 'Tips' => "tips", 'Tarieven' => "tarieven", 'Contact' => "contact");
 
     foreach ($pages as $pageName => $page) {
+        $active = "";
+        if(!empty($_GET['currentActive'])) {
+            $active = ($page == $_GET['currentActive']) ? "active" : "";
+        }
         ?>
-        <p class="page" id="<?=$page?>"><?=$pageName?><i class="fas fa-plus"></i></p>
+        <p class="page <?=$active?>" id="<?=$page?>"><?=$pageName?><i class="fas fa-plus"></i></p>
         <?php
     }
     ?>
@@ -52,6 +64,12 @@ $('#logout').on('click', function() {
         }
     })
 });
+
+$('.page').on('click', function() {
+    var currentActive = $(this).attr('id');
+
+    history.pushState({}, null, "?currentActive="+currentActive);
+})
 </script>
 
 
