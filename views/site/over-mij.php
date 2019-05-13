@@ -55,3 +55,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/over-mij.php";
 		</div>
 	</div>
 </section>
+
+<?php
+	include_once $_SERVER['DOCUMENT_ROOT']."/views/site/contact-form.php";
+?>
