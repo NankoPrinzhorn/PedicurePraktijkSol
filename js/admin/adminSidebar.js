@@ -29,16 +29,28 @@ function toggleSideBar(el) {
 }
 
 function makeActive(current, className) {
-    // $('#'+className).addClass('active');
-    $('.fake_body.'+className).addClass('active_panel full');
+    setTimeout(function() {
+        $('#'+className).addClass('active');
+        $('.fake_body.'+className).addClass('active_panel full');
+    }, 500);
+    
 }
 
 function removeActive(current, className) {
-    $(current).removeClass('active_panel');
-    $('#'+className).removeClass('active');
-    $('.fake_body.'+className).removeClass('active_panel');
-    $('.fake_body.'+className).removeClass('full');
-    $('#'+className).find('i').css('transform', 'rotate(0deg)');
+    //listing
+    if ($('#'+className).hasClass('active')) {
+        $('#'+className).removeClass('active');
+        $('#'+className).find('i').css('transform', 'rotate(0deg)');
+    }
+    
+    
+    //fake body
+    if ($('.fake_body.'+className).hasClass('active_panel') || $('.fake_body.'+className).hasClass('full')) {
+        $('.fake_body.'+className).removeClass('active_panel');
+        $(' .fake_body.'+className).removeClass('full');
+    }
+    
+    // $(current).removeClass('active_panel');
 }
 
 function toggleEdit(current, className) {
