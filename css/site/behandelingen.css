@@ -34,10 +34,11 @@ section {
 #section-2 {
   text-align: center;
   padding-top: 0px !important;
-  padding-bottom: 0px !important; }
+  padding-bottom: 0px !important;
+  margin-top: -50px; }
   #section-2 .after-header {
     background: white;
-    top: -100px;
+    top: -60px;
     padding: 50px;
     box-shadow: 0px 1px 30px rgba(0, 0, 0, 0.2);
     border-bottom: 2px #9CD1BE solid; }
@@ -106,10 +107,15 @@ section {
   margin-bottom: 5px;
   position: relative;
   margin-bottom: 20px; }
+  .behandeling--case .behandeling--case--img {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px; }
   .behandeling--case a {
     color: #9CD1BE !important;
     font-size: 12px !important;
-    padding-top: 15px !important; }
+    position: relative; }
   .behandeling--case hr {
     width: 50px;
     height: 2px;
@@ -137,7 +143,7 @@ section {
     font-size: 130px;
     position: absolute;
     opacity: 0.3;
-    top: -70px;
+    top: -60px;
     color: #9CD1BE;
     font-family: 'playfair';
     font-weight: bold;
