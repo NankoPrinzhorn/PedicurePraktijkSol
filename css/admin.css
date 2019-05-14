@@ -8,6 +8,7 @@
     transition: .5s;
     overflow-y: auto;
     z-index: 1;
+    background-color: #eee;
 }
 
 .fake_body.active_panel {

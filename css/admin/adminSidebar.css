@@ -7,7 +7,7 @@ body {
 	width: 350px;
 	height: 100vh;
     background-color: #313539;
-    z-index: 5;
+    z-index: 6;
 }
 
 #sidebar .header h3 {
@@ -34,7 +34,7 @@ body {
 
 #sidebar .pages i {
     float: right;
-    transition:  .5s;
+    transition:  .2s;
 }
 
 #sidebar .pages .page {
@@ -71,9 +71,9 @@ body {
     position: absolute;
     width: 700px;
     background-color: rgb(243, 243, 243);
-    z-index: 2;
+    z-index: 4;
     left: -350px;
-    transition: .5s;
+    transition: .2s;
     height: 100%;
     padding: 20px 40px;
     overflow-y: auto;
