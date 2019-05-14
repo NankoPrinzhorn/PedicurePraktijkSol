@@ -55,5 +55,5 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/over-mij.php";
 </section>
 
 <?php
-	include_once $_SERVER['DOCUMENT_ROOT']."/views/site/contact-form.php";
+	// include_once $_SERVER['DOCUMENT_ROOT']."/views/site/contact-form.php";
 ?>
