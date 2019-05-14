@@ -39,11 +39,8 @@ body {
 }
 
 .over-mij-hero .intro h1::before {
-    content: '“';
     font-size: 400px;
-    position: absolute;
-    top: -140px;
-    opacity: 0.2;
+    margin-top: 115px;
     left: -50px;
 }
 
@@ -113,6 +110,7 @@ body {
     content: 'Review';
     font-size: 160px;
     position: absolute;
+    width: 100%;
     font-family: 'Playfair Display', serif;
     color: rgba(136, 220, 181, 0.3);
     margin-top: -100px;
@@ -160,7 +158,25 @@ body {
     text-align: center;
 }
 
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 992px) {
+
+.over-mij-hero .intro h1{
+    font-size: 50px;
+}
+
+.over-mij-hero .intro h1::before {
+    content: '“';
+    font-size: 250px;
+    position: absolute;
+    left: -20px;
+    opacity: 0.2;
+}
+
+.overmij-image img{
+    padding-top: 0px;
+    padding-bottom: 50px;
+}
+
   .review {
         height: 1200px;
   }
@@ -171,5 +187,59 @@ body {
 
   .reviewInformation {
     margin-top: 900px;
+  }
+  .reviewText{
+    margin-top: -115px;
+  }
+
+  .reviewText::before{
+    font-size: 80px;
+    margin-left: -20%;
+    margin-top: 20px;
+  }
 }
+
+@media only screen and (max-width: 450px) {
+
+    .over-mij-hero .intro h1::before {
+        content: '“';
+        font-size: 250px;
+        position: absolute;
+        left: -20px;
+        opacity: 0.2;
+        margin-top: -80px;
+        margin-left: 5%;
+    }
+
+    .over-mij-hero .intro h1{
+        font-size: 40px;    
+    }
+
+    .over-mij-hero .intro p{
+        font-size: 25px;
+    }
+    
+    .loopbaanswitch{
+        margin-left: -30px;
+    }
+
+    .review{
+        height: 1140px;
+    }
+
+    .reviewText {
+        margin-top: -190px;
+    }
+
+    .reviewInline{
+        height: 1100px;
+    }
+
+    .affiliatedWith h2 {
+        font-size: 30px;
+    }
+
+    .affiliatedWith img{
+        margin-bottom: 70px;
+    }
 }
