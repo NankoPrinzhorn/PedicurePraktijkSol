@@ -42,7 +42,7 @@
 
                 
                     <ul id="desktop-menu">
-                        <li><a href="/over-mij">Over mij</a></li>
+                        <li><a class="menu-item-active" href="/over-mij">Over mij</a></li>
                         <!-- geef class="menu-item-active" voor active statement aan de <a> -->
                         <li><a href="/behandelingen">Behandelingen</a></li>
                         <li><a href="/tips">Tips</a></li>
