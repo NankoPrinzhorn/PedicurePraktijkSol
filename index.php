@@ -1,11 +1,17 @@
 <?php 
 session_start();
 ini_set('display_errors', 1);
+
+if (strpos($_SERVER['REQUEST_URI'], "?") !== false) {
+	$_SERVER['REQUEST_URI'] = substr($_SERVER['REQUEST_URI'], 0, strpos($_SERVER['REQUEST_URI'], '?'));
+}
+
 include_once "model/urlhandler.php";
 
 //set database
 include_once "database/Database.php";
 include_once "database/SiteDatabase.php";
+
 $db = new SiteDatabase();
 ?>
 <!DOCTYPE html>
