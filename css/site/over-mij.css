@@ -6,22 +6,18 @@
 
 body {
     font-family: "Josefin Sans", sans-serif;
-    height: 3000px;
-    /* <--scroll testen */
     background: #eee;
 }
 
-/* Hero Section */
 .over-mij-hero {
     width: 100%;
-    min-height: 90vh;
     background-image: url(../../images/over-mij-background.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
-    padding: 100px 0;
+    padding: 250px 20px;
 }
 
 .over-mij-hero .intro small {
@@ -34,13 +30,15 @@ body {
     color: white;
     font-family: 'Playfair Display', serif;
     font-weight: bold;
-    font-size: 60px;
     max-width: 900px;
 }
 
 .over-mij-hero .intro h1::before {
+    content: '“';
     font-size: 400px;
-    margin-top: 115px;
+    position: absolute;
+    top: -140px;
+    opacity: 0.2;
     left: -50px;
 }
 
@@ -50,99 +48,134 @@ body {
     max-width: 750px;
     color: white;
     font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 300;
 }
 
 .over-mij-info {
     margin-top: -100px;
-    height: 500px;
+    /* height: 500px; */
 }
 
 .overMijBlock {
-    display: block;
+    display: flex;
+    align-items: center;
     z-index: 3;
     background-color: #ffffff;
     min-height: 500px;
-    border-bottom: 3px solid #67ABA4;
+    border-bottom: 3px solid #9CD1BE;
     box-shadow: 12px 0 20px -4px rgba(0, 0, 0, 0.1), -12px 0 20px -4px rgba(0, 0, 0, 0.1);
 }
 
+@media only screen and (max-width: 992px) {
+    .overMijBlock {
+        display: block;
+    }
+} 
+
 .loopbaanswitch {
-    padding: 50px 0px 50px 50px;
+    padding: 50px 50px;
 }
+
+@media only screen and (max-width: 992px) {
+    .loopbaanswitch {
+        padding: 50px 20px;
+    }
+} 
 
 .loopbaanswitch h2 {
     color: #67ABA4;
-    font-family: 'Playfair Display', serif;
     padding-bottom: 30px;
 }
 
-.loopbaanswitch p {
-    color: #000000;
-    font-size: 15px;
+.overmij-image img {
+    width: 100%;
 }
 
-.overmij-image img {
-    width: 95%;
-    margin-left: 2.5%;
-    padding-top: 100px;
-}
+@media only screen and (max-width: 992px) {
+    .overmij-image img {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+} 
 
 .review {
     z-index: 1;
     margin-top: -400px;
-    height: 790px;
     background-color: #ffffff;
     padding: 20px 20px 20px 20px;
 }
 
+@media only screen and (max-width: 992px) {
+
+    .review {
+        margin-top: 50px;
+    }
+
+} 
+
 .reviewInline {
-    height: 750px;
     border: 3px solid #9CD1BE;
 }
 
 .reviewInformation {
-    margin-top: 120px;
+    margin: 200px 0 200px;
+    position: relative;
 }
 
-.reviewText:before {
+.reviewInformation:before {
     content: 'Review';
     font-size: 160px;
     position: absolute;
     width: 100%;
     font-family: 'Playfair Display', serif;
-    color: rgba(136, 220, 181, 0.3);
-    margin-top: -100px;
     text-align: center;
-    margin-left: -10%;
+    color: #E9F9F1;
+    z-index: 0;
+    top: -130px;
+    left: -220px;
 }
 
-.reviewText {
-    max-width: 70%;
-    margin-left: 15%;
-    font-size: 30px;
-    color: #000000;
+@media only screen and (max-width: 992px) {
+
+    .reviewInformation:before {
+        content: "" !important;
+    }
+
+} 
+
+.reviewInformation h4 {
     text-align: center;
-}
+    position: relative;
+    max-width: 800px;
+    display: block;
+    margin: auto;
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 300;
+  }
 
 .reviewName {
     text-align: center;
-    font-size: 30px;
-    color: rgba(0, 0, 0, 0.3);
+    position: relative;
+    margin-top: 30px;
+}
+
+.affiliatedWith {
+    padding: 50px 20px;
 }
 
 .affiliatedWith h2 {
     text-align: center;
     color: #67ABA4;
-    font-size: 50px;
     margin-top: 50px;
 }
 
 .affiliatedWith img {
     display: block;
     margin: 0 auto;
-    width: 35%;
+    max-width: 300px;
     margin-top: 50px;
     margin-bottom: 100px;
 }
@@ -156,90 +189,4 @@ body {
 
 .avgPrivacy {
     text-align: center;
-}
-
-@media only screen and (max-width: 992px) {
-
-.over-mij-hero .intro h1{
-    font-size: 50px;
-}
-
-.over-mij-hero .intro h1::before {
-    content: '“';
-    font-size: 250px;
-    position: absolute;
-    left: -20px;
-    opacity: 0.2;
-}
-
-.overmij-image img{
-    padding-top: 0px;
-    padding-bottom: 50px;
-}
-
-  .review {
-        height: 1200px;
-  }
-
-  .reviewInline {
-    height: 1160px;
-  }
-
-  .reviewInformation {
-    margin-top: 900px;
-  }
-  .reviewText{
-    margin-top: -115px;
-  }
-
-  .reviewText::before{
-    font-size: 80px;
-    margin-left: -20%;
-    margin-top: 20px;
-  }
-}
-
-@media only screen and (max-width: 450px) {
-
-    .over-mij-hero .intro h1::before {
-        content: '“';
-        font-size: 250px;
-        position: absolute;
-        left: -20px;
-        opacity: 0.2;
-        margin-top: -80px;
-        margin-left: 5%;
-    }
-
-    .over-mij-hero .intro h1{
-        font-size: 40px;    
-    }
-
-    .over-mij-hero .intro p{
-        font-size: 25px;
-    }
-    
-    .loopbaanswitch{
-        margin-left: -30px;
-    }
-
-    .review{
-        height: 1140px;
-    }
-
-    .reviewText {
-        margin-top: -190px;
-    }
-
-    .reviewInline{
-        height: 1100px;
-    }
-
-    .affiliatedWith h2 {
-        font-size: 30px;
-    }
-
-    .affiliatedWith img{
-        margin-bottom: 70px;
-    }
 }

@@ -112,10 +112,13 @@
 	width: 30px;
 	height: 2px;
 	position: absolute;
-	background: black;
+	background: white;
 	transition: all 0.5s cubic-bezier(1,-0.14, 0.01, 1.13);
 }
 
+.navbar-scrolled .line{
+	background: black !important;
+}
 #line-1{
 
 }
@@ -126,6 +129,10 @@
 
 #line-3{
 	margin-top: 24px;
+}
+
+.mobile-nav-btn-active .line{
+	background: black !important;
 }
 
 .mobile-nav-btn-active #line-1{

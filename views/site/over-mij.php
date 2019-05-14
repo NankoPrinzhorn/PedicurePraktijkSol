@@ -6,7 +6,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/over-mij.php";
   <div class="container">
     <div class="row">
       <div class="intro col-md-12">
-      	<small>Welkom &mdash;</small>
+      	<!-- <small>Over mij &mdash;</small> -->
         <h1 class="<?=$data[0]['editID']?>"><?=$data[0]['text']?></h1>
         <p class="<?=$data[1]['editID']?>"><?=$data[1]['text']?></p>
       </div>
@@ -32,7 +32,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/over-mij.php";
 		<div class="container">
 			<div class="col-md-12">
 				<div class="reviewInformation">
-					<p class="reviewText">Een hele fijne service. xxxxxxx xxxxxxx xxxxxxxx xxxxxxx xxxxx xx xx xxx</p>
+					<h4>Een hele fijne service. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nulla, dolorum com</h4>
 					<p class="reviewName">- Mevrouw</p>
 				</div>		
 			</div>
