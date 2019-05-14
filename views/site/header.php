@@ -42,12 +42,12 @@
 
                 
                     <ul id="desktop-menu">
-                        <li><a class="menu-item-active" href="/over-mij">Over mij</a></li>
+                        <li><a class="<?php echo ($page_url1 == 'over-mij') ? 'menu-item-active' : "" ?>" href="/over-mij">Over mij</a></li>
                         <!-- geef class="menu-item-active" voor active statement aan de <a> -->
-                        <li><a href="/behandelingen">Behandelingen</a></li>
-                        <li><a href="/tips">Tips</a></li>
-                        <li><a href="/prijslijst">Prijslijst</a></li>
-                        <li><a href="/contact">Contact</a></li>
+                        <li><a class="<?php echo ($page_url1 == 'behandelingen') ? 'menu-item-active' : "" ?>" href="/behandelingen">Behandelingen</a></li>
+                        <li><a class="<?php echo ($page_url1 == 'tips') ? 'menu-item-active' : "" ?>" href="/tips">Tips</a></li>
+                        <li><a class="<?php echo ($page_url1 == 'prijslijst') ? 'menu-item-active' : "" ?>" href="/prijslijst">Prijslijst</a></li>
+                        <li><a class="<?php echo ($page_url1 == 'contact') ? 'menu-item-active' : "" ?>" href="/contact">Contact</a></li>
                     </ul>
 
 

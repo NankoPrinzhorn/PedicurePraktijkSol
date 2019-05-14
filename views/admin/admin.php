@@ -11,7 +11,7 @@ include_once "adminSidebar.php";
     ?>
     <div class="fake_body <?=$page?> <?=$active?>">
     <?php
-        include_once $_SERVER['DOCUMENT_ROOT']."/views/site/".$page.".php";
+        include_once $_SERVER['DOCUMENT_ROOT']."/views/site/".strToLower($page).".php";
     ?>
     </div>
     <?php
