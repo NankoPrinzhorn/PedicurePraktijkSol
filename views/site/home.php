@@ -83,8 +83,9 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/home.php";
     <div class="inner-tip">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 tip">
                     <h4 class="<?=$data[3]['editID']?>"><?=$data[3]['text']?></h4>
+                    <p>- Joke Sol</p>
                 </div>
             </div>
         </div>
