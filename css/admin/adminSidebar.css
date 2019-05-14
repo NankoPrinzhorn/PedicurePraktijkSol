@@ -7,7 +7,7 @@ body {
 	width: 350px;
 	height: 100vh;
     background-color: #313539;
-    z-index: 2;
+    z-index: 5;
 }
 
 #sidebar .header h3 {
@@ -71,7 +71,7 @@ body {
     position: absolute;
     width: 700px;
     background-color: rgb(243, 243, 243);
-    z-index: 1;
+    z-index: 2;
     left: -350px;
     transition: .5s;
     height: 100%;

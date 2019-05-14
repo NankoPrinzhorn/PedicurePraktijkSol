@@ -1,8 +1,7 @@
 <?php
 /**
- * TODO lag fix for MAC
- * TODO image folder creeeren wanneer niet bestaat
- * TODO Onclick open fake_body full!
+ * TODO MAC TESTING!!!!!!!!!!!!!!!!!!!!!!
+ * TODO toggleEdit not working
  */
 ?>
 
