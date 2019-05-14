@@ -1,8 +1,9 @@
-* {
+@charset "UTF-8";
+/* * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-}
+} */
 
 body {
     font-family: "Josefin Sans", sans-serif;
@@ -41,6 +42,14 @@ body {
     opacity: 0.2;
     left: -50px;
 }
+
+@media only screen and (max-width: 992px) {
+
+    .over-mij-hero .intro h1::before {
+        content: "" !important;
+    }
+
+} 
 
 
 .over-mij-hero .intro p {
