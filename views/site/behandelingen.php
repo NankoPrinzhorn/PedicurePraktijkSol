@@ -57,45 +57,45 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/behandelingen.php";
 				<div id="behandeling--1" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 behandeling--case">
 					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 behandeling--left">
 						<span class="behandeling--number">1</span>
-						<h3>BEHANDELING MET INTAKE (90 minuten)</h3>
+						<h3>Behandeling met intake <br>(90 minuten)</h3>
 					<p>Intake en voetonderzoek, opstellen behandelplan; algehele voetverzorging: thuisadvies. Doel van het voetonderzoek is te inventariseren wat uw voetklachten zijn en waar deze uit voort kunnen komen/mee samenhangen; of er sprake is van een risicovoet; met welke behandeling uw klachten verlicht kunnen worden. Het resultaat is dat u een advies krijgt wat u zelf kunt doen aan uw voetverzorging en het verminderen van uw klachten en tevens een behandelvoorstel krijgt. Indien noodzakelijk zal u een verwijzing naar een medisch voetspecialist of de huisarts krijgen.</p>
 					</div>
 
-						<div class="image--big" style="background-image: url(https://via.placeholder.com/500x300);"></div>
+						<div class="image--big" style="background-image: url(/images/behandeling.png);"></div>
 
 				</div>
 
 				<div id="behandeling--2" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 behandeling--case">
 					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 behandeling--left">
 						<span class="behandeling--number">2</span>
-						<h3>ALGEHELE VOETVERZORGING (45 minuten)</h3>
+						<h3>Algehele voetverzorging <br>(45 minuten)</h3>
 					<p>Iedere klant die op bezoek komt kan rekenen op een algehele voetverzorging. Of u nu uw voeten zomer klaar wilt maken of dat u klachten heeft bijvoorbeeld van pijnlijke drukplekken en likdoorns, kalknagels, ingroeiende nagels of kloven, iedereen wordt met de grootste aandacht behandeld. <br><br> De voeten worden gereinigd en gedesinfecteerd. De nagels worden, indien nodig, verdund en bijgeknipt en de nagelomgeving wordt gereinigd, nagelriemen worden bijgewerkt, zodat ze weer hun mooie verzorgde en gezonde uitstraling krijgen. Eelt wordt verwijderd en zo ook eventuele likdoorns en kloven. Is er sprake van beginnende ingroei van nagels dan wordt de nagelwal vrijgemaakt. Nadat de voeten en nagels zijn behandeld, krijgt u tot slot een heerlijke verzorgende crème. De voeten worden kort gemasseerd zodat u weer op verzorgde en ontspannen voeten de praktijk kunt verlaten.</p>
 					</div>
 
-						<div class="image--big" style="background-image: url(https://via.placeholder.com/500x300);"></div>
+						<div class="image--big" style="background-image: url(/images/behandeling.png);"></div>
 
 				</div>
 				<div id="behandeling--3" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 behandeling--case">
 					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 behandeling--left">
 						<span class="behandeling--number">3</span>
-						<h3>PEDICUREBEHANDELING PLUS</h3>
+						<h3>Pedicure plus</h3>
 					<p>Deze behandeling geeft u naast een algehele voetverzorging ook ontspannende scrub en massage. (tot 60 min).</p>
 					</div>
 
-						<div class="image--big" style="background-image: url(https://via.placeholder.com/500x300);"></div>
+						<div class="image--big" style="background-image: url(/images/behandeling.png);"></div>
 
 				</div>
 
 					<div id="behandeling--4" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 behandeling--case">
 					<div class="behandeling--left">
 						<span style="margin-top: 76px;" class="behandeling--number">4</span>
-						<h3>SPECIALISTISCHE TECHNIEKEN</h3>
+						<h3>Specialistische technieken</h3>
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<h4>Nagelbeugel plaatsen bij ingroeiende nagel.</h4>
-					<p>Een nagelbeugel is een op maat gemaakt hulpmiddel om uw nagelgroei te reguleren. Ze begeleidt als het ware de groei van de nagel in de juiste richting. Er zijn verschillende typen nagelbeugels. Afhankelijk van uw nagels en uw situatie wordt voor de meest geschikte beugel gekozen.</p>
+					<p>Een nagelbeugel is een op maat gemaakt hulpmiddel om uw nagelgroei te reguleren. Ze begeleidt als het ware de groei van de nagel in de juiste richting. Er zijn verschillende typen nagelbeugels. Afhankelijk van uw nagels en uw situatie wordt voor de meest geschikte beugel gekozen.<br><br></p>
 					<a class="behandeling--left-link" href="#">Bekijk het informatieblad over deze behandeling</a>
 
-					<div class="behandeling--case--img" style="background-image: url(https://via.placeholder.com/500x300);"></div>
+					<div class="behandeling--case--img" style="background-image: url(/images/behandeling.png);"></div>
 
 						</div>
 						
@@ -103,16 +103,16 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/behandelingen.php";
 						<h4>Nagelreparatie gel of acryl</h4>
 					<p>Een nagelreparatie kan wenselijk zijn in verschillende situaties bijvoorbeeld als er een stuk van uw nagel afgebroken is; als er sprake van een gespleten of ernstig beschadigde nagel is. Met gel of acryl kan uw nagel weer opgebouwd worden waardoor uw nagelbed beschermd is en oogt als bij een gezonde nagel.</p>
 					<a class="behandeling--left-link" href="#">Bekijk het informatieblad over deze behandeling</a>
-					<div class="behandeling--case--img" style="background-image: url(https://via.placeholder.com/500x300);"></div>
+					<div class="behandeling--case--img" style="background-image: url(/images/behandeling.png);"></div>
 					</div>
 					
 					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 						
 				
 					<h4>Ortheses</h4>
-					<p>Een orthese is een op maat gemaakt hulpmiddel op basis van siliconen, waarmee complicaties die zich bijvoorbeeld voordoen door teenstandafwijkingen, verholpen kunnen worden. Zo kan een orthese een oplossing zijn voor een steeds terugkerende likdoorn tussen de tenen of op de top van hamertenen.</p>
+					<p>Een orthese is een op maat gemaakt hulpmiddel op basis van siliconen, waarmee complicaties die zich bijvoorbeeld voordoen door teenstandafwijkingen, verholpen kunnen worden. Zo kan een orthese een oplossing zijn voor een steeds terugkerende likdoorn tussen de tenen of op de top van hamertenen.<br><br></p>
 					<a class="behandeling--left-link" href="#">Bekijk het informatieblad over deze behandeling</a>
-					<div class="behandeling--case--img" style="background-image: url(https://via.placeholder.com/500x300);"></div>
+					<div class="behandeling--case--img" style="background-image: url(/images/behandeling.png);"></div>
 						</div>
 					
 					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
@@ -121,7 +121,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/behandelingen.php";
 					<h4>Antidruktechiek met vilt</h4>
 					<p>Heeft u last van drukplekken die tijdelijk ontlast moeten worden dan kan een “viltpadding” een welkome oplossing bieden. Zo kan een gevoelige (druk)plek op de hiel of voorvoet door een wrat een likdoorn of een wond vrij gelegd worden. Een viltpadding kan een tijdelijke verlichting bieden in afwachting van een meer definitieve oplossing zoals een orthese of aangepast schoeisel.</p>
 					<a class="behandeling--left-link" href="#">Bekijk het informatieblad over deze behandeling</a>
-					<div class="behandeling--case--img" style="background-image: url(https://via.placeholder.com/500x300);"></div>
+					<div class="behandeling--case--img" style="background-image: url(/images/behandeling.png);"></div>
 					</div>
 					</div>
 
@@ -134,7 +134,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/behandelingen.php";
 					<p>Het reinigen van de nagelomgeving en het aanbrengen van een kleurlak en een beschermende toplaag op uw teennagels na een algehele voetverzorging.</p>
 					</div>
 
-						<div class="image--big" style="background-image: url(https://via.placeholder.com/500x300);"></div>
+						<div class="image--big" style="background-image: url(/images/behandeling.png);"></div>
 
 				</div>
 
