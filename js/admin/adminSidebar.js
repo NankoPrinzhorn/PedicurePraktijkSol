@@ -56,31 +56,14 @@ function removeActive(current, className) {
 
 function toggleEdit(current, className) {
     if ($('.panel.'+className).hasClass('active_panel')) {
-        $('.panel.'+className).removeClass('active_panel');
-        $('#'+className).find('i').css('transform', 'rotate(0deg)');
+        setTimeout(function() {
+            $('.panel.'+className).removeClass('active_panel');
+            $('#'+className).find('i').css('transform', 'rotate(0deg)');
+        }, 250)
     } else {
-        $('.panel.'+className).addClass('active_panel');
-        $('#'+className).find('i').css('transform', 'rotate(45deg)');
-    }
-    return;
-    if ($('.fake_body.'+className).hasClass('full')) {
-        console.log('YEET');
-        $('#'+className).find('i').css('transform', 'rotate(45deg)');
-        $('.fake_body.'+className).removeClass('full');
-        $('.panel.'+className).addClass('active_panel');
-    } else {
-        $('#'+className).find('i').css('transform', 'rotate(45deg)');
-        $('.fake_body.'+className).addClass('full');
-        $('.panel.'+className).removeClass('active_panel');
-    }
-    return;
-    if ($('.panel.'+className).hasClass('active_panel')) {
-        $('.fake_body.'+className).addClass('full');
-        $('.'+className).removeClass('active_panel');
-        $('#'+className).find('i').css('transform', 'rotate(0deg)');
-    } else {
-        $('.panel.'+className).addClass('active_panel');
-        $('.fake_body.'+className).removeClass('full');
-        $('#'+className).find('i').css('transform', 'rotate(45deg)');
+        setTimeout(function() {
+            $('.panel.'+className).addClass('active_panel');
+            $('#'+className).find('i').css('transform', 'rotate(45deg)');
+        }, 250)
     }
 }

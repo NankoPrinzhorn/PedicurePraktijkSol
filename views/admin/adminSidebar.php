@@ -13,7 +13,8 @@
 <div id="sidebar">
     <div class="header">
         <h3>Dashboard</h3>
-        <p id="logout">Uitloggen</p>
+        <br>
+        <p>Hallo, <?=$_SESSION['name']?></p>
     </div>
 	<div class="pages">
     <?php 
@@ -30,8 +31,14 @@
     }
     ?>
     </div>
+    <div class="showSite">
+        <h3>Naar website</h3>
+    </div>
     <div class="saveChanges">
         <h3>Publiceren</h3>
+    </div>
+    <div class="logout" id="logout">
+        <h3>Uitloggen</h3>
     </div>
 </div>
 <?php 
@@ -49,6 +56,7 @@ foreach ($pages as $pageName => $page) {
 <script type="text/javascript" src="/js/admin/adminSidebar.js"></script>
 <script type="text/javascript" >
 $('#logout').on('click', function() {
+    console.log('TEST');
     $.ajax({
         url:'/model/requests/logoutSubmit.php',
         method:'GET',

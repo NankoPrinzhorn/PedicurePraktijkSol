@@ -44,27 +44,46 @@ body {
     margin: 0;
 }
 
-#sidebar .saveChanges {
+#sidebar .saveChanges, #sidebar .showSite {
     background-color: #9CD1BE;
     width: 100%;
-    height: 70px;
+    height: 50px;
     color: #EEEEEE;
     text-align: center;
     position: absolute;
-    bottom: 0;
-    padding-top: 20px;
+    bottom: 50px;
     cursor: pointer;
     transition: .3s ease;
 }
 
-#sidebar .saveChanges:hover {
+#sidebar .showSite {
+    bottom: 100px;
+}
+
+#sidebar .logout {
+    background-color: #313539;
+    width: 100%;
+    height: 50px;
+    color: #686868;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    transition: .3s ease;
+}
+#sidebar .saveChanges:hover, #sidebar .showSite:hover {
     background-color: rgb(235, 235, 235);
     color: #00A077;
 }
 
-#sidebar .saveChanges h3 {
+#sidebar .logout:hover {
+    color: white;
+}
+
+#sidebar .saveChanges h3, #sidebar .showSite h3, #sidebar .logout h3 {
     font-family: 'Montserrat', sans-serif !important;
     font-size: 22px;
+    margin-top: 13px;
 }
 
 .panel {
@@ -118,12 +137,6 @@ body {
     font-size: 18px;
     padding: 20px;
     resize: none;
-}
-
-#logout {
-    color: white;
-    margin-top: 20px;
-    cursor: pointer;
 }
 
 .page.active {
