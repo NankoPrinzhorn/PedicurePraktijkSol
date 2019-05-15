@@ -3,6 +3,17 @@ body{
 	overflow: hidden;
 }
 
+
+#loginForm, #forgotPasswordForm, #emailSends{
+	position: absolute;
+	left: calc(50vw - 325px);
+	width: 650px;
+	margin: 0 auto; 
+	margin-top: calc(50vh - 225px);
+	background-color: #ffffff;
+	transition: .5s;
+	padding-bottom: 60px;
+}
 .logoLogin{
 	width: 60%;
 	margin: 0 auto;
@@ -11,15 +22,11 @@ body{
 	padding-bottom: 40px; 
 }
 
-#loginForm, #forgotPasswordForm, #emailSends{
-	position: absolute;
-	left: calc(50vw - 325px);
-	width: 650px;
-	height: 450px;
-	margin: 0 auto; 
-	margin-top: calc(50vh - 225px);
-	background-color: #ffffff;
-	transition: .5s;
+.logoForgotPassword{
+	width: 60%;
+	margin: 0 auto;
+	padding-top: 40px;
+	padding-bottom: 40px; 
 }
 
 #forgotPasswordForm{
@@ -63,6 +70,7 @@ body{
 
 #forgotPasswordText, #loginText{
 	color: black;
+	padding-bottom: 1em;
 }
 
 #forgotPassword{
@@ -77,6 +85,10 @@ body{
 
 #confirmButton{
 	margin-top: 50px;
+}
+
+@media only screen and (max-width: 992px) {
+
 }
 
 
