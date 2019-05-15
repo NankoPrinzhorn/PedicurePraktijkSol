@@ -56,11 +56,15 @@ function removeActive(current, className) {
 
 function toggleEdit(current, className) {
     if ($('.panel.'+className).hasClass('active_panel')) {
-        $('.panel.'+className).removeClass('active_panel');
-        $('#'+className).find('i').css('transform', 'rotate(0deg)');
+        setTimeout(function() {
+            $('.panel.'+className).removeClass('active_panel');
+            $('#'+className).find('i').css('transform', 'rotate(0deg)');
+        }, 250)
     } else {
-        $('.panel.'+className).addClass('active_panel');
-        $('#'+className).find('i').css('transform', 'rotate(45deg)');
+        setTimeout(function() {
+            $('.panel.'+className).addClass('active_panel');
+            $('#'+className).find('i').css('transform', 'rotate(45deg)');
+        }, 250)
     }
     return;
     if ($('.fake_body.'+className).hasClass('full')) {
