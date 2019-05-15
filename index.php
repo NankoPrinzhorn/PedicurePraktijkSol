@@ -66,7 +66,7 @@ $db = new SiteDatabase();
 					include_once "views/404.php";
 				}
 			}
-			include_once "views/site/footer.php";
+			// include_once "views/site/footer.php";
 		} else {
 			$admin = true;
 			include_once "model/functions.php";
