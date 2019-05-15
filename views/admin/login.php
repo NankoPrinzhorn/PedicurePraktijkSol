@@ -5,9 +5,8 @@ if (isset($_SESSION['user_id'])) {
 ?>
 <link rel="stylesheet" type="text/css" href="/css/admin/login.css">
 <div id="loginForm">
+<img src="/images/logo.svg" alt="Pedicure Praktijk Sol" class="logoLogin">
     <form id="login_form">
-        <h1>Logo</h1>
-        <img src="/images/logo.svg" alt="Pedicure Praktijk Sol" class="logo">
         <input class="loginInput username" type="text" placeholder="Gebruikersnaam" name="username" required>
         <input class="loginInput password" type="password" placeholder="Wachtwoord" name="password" required>
         <input type="submit" class="loginSubmit" value="Inloggen">
