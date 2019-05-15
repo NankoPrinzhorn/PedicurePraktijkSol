@@ -3,6 +3,14 @@ body{
 	overflow: hidden;
 }
 
+.logoLogin{
+	width: 60%;
+	margin: 0 auto;
+	margin-left: 10%;
+	padding-top: 40px;
+	padding-bottom: 40px; 
+}
+
 #loginForm, #forgotPasswordForm, #emailSends{
 	position: absolute;
 	left: calc(50vw - 325px);
@@ -28,19 +36,8 @@ body{
 	margin-left: 10%;
 }
 
-
-#login_form img, .forgotPassword_form img, .email_sends img{
-	height: 80px;
-	text-align: center;
-	padding-top: 2.5em;
-	padding-bottom: 2.5em;
-	display: block;
-	margin: 0 auto;
-}
-
 .loginInput, .emailInput{
-	width: 95%;
-	height: 50px;
+	width: 100%;
 	margin-bottom: 1em;
 	border: none;
 	background-color: #EEEEEE;
