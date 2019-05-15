@@ -5,9 +5,8 @@ if (isset($_SESSION['user_id'])) {
 ?>
 <link rel="stylesheet" type="text/css" href="/css/admin/login.css">
 <div id="loginForm">
+<img src="/images/logo.svg" alt="Pedicure Praktijk Sol" class="logoLogin">
     <form id="login_form">
-        <h1>Logo</h1>
-        <img src="/images/logo.svg" alt="Pedicure Praktijk Sol" class="logo">
         <input class="loginInput username" type="text" placeholder="Gebruikersnaam" name="username" required>
         <input class="loginInput password" type="password" placeholder="Wachtwoord" name="password" required>
         <input type="submit" class="loginSubmit" value="Inloggen">
@@ -17,7 +16,7 @@ if (isset($_SESSION['user_id'])) {
 
 <div id="forgotPasswordForm">
     <form class="forgotPassword_form">
-    <img src="/images/logo.svg" alt="Pedicure Praktijk Sol" class="logo">
+    <img src="/images/logo.svg" alt="Pedicure Praktijk Sol" class="logoForgotPassword">
         <p id="forgotPasswordText">Vul hier uw e-mail adres in</p>
         <input class="emailInput" type="email" placeholder="e-mail" name="email" required>
         <input type="submit" id="iGotIt" value="Verstuur e-mail">
@@ -26,7 +25,7 @@ if (isset($_SESSION['user_id'])) {
 
 <div id="emailSends">
     <form class="email_sends">
-        <img src="/images/logo.svg" alt="Pedicure Praktijk Sol" class="logo">
+        <img src="/images/logo.svg" alt="Pedicure Praktijk Sol" class="logoLogin">
         <p id="forgotPasswordText">Er is succesvol een email verstuurd naar iemand@example.nl</p>
         <input type="button" id="confirmButton" value="Terug naar login">
     </form> 
