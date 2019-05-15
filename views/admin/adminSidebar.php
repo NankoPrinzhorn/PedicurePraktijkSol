@@ -30,8 +30,14 @@
     }
     ?>
     </div>
+    <div class="showSite">
+        <h3>Naar website</h3>
+    </div>
     <div class="saveChanges">
         <h3>Publiceren</h3>
+    </div>
+    <div class="logout">
+        <h3>Uitloggen</h3>
     </div>
 </div>
 <?php 

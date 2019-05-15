@@ -13,6 +13,7 @@
     <div class="container">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <ul id="mobile-menu">
+                <li><a href="/">Home</a></li>
                 <li><a href="/over-mij">Over mij</a></li>
                 <li><a href="/behandelingen">Behandelingen</a></li>
                 <li><a href="/tips">Tips</a></li>

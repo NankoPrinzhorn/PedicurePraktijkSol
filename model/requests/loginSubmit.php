@@ -19,6 +19,7 @@ if (!empty($_GET)) {
 
     if ($result) {
         $_SESSION['user_id'] = $result['id'];
+        $_SESSION['name'] = $result['name'];
         echo json_encode(true);
     } else {
         echo json_encode(false);
