@@ -136,6 +136,7 @@ body {
   color: #67ABA4;
   z-index: 2;
   position: relative;
+  font-weight: 400;
 }
 
 .home-behandelingen .behandeling-text:before {
