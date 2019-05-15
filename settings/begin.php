@@ -5,12 +5,13 @@ $whitelist = array(
 );
 
 if(in_array($_SERVER['REMOTE_ADDR'], $whitelist)){
-    // not valid
+    //localhost
     $sHost = "localhost";
     $sUser = "root";
     $sDb = 'pedicurepraktijksol';
     $password = 'root';
 } else {
+    //online
     $sHost = "localhost";
     $sUser = "Nanko";
     $sDb = 'pedicurepraktijdsol';
