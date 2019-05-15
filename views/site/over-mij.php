@@ -32,8 +32,8 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/over-mij.php";
 		<div class="container">
 			<div class="col-md-12">
 				<div class="reviewInformation">
-					<h4>Een hele fijne service. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nulla, dolorum com</h4>
-					<p class="reviewName">- Mevrouw</p>
+					<h4>Een afspraak bij Joke is deskundige voetverzorging en een fijn gesprek in één. Zij is heel zorgvuldig en boezemt vertrouwen in</h4>
+					<p class="reviewName">- Riny Tehupeiory</p>
 				</div>		
 			</div>
 		</div>
