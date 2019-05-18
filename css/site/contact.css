@@ -1,0 +1,114 @@
+.contact-hero {
+    width: 100%;
+    background-image: url(../../images/over-mij-background.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 250px 20px;
+}
+
+.contact-hero .intro small {
+    color: white;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact-hero .intro h1 {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    max-width: 900px;
+}
+
+@media only screen and (max-width: 992px) {
+
+    .contact-hero .intro h1::before {
+        content: "" !important;
+    }
+
+}
+
+.header-buttons{
+    margin-top: 40px;
+}
+.header-buttons button{
+    background-color: #ffffff;
+    color: #67ABA4;
+    border: none;
+    padding: 20px 10px 20px 10px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 50px;
+    width: 250px;
+}
+
+.header-buttons button:first-child { 
+    margin-right: 20px;
+}
+
+.contact-info {
+    margin-top: -100px;
+    /* height: 500px; */
+}
+
+.alkmaar, .castricum{
+    background-color: #ffffff;
+    padding: 70px;
+    margin-right: -20px;
+    border-bottom: 3px solid #9CD1BE;
+}
+
+@media only screen and (max-width: 992px) {
+    .alkmaar, .castricum{
+        padding: 50px 20px;
+    }
+}
+
+.alkmaar h4, .castricum h4 {
+    color: #67ABA4;
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+
+.adres-alkmaar{
+    margin-bottom: 20px;
+}
+
+.info-alkmaar, .info-castricum{
+    padding-bottom: 30px;
+}
+
+.alkmaar a, .castricum a{
+    color: #9CD1BE;
+}
+
+.contact-information {
+    z-index: 1;
+    margin-top: -285px;
+    background-color: #ffffff;
+    padding: 20px 20px 20px 20px;
+}
+
+@media only screen and (max-width: 992px) {
+
+    .contact-information {
+        margin-top: 50px;
+    }
+} 
+
+.contact-informationInline {
+    border: 3px solid #9CD1BE;
+}
+
+
+
+ 
+
+
+
+
+
+
+
