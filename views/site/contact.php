@@ -38,6 +38,20 @@
 			<div class="col-md-12">
                 <div class="col-md-6">
                     <h2>Wilt u een afspraak maken of heeft u een vraag?</h2>
+                    <p>Pedicurepraktijk Sol,</p>
+                    <p><i class="fas fa-phone"></i>06 51304651</p>
+                    <p><i class="fas fa-envelope"></i>pedicurepraktijksol@gmail.nl</p>
+
+                    <div class="reviewInformation">
+					    <h4>Voor een behandeling in Castricum kunt u ook bij de medewerkers van Cosmo Hairstyling een afspraak maken.</h4>
+					    <p class="reviewName">- Joke Sol</p>
+                    </div>
+                    
+                    <div class="otherData">
+                        <h4>Overige algemene gegevens</h4>
+                        <p><b>KVK:</b>74382713</p>
+                        <p><b>Bank:</b>NL55 ASNB 0781 2720 25</p>
+                    </div>
                 </div>       
 			</div>
 		</div>
