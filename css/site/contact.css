@@ -102,6 +102,70 @@
     border: 3px solid #9CD1BE;
 }
 
+.contact-informationInline h2{
+    color: #67ABA4;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.fas{
+    margin-right: 10px;
+}
+
+
+
+.reviewInformation {
+    margin: 80px 0 50px;
+    position: relative;
+}
+
+.reviewInformation:before {
+    content: '“';
+    font-size: 160px;
+    position: absolute;
+    width: 100%;
+    font-family: 'Playfair Display', serif;
+    color: rgba(0, 0, 0, 0.11);
+    z-index: 0;
+    top: -80px;
+}
+
+@media only screen and (max-width: 992px) {
+
+    .reviewInformation:before {
+        content: "" !important;
+    }
+
+} 
+
+.reviewInformation h4 {
+    position: relative;
+    display: block;
+    margin: auto;
+    font-size: 22px;
+    line-height: 34px;
+    font-weight: 300;
+  }
+
+.reviewName {
+    position: relative;
+    margin-top: 5px;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.otherData{
+    margin-bottom: 50px;
+}
+
+.otherData h4 {
+    color: #67ABA4;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.otherData b{
+    margin-right: 5px;
+}
 
 
  
