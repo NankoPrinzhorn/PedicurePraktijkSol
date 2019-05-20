@@ -52,7 +52,22 @@
                         <p><b>KVK:</b>74382713</p>
                         <p><b>Bank:</b>NL55 ASNB 0781 2720 25</p>
                     </div>
-                </div>       
+                </div>   
+
+                <div class="col-md-6 contactForm">
+                    <h4>Neem contact op</h4>
+                    <input type="text" name="firstName" placeholder="Voornaam">
+                    <input type="text" name="LastName" placeholder="Achternaam">
+                    <input type="email" name="email" placeholder="E-mailadres">
+                    <textarea name="textArea" placeholder="Wat wilt u vragen">                        
+                    </textarea>
+                    <div class="col-md-6">
+                        <p>Door op versturen te drukken gaat u akkoord met onze <u>voorwaarden</u></p>
+                    </div>
+                    <div class="col-md-6">
+                        <button type="submit">Versturen</button>
+                    </div>
+                </div>    
 			</div>
 		</div>
 	</div>
