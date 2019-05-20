@@ -58,6 +58,7 @@
     padding: 70px;
     margin-right: -20px;
     border-bottom: 3px solid #9CD1BE;
+    box-shadow: 12px 0 20px -4px rgba(0, 0, 0, 0.1), -12px 0 20px -4px rgba(0, 0, 0, 0.1);
 }
 
 @media only screen and (max-width: 992px) {
@@ -166,6 +167,61 @@
 .otherData b{
     margin-right: 5px;
 }
+
+.contactForm {
+    padding: 50px;
+    border-bottom: 3px solid #9CD1BE;
+    box-shadow: 12px 0 20px -4px rgba(0, 0, 0, 0.1), -12px 0 20px -4px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+}
+
+.contactForm h4 {
+    color: #67ABA4;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.contactForm input[type=text]{
+    width: 49.55%;
+    border: none;
+    background-color: #F6F7F7;
+    padding: 10px;
+}
+
+.contactForm input[type=email]{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #F6F7F7;
+    padding: 10px;
+}
+
+.contactForm textarea{
+    width: 100%;
+    border: none;
+    background-color: #F6F7F7;  
+    resize: vertical;
+    overflow: auto;
+    min-height: 200px;
+}
+
+.contactForm p{
+    font-size: 12px;
+}
+
+.contactForm u{
+    color: #9CD1BE;
+}
+
+.contactForm button{
+    float: left;
+    background-color: #9CD1BE;
+    border-radius: 50px;
+    border: none;
+    padding: 10px 20px 10px 20px;
+}
+
 
 
  
