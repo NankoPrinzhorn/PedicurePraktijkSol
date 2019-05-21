@@ -35,7 +35,7 @@
 <section class="contact-information">
 	<div class="contact-informationInline">
 		<div class="container">
-			<div class="col-md-12">
+			<div class="col-md-12 contactAppointment">
                 <div class="col-md-6">
                     <h2>Wilt u een afspraak maken of heeft u een vraag?</h2>
                     <p>Pedicurepraktijk Sol,</p>
@@ -59,8 +59,7 @@
                     <input type="text" name="firstName" placeholder="Voornaam">
                     <input type="text" name="LastName" placeholder="Achternaam">
                     <input type="email" name="email" placeholder="E-mailadres">
-                    <textarea name="textArea" placeholder="Wat wilt u vragen">                        
-                    </textarea>
+                    <textarea name="textArea"rows="4" cols="50" placeholder="Wat wilt u vragen"></textarea>
                     <div class="col-md-6">
                         <p>Door op versturen te drukken gaat u akkoord met onze <u>voorwaarden</u></p>
                     </div>
