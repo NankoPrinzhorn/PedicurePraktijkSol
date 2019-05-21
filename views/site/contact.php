@@ -71,3 +71,7 @@
 		</div>
 	</div>
 </section>
+
+<?php
+    include_once $_SERVER['DOCUMENT_ROOT']."/views/site/footer.php";
+?>
