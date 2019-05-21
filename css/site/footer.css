@@ -1,6 +1,6 @@
 .footer{
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #9cd1be;
 }
 
@@ -62,7 +62,7 @@ padding: 10px
 .footer p {
   text-align: center;
   color: #ffffff;
-  padding:10px;
+  padding:1px;
 }
 }
 
