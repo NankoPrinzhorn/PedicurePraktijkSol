@@ -84,7 +84,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/home.php";
         <div class="container">
             <div class="row">
                 <div class="col-md-12 tip">
-                    <h4 class="<?=$data[3]['editID']?>"><?=$data[3]['text']?></h4>
+                    <h4>Kom op schoenen die u al enige tijd heeft/draagt, ze geven informatie over drukpunten en hoe u de voeten belast.</h4>
                     <p>- Joke Sol</p>
                 </div>
             </div>
