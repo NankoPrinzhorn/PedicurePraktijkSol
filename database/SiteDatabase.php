@@ -117,6 +117,42 @@ class SiteDatabase extends Database {
         return $items;
     }
 
+    public function fetchTips($admin) {
+        $koppel_tabel = "concept_tips";
+
+        $koppel_columns = $this->fetchAll("SHOW COLUMNS FROM `$koppel_tabel`");
+        $koppel_info = $this->fetchAll("SELECT * FROM `$koppel_tabel` WHERE deleted = 0 AND weergeven = 1 ORDER BY pageOrder ASC");
+        
+        $items = array();
+
+        foreach ($koppel_info as $item) {
+            $current_item = array();
+
+            foreach($koppel_columns as $column) {
+                if ($column["Type"] == "text" || 
+                    $column["Type"] == "varchar(255)" ||
+                    $column["Type"] == "int(1)" ||
+                    $column["Type"] == "longtext") {
+
+                    $array = array(
+                        'id' => $item['id'],
+                        'inputType' => $column["Type"],
+                        'Field' => $column["Field"],
+                        'editID' => $item['id']."-".$koppel_tabel."-".$column['Field'].'text',
+                        'htmlID' => str_replace("concept_", "", $koppel_tabel),
+                        'text' => $item[$column['Field']],
+                        'koppel_tabel' => $koppel_tabel
+                    );
+                    array_push($current_item, $array);
+                }
+            }
+
+            array_push($items, $current_item);
+        }
+
+        return $items;
+    }
+
     public function createKoppelCMSHTML($koppel_tabel, $count) {
         $order = $this->fetchAssoc("SELECT MAX(pageOrder) as nummer FROM `$koppel_tabel` WHERE deleted = 0");
         $order = $order['nummer']+1;
@@ -127,7 +163,7 @@ class SiteDatabase extends Database {
 
         $current_item = array();
         echo "<div class='innerCMSBlok ".$koppel_tabel."-".$item['id']."'>";
-        echo "<h1>".substr(str_replace("concept_", "", $koppel_tabel), 0, -2) ." ".$count."</h1>";
+        echo "<h1>".str_replace("concept_", "", $koppel_tabel) ." ".$count."</h1>";
         echo "<i class='fas fa-times ".$koppel_tabel."-".$item['id']."-delete'></i>";
         echo "
             <script>
@@ -191,7 +227,7 @@ class SiteDatabase extends Database {
             $current_item = array();
             echo "<div class='innerCMSBlok ".$koppel_tabel."-".$item['id']."'>";
             $count++;
-            echo "<h1>".substr(str_replace("concept_", "", $koppel_tabel), 0, -2) ." ".$count."</h1>";
+            echo "<h1>".str_replace(["concept_", "en", "s"], ["", "", ""], $koppel_tabel)." ".$count."</h1>";
             echo "<i class='fas fa-times ".$koppel_tabel."-".$item['id']."-delete'></i>";
             echo "
                 <script>
@@ -239,7 +275,7 @@ class SiteDatabase extends Database {
             }
 
             foreach($current_item as $item) {
-                $this->showCMSHTML($item);
+                $this->showCMSHTML($item, true);
             }
             echo "</div>";
         }
@@ -274,22 +310,27 @@ class SiteDatabase extends Database {
         ";
     }
 
-    public function showCMSHTML($item) {
+    public function showCMSHTML($item, $boolean = false) {
         switch ($item["inputType"]) {
             case "text":
+                if ($boolean) {
+                    $count = 1500;
+                } else {
+                    $count = 450;
+                }
                 echo "<div class='outerTextarea'><label for=".$item["editID"].">".$item["htmlID"]."</label><textarea id='".$item["editID"]."' style='width: 100%;'>".$item["text"]."</textarea>";
-                echo "<p class='".$item["editID"]."_counter counter'>".(450 - strlen($item['text']))."</p>";
+                echo "<p class='".$item["editID"]."_counter counter'>".($count - strlen($item['text']))."</p>";
                 echo "<p class='".$item["editID"]."_errorText errorText'>Maximale aantal karakters overschreden!</p></div>";
                 echo "
                     <script>
                         $('#".$item["editID"]."').on('keyup', function(e) {
-                            if ($(this).val().length <= 450) {
+                            if ($(this).val().length <= ".$count.") {
                                 $(this).removeClass('formError');
                                 $('.".$item["editID"]."_errorText').css('display','none');
 
                                 $('.".$item["editID"]."').text($(this).val());
 
-                                $('.".$item["editID"]."_counter').text(450 - $(this).val().length);
+                                $('.".$item["editID"]."_counter').text(".$count." - $(this).val().length);
 
                                 if(ajaxListRequest) {
                                     ajaxListRequest.abort();
@@ -318,18 +359,18 @@ class SiteDatabase extends Database {
 
             case "varchar(255)":
                 echo "<div class='outerInput'><label for=".$item["editID"].">".$item["htmlID"]."</label><input id='".$item["editID"]."' style='width: 100%;' type='text' value='".$item["text"]."'>";
-                echo "<p class='".$item["editID"]."_counter counter'>".(75 - strlen($item['text']))."</p>";
+                echo "<p class='".$item["editID"]."_counter counter'>".(50 - strlen($item['text']))."</p>";
                 echo "<p class='".$item["editID"]."_errorText errorText'>Maximale aantal karakters overschreden!</p></div>";
                 echo "
                     <script>
                         $('#".$item["editID"]."').on('keyup', function() {
-                            if ($(this).val().length <= 75) {
+                            if ($(this).val().length <= 50) {
                                 $(this).removeClass('formError');
                                 $('.".$item["editID"]."_errorText').css('display','none');
                                 
                                 $('.".$item["editID"]."').text($(this).val());
 
-                                $('.".$item["editID"]."_counter').text(75 - $(this).val().length);
+                                $('.".$item["editID"]."_counter').text(50 - $(this).val().length);
 
                                 if(ajaxListRequest) {
                                     ajaxListRequest.abort();
