@@ -20,7 +20,7 @@ class SiteDatabase extends Database {
             $sql = "SELECT
                     `page`,
                     `content` as text,
-                    CONCAT(`id`, '-', Replace(`htmlID`, ' ', '_')) as editID
+                    CONCAT(`id`, '-', Replace(`htmlID`, ' ', '_'), 'text') as editID
                     FROM concept WHERE page = ? ORDER BY pageOrder ASC";
             $params = array($page);
         } else {
@@ -28,7 +28,7 @@ class SiteDatabase extends Database {
             $sql = "SELECT
                     `page`,
                     `content` as text,
-                    CONCAT(`id`, '-', Replace(`htmlID`, ' ', '_')) as editID
+                    CONCAT(`id`, '-', Replace(`htmlID`, ' ', '_'), 'text') as editID
                     FROM concept WHERE page = ? ORDER BY pageOrder ASC";
             $params = array($page);
         }
@@ -49,7 +49,7 @@ class SiteDatabase extends Database {
             `inputType`,
             `page`,
             `content` as text,
-            CONCAT(`id`, '-', Replace(`htmlID`, ' ', '_')) as editID,
+            CONCAT(`id`, '-', Replace(`htmlID`, ' ', '_'), 'text') as editID,
             `htmlID`
             FROM concept WHERE page = ? ORDER BY pageOrder ASC";
         $params = array($page);
@@ -102,7 +102,7 @@ class SiteDatabase extends Database {
                         'id' => $item['id'],
                         'inputType' => $column["Type"],
                         'Field' => $column["Field"],
-                        'editID' => $item['id']."-".$koppel_tabel."-".$column['Field'],
+                        'editID' => $item['id']."-".$koppel_tabel."-".$column['Field'].'text',
                         'htmlID' => str_replace("concept_", "", $koppel_tabel),
                         'text' => $item[$column['Field']],
                         'koppel_tabel' => $koppel_tabel
@@ -165,7 +165,7 @@ class SiteDatabase extends Database {
                     'id' => $item['id'],
                     'inputType' => $column["Type"],
                     'Field' => $column["Field"],
-                    'editID' => $item['id']."-".$koppel_tabel."-".$column['Field'],
+                    'editID' => $item['id']."-".$koppel_tabel."-".$column['Field'].'text',
                     'htmlID' => str_replace("concept_", "", $koppel_tabel),
                     'text' => $item[$column['Field']],
                     'koppel_tabel' => $koppel_tabel
@@ -229,7 +229,7 @@ class SiteDatabase extends Database {
                         'id' => $item['id'],
                         'inputType' => $column["Type"],
                         'Field' => $column["Field"],
-                        'editID' => $item['id']."-".$koppel_tabel."-".$column['Field'],
+                        'editID' => $item['id']."-".$koppel_tabel."-".$column['Field'].'text',
                         'htmlID' => str_replace("concept_", "", $koppel_tabel),
                         'text' => $item[$column['Field']],
                         'koppel_tabel' => $koppel_tabel
@@ -277,50 +277,79 @@ class SiteDatabase extends Database {
     public function showCMSHTML($item) {
         switch ($item["inputType"]) {
             case "text":
-                echo "<label for=".$item["editID"].">".$item["htmlID"]."</label><textarea id='".$item["editID"]."' style='width: 100%;'>".$item["text"]."</textarea>";
+                echo "<div class='outerTextarea'><label for=".$item["editID"].">".$item["htmlID"]."</label><textarea id='".$item["editID"]."' style='width: 100%;'>".$item["text"]."</textarea>";
+                echo "<p class='".$item["editID"]."_counter counter'>".(450 - strlen($item['text']))."</p>";
+                echo "<p class='".$item["editID"]."_errorText errorText'>Maximale aantal karakters overschreden!</p></div>";
                 echo "
                     <script>
-                        $('#".$item["editID"]."').on('keyup', function() {
-                            $('.".$item["editID"]."').text($(this).val());
-                            if(ajaxListRequest) {
-                                ajaxListRequest.abort();
-                                ajaxListRequest = null;
-                            }
+                        $('#".$item["editID"]."').on('keyup', function(e) {
+                            if ($(this).val().length <= 450) {
+                                $(this).removeClass('formError');
+                                $('.".$item["editID"]."_errorText').css('display','none');
 
-                            ajaxListRequest = $.ajax({
-                                url:'/model/requests/updateConcept.php',
-                                data: {
-                                    id:".$item["id"].",
-                                    koppel_tabel:'".$item['koppel_tabel']."',
-                                    koppel_type:'".$item['Field']."',
-                                    value:$(this).val()
+                                $('.".$item["editID"]."').text($(this).val());
+
+                                $('.".$item["editID"]."_counter').text(450 - $(this).val().length);
+
+                                if(ajaxListRequest) {
+                                    ajaxListRequest.abort();
+                                    ajaxListRequest = null;
                                 }
-                            });
+
+                                ajaxListRequest = $.ajax({
+                                    url:'/model/requests/updateConcept.php',
+                                    data: {
+                                        id:".$item["id"].",
+                                        koppel_tabel:'".$item['koppel_tabel']."',
+                                        koppel_type:'".$item['Field']."',
+                                        value:$(this).val()
+                                    }
+                                });
+                            } else {
+                                $(this).addClass('formError');
+                                $('.".$item["editID"]."_errorText').css('display','block');
+                                $('#".$item["editID"]."').val($(this).val().substr(0,$(this).val().length-1));
+                            }
+                            
                         });
                     </script>
                 ";
                 break;
 
             case "varchar(255)":
-                echo "<label for=".$item["editID"].">".$item["htmlID"]."</label><input id='".$item["editID"]."' style='width: 100%;' type='text' value='".$item["text"]."'>";
+                echo "<div class='outerInput'><label for=".$item["editID"].">".$item["htmlID"]."</label><input id='".$item["editID"]."' style='width: 100%;' type='text' value='".$item["text"]."'>";
+                echo "<p class='".$item["editID"]."_counter counter'>".(75 - strlen($item['text']))."</p>";
+                echo "<p class='".$item["editID"]."_errorText errorText'>Maximale aantal karakters overschreden!</p></div>";
                 echo "
                     <script>
                         $('#".$item["editID"]."').on('keyup', function() {
-                            $('.".$item["editID"]."').text($(this).val());
-                            if(ajaxListRequest) {
-                                ajaxListRequest.abort();
-                                ajaxListRequest = null;
-                            }
+                            if ($(this).val().length <= 75) {
+                                $(this).removeClass('formError');
+                                $('.".$item["editID"]."_errorText').css('display','none');
+                                
+                                $('.".$item["editID"]."').text($(this).val());
 
-                            ajaxListRequest = $.ajax({
-                                url:'/model/requests/updateConcept.php',
-                                data: {
-                                    id:".$item["id"].",
-                                    koppel_tabel:'".$item['koppel_tabel']."',
-                                    koppel_type:'".$item['Field']."',
-                                    value:$(this).val()
+                                $('.".$item["editID"]."_counter').text(75 - $(this).val().length);
+
+                                if(ajaxListRequest) {
+                                    ajaxListRequest.abort();
+                                    ajaxListRequest = null;
                                 }
-                            });
+
+                                ajaxListRequest = $.ajax({
+                                    url:'/model/requests/updateConcept.php',
+                                    data: {
+                                        id:".$item["id"].",
+                                        koppel_tabel:'".$item['koppel_tabel']."',
+                                        koppel_type:'".$item['Field']."',
+                                        value:$(this).val()
+                                    }
+                                });
+                            } else {
+                                $(this).addClass('formError');
+                                $('.".$item["editID"]."_errorText').css('display','block');
+                                $('#".$item["editID"]."').val($(this).val().substr(0,$(this).val().length-1));
+                            }
                         });
                     </script>
                 ";
