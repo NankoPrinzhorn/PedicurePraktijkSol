@@ -12,9 +12,9 @@ body {
 
 .over-mij-hero {
     width: 100%;
-    background-image: url(../../images/over-mij-background.jpg);
-    background-size: cover;
-    background-position: center center;
+    /*background-image: url(../../images/over-mij-background.jpg);*/
+    background-size: cover !important;
+    /*background-position: center center;*/
     background-repeat: no-repeat;
     display: flex;
     align-items: center;

@@ -3,7 +3,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/home.php";
 ?>
 <link rel="stylesheet" type="text/css" href="/css/site/home.css">
 
-<section class="home-hero">
+<section class="home-hero parralax--bg" style="background: url(/images/home-background.jpg) center 0px;">
     <div class="container">
         <div class="row">
             <div class="intro col-md-12">

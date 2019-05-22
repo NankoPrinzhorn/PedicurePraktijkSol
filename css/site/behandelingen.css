@@ -1,87 +1,183 @@
-/*
-Error: Undefined variable: "$color".
-        on line 55 of behandelingen.scss
+@charset "UTF-8";
+body {
+  background: #eee; }
 
-50: 	.after-header{
-51: 		background: white;
-52: 		top: -60px;
-53: 		padding: 50px;
-54: 		box-shadow: 0px 1px 30px rgba(0,0,0,0.2);
-55: 		border-bottom: 2px $color solid; 
-56: 	}
-57: 
-58: 	p{
-59: 		@media (max-width: 992px) {
-60:    			font-size: 12px !important;
+section {
+  padding-top: 75px !important;
+  padding-bottom: 75px !important; }
 
-Backtrace:
-behandelingen.scss:55
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/script/tree/variable.rb:49:in `_perform'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/script/tree/node.rb:50:in `perform'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/script/tree/list_literal.rb:75:in `block in _perform'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/script/tree/list_literal.rb:75:in `map'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/script/tree/list_literal.rb:75:in `_perform'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/script/tree/node.rb:50:in `perform'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `map'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `map'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:161:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:320:in `block in watch'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$color\".\A         on line 55 of behandelingen.scss\A \A 50: 	.after-header{\A 51: 		background: white;\A 52: 		top: -60px;\A 53: 		padding: 50px;\A 54: 		box-shadow: 0px 1px 30px rgba(0,0,0,0.2);\A 55: 		border-bottom: 2px $color solid; \A 56: 	}\A 57: \A 58: 	p{\A 59: 		@media (max-width: 992px) {\A 60:    			font-size: 12px !important;"; }
+.parralax--bg {
+  background-size: 100%; }
+
+#behandelingen-hero {
+  padding-top: 200px !important;
+  padding-bottom: 200px !important; }
+  #behandelingen-hero h1 {
+    font-size: 50px;
+    color: white; }
+    #behandelingen-hero h1::before {
+      content: '“';
+      font-size: 250px;
+      position: absolute;
+      top: -100px;
+      left: -20px;
+      opacity: 0.2;
+      color: white; }
+    @media (max-width: 992px) {
+      #behandelingen-hero h1 {
+        font-size: 35px !important; } }
+  #behandelingen-hero p {
+    padding-top: 20px;
+    color: white !important; }
+    @media (max-width: 992px) {
+      #behandelingen-hero p {
+        font-size: 12px !important; } }
+
+#section-2 {
+  text-align: center;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  margin-top: -50px; }
+  #section-2 .after-header {
+    background: white;
+    top: -60px;
+    padding: 50px;
+    box-shadow: 0px 1px 30px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px #9CD1BE solid; }
+  @media (max-width: 992px) {
+    #section-2 p {
+      font-size: 12px !important; } }
+
+#behandelingen--section {
+  outline: 2px #9CD1BE solid;
+  outline-offset: -20px;
+  padding-top: 200px !important;
+  top: 0;
+  margin-top: -205px;
+  background: white; }
+  #behandelingen--section .g-txt {
+    position: absolute !important;
+    font-size: 100px !important;
+    color: #9CD1BE;
+    opacity: 0.2;
+    top: -30px; }
+    @media (max-width: 992px) {
+      #behandelingen--section .g-txt {
+        font-size: 40px !important;
+        left: 50px; } }
+  #behandelingen--section #behandelingen--items {
+    list-style: none;
+    padding-left: 0px;
+    text-align: center; }
+    #behandelingen--section #behandelingen--items li {
+      transition: all 0.2s ease;
+      padding-top: 20px; }
+      #behandelingen--section #behandelingen--items li:hover {
+        transform: scale(1.02); }
+      #behandelingen--section #behandelingen--items li a {
+        transition: all 0.5s ease;
+        color: black !important;
+        text-decoration: none;
+        font-size: 20px !important;
+        opacity: 1;
+        position: relative; }
+        @media (max-width: 992px) {
+          #behandelingen--section #behandelingen--items li a {
+            font-size: 13px !important; } }
+        #behandelingen--section #behandelingen--items li a:hover {
+          opacity: 1 !important;
+          color: #9CD1BE !important; }
+          #behandelingen--section #behandelingen--items li a:hover::after {
+            width: 100% !important;
+            background: #9CD1BE !important; }
+        #behandelingen--section #behandelingen--items li a::after {
+          content: '';
+          height: 1px;
+          width: 120px;
+          background: black;
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: -10px;
+          margin: auto;
+          transition: all 0.5s ease; }
+
+.behandeling--case {
+  background: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  transition: all 1s ease;
+  border-bottom: 2px #9CD1BE solid;
+  margin-bottom: 5px;
+  position: relative;
+  margin-bottom: 20px; }
+  .behandeling--case .behandeling--case--img {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px; }
+  .behandeling--case a {
+    color: #9CD1BE !important;
+    font-size: 12px !important;
+    position: relative; }
+  .behandeling--case hr {
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    background: #9CD1BE;
+    border-style: none;
+    margin-left: -20px; }
+  .behandeling--case:hover {
+    transform: scale(1.02) !important;
+    transition: all 0.3s ease; }
+  .behandeling--case p {
+    color: black !important;
+    font-size: 15px !important;
+    z-index: 1;
+    position: relative; }
+    @media (max-width: 992px) {
+      .behandeling--case p {
+        font-size: 12px !important; } }
+  .behandeling--case .behandeling--left {
+    padding: 0px 50px; }
+    @media (max-width: 992px) {
+      .behandeling--case .behandeling--left {
+        padding: 0px 15px !important; } }
+  .behandeling--case .behandeling--number {
+    font-size: 130px;
+    position: absolute;
+    opacity: 0.3;
+    top: -60px;
+    color: #9CD1BE;
+    font-family: 'playfair';
+    font-weight: bold;
+    z-index: 0 !important; }
+  .behandeling--case h3 {
+    padding-bottom: 10px;
+    color: #9CD1BE;
+    font-weight: lighter;
+    font-size: 20px !important;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1 !important; }
+  .behandeling--case .image--big {
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 15px;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0; }
+    @media screen and (max-width: 992px) {
+      .behandeling--case .image--big {
+        display: none; } }
+  .behandeling--case h4 {
+    z-index: 1;
+    position: relative;
+    font-size: 15px !important;
+    padding-bottom: 10px;
+    color: #9CD1BE;
+    padding-top: 50px; }
+
+/*# sourceMappingURL=behandelingen.css.map */

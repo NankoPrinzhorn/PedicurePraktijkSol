@@ -1,0 +1,58 @@
+#hero--prijslijst {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-size: cover !important; }
+  #hero--prijslijst h1 {
+    color: white;
+    text-transform: uppercase; }
+    @media (max-width: 992px) {
+      #hero--prijslijst h1 {
+        font-size: 25px !important; } }
+  #hero--prijslijst p {
+    color: white;
+    padding-top: 15px; }
+
+#underheader--prijslijst {
+  padding-top: 0px;
+  padding-bottom: 0px; }
+  #underheader--prijslijst #header--box {
+    background: white;
+    padding: 50px 70px;
+    border-bottom: 2px #9CD1BE solid;
+    top: -80px; }
+
+#prijslijst--section {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  #prijslijst--section #title {
+    padding-bottom: 100px; }
+  #prijslijst--section #prijslijst--btn {
+    padding: 12px 30px;
+    background: #9CD1BE;
+    border-radius: 50px;
+    border-style: none;
+    color: black;
+    outline: none;
+    transition: all 0.5s ease; }
+    #prijslijst--section #prijslijst--btn:hover {
+      transform: scale(0.99); }
+  #prijslijst--section h2 {
+    padding-bottom: 20px; }
+  #prijslijst--section ul {
+    padding-left: 0px; }
+    #prijslijst--section ul li {
+      list-style: none;
+      padding-left: 0px;
+      font-family: 'Montserrat', sans-serif; }
+
+#zorgverzekering--section {
+  background: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  outline: 2px #9CD1BE solid;
+  outline-offset: -10px; }
+  #zorgverzekering--section h2 {
+    padding-bottom: 20px;
+    color: #9CD1BE; }
+
+/*# sourceMappingURL=prijslijst.css.map */
