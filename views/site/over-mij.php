@@ -8,7 +8,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/over-mij.php";
       <div class="intro col-md-12">
       	<!-- <small>Over mij &mdash;</small> -->
         <h1 class="<?=$data[0]['editID']?>"><?=$data[0]['text']?></h1>
-        <p class="<?=$data[1]['editID']?>"><?=$data[1]['text']?></p>
+        <p class="<?=$data[1]['editID']?>" style="white-space: pre-line"><?=$data[1]['text']?></p>
       </div>
   </div>
 </section>
@@ -18,7 +18,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/over-mij.php";
 		<div class="col-md-12 overMijBlock">
 		<div class="col-md-6 loopbaanswitch">
 			<h2 class="<?=$data[2]['editID']?>"><?=$data[2]['text']?></h2>
-			<p class="<?=$data[3]['editID']?>"><?=$data[3]['text']?></p>			
+			<p class="<?=$data[3]['editID']?>" style="white-space: pre-line"><?=$data[3]['text']?></p>			
 		</div>
 		<div class="overmij-image col-md-6">
 			<img src="/images/uploads/<?=$data[4]['text']?>" class="<?=$data[4]['editID']?>">
