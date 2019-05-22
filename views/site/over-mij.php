@@ -2,7 +2,7 @@
 include_once $_SERVER['DOCUMENT_ROOT']."/model/site/over-mij.php";
 ?>
 <link rel="stylesheet" type="text/css" href="/css/site/over-mij.css">
-<section class="over-mij-hero">
+<section class="over-mij-hero parralax--bg" style="background: url(/images/over-mij-background.jpg) center 0px;">
   <div class="container">
     <div class="row">
       <div class="intro col-md-12">
