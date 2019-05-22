@@ -12,13 +12,13 @@
 
 <div id="sidebar">
     <div class="header">
-        <h3>Dashboard</h3>
+        <h3 class="page" style="cursor: pointer;">Dashboard</h3>
         <br>
         <p>Hallo, <?=$_SESSION['name']?></p>
     </div>
 	<div class="pages">
     <?php 
-    $pages = array('Home' => "Home", 'Over mij' => "over-mij", 'Behandelingen' => "behandelingen", 'Tips' => "tips", 'Tarieven' => "tarieven", 'Contact' => "contact");
+    $pages = array('Home' => "Home", 'Over mij' => "over-mij", 'Behandelingen' => "behandelingen", 'Tips' => "tips", 'Prijslijst' => "prijslijst", 'Contact' => "contact");
 
     foreach ($pages as $pageName => $page) {
         $active = "";
@@ -74,8 +74,11 @@ $('#logout').on('click', function() {
 
 $('.page').on('click', function() {
     var currentActive = $(this).attr('id');
-
-    history.pushState({}, null, "?currentActive="+currentActive);
+    if (currentActive != null) {
+        history.pushState({}, null, "?currentActive="+currentActive);
+    } else {
+        history.pushState({}, null, "/admin");
+    }
 })
 </script>
 
