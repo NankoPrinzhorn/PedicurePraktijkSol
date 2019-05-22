@@ -116,7 +116,6 @@ body {
     height: 50px;
     border: none;
     margin-top: 15px;
-    margin-bottom: 50px;
     font-family: 'Montserrat', sans-serif !important;
     font-size: 18px;
     padding: 20px;
@@ -130,9 +129,8 @@ body {
 
 .panel textarea {
     min-height: 300px;
-    border: none;
+    border: 1px solid white;
     margin-top: 15px;
-    margin-bottom: 50px;
     font-family: 'Montserrat', sans-serif !important;
     font-size: 18px;
     padding: 20px;
@@ -141,4 +139,30 @@ body {
 
 .page.active {
     color: #F1F1F1;
+}
+
+.outerTextarea, .outerInput {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.outerTextarea p.counter, .outerInput p.counter {
+    position: absolute;
+    bottom: -25px;
+    right: 5px;
+}
+
+.outerTextarea p.errorText, .outerInput p.errorText {
+    position: absolute;
+    bottom: -25px;
+    left: 5px;
+    color: red;
+    display: none;
+}
+.formError {
+    border: 1px solid red !important;
+}
+
+textarea:focus, input:focus {
+    outline: none !important;
 }

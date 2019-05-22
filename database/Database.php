@@ -29,6 +29,19 @@ class Database {
 		
 	}
 
+	public function generateErrorMessage($function, $e, $sql) {
+		echo '<script>document.querySelector(\'body\').classList.remove(\'fade-out\');</script>';
+
+		echo '<div>
+			<h3>MySQL Error</h3>
+			<p>Pagina: '.$_SERVER["PHP_SELF"].'</p>
+			<p>Functie: '.$function.'</p>
+			'.$sql.'
+			<br /><br />
+			'.$e->getMessage().'
+		</div>';
+	}
+
 	# Only for non-returning methods
 	# And only use this static method if you're going to create and delete an object only for one query
 	public function performQuery($sql, $params = null) {
