@@ -1,6 +1,6 @@
 #hero--prijslijst {
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 220px;
+  padding-bottom: 220px;
   background-size: cover !important; }
   #hero--prijslijst h1 {
     color: white;
@@ -24,6 +24,13 @@
 #prijslijst--section {
   padding-top: 100px;
   padding-bottom: 100px; }
+  #prijslijst--section .prijs--col:nth-of-type(odd) {
+    background: #f4f4f4; }
+  #prijslijst--section .prijs--col {
+    padding-bottom: 10px;
+    padding-top: 10px; }
+    #prijslijst--section .prijs--col .prijs {
+      text-align: right; }
   #prijslijst--section #title {
     padding-bottom: 100px; }
   #prijslijst--section #prijslijst--btn {
