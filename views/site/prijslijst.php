@@ -35,32 +35,91 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/prijslijst.php";
 				<a href="/contact"><button id="prijslijst--btn">Maak nu een afspraak</button></a>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-md-offset-2">
-				<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-					<ul>
-						<li class="prijslijst--title">Algehele voetverzorging (45 min)</li>
-						<li class="prijslijst--title">1e behandeling met intake/voetonderzoek</li>
-						<li class="prijslijst--title">Pedicure plus: algehele voetverzorging + scrub/massage</li>
-						<li class="prijslijst--title">Algehele voetverzorging + nagels lakken</li>
-						<li class="prijslijst--title">Intake/voetonderzoek</li>
-						<li class="prijslijst--title">Nagels lakken (reinigen, kleurlak, top coat)</li>
-						<li class="prijslijst--title">Toeslag per 15 minuten</li>
-						<li class="prijslijst--title">Cadeaubonnen vanaf</li>
-						<li class="prijslijst--title">Toeslag behandeling op locatie</li>
-					</ul>
-				</div>
-				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-					<ul>
-						<li>€35</li>
-						<li>€55</li>
-						<li>€45</li>
-						<li>€45</li>
-						<li>€20</li>
-						<li>€15</li>
-						<li>€10</li>
-						<li>€20</li>
-						<li>€10</li>
-					</ul>
-				</div>
+
+
+
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 prijs--col">
+						<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+							<p>Algehele voetverzorging (45 min)</p>
+						</div>
+						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+							<p class="prijs">€35</p>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 prijs--col">
+						<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+							<p>1e behandeling met intake/voetonderzoek</p>
+						</div>
+						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+							<p class="prijs">€55</p>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 prijs--col">
+						<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+							<p>algehele voetverzorging + scrub/massage</p>
+						</div>
+						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+							<p class="prijs">€45</p>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 prijs--col">
+						<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+							<p>algehele voetverzorging + nagels lakken</p>
+						</div>
+						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+							<p class="prijs">€45</p>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 prijs--col">
+						<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+							<p>Intake/voetonderzoek</p>
+						</div>
+						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+							<p class="prijs">€20</p>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 prijs--col">
+						<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+							<p>Nagels lakken (reinigen, kleurlak, topcoat)</p>
+						</div>
+						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+							<p class="prijs">€15</p>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 prijs--col">
+						<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+							<p>Cadeaubonnen vanaf</p>
+						</div>
+						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+							<p class="prijs">€20</p>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 prijs--col">
+						<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+							<p>Toeslag per 15 min</p>
+						</div>
+						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+							<p class="prijs">€10</p>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 prijs--col">
+						<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+							<p>Toeslag behandeling op locatie</p>
+						</div>
+						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+							<p class="prijs">€10</p>
+						</div>
+					</div>
+
+
 			</div>
 		</div>
 	</div>
