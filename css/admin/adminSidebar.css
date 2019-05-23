@@ -144,6 +144,12 @@ body {
 .outerTextarea, .outerInput {
     position: relative;
     margin-bottom: 50px;
+    width: 100%;
+    float: left;
+}
+
+.innerCMSBlok .outerInput.weergevenDeleted {
+    margin-bottom: 0 !important;
 }
 
 .outerTextarea p.counter, .outerInput p.counter {
@@ -165,6 +171,7 @@ body {
 
 textarea:focus, input:focus {
     outline: none !important;
+    border: 1px solid #00A077;
 }
 
 input[type=radio] {
