@@ -222,12 +222,12 @@ class SiteDatabase extends Database {
         $koppel_columns = $this->fetchAll("SHOW COLUMNS FROM `$koppel_tabel`");
         $koppel_info = $this->fetchAll("SELECT * FROM `$koppel_tabel` WHERE deleted = 0 ORDER BY pageOrder ASC");
         $count = 0;
-        echo "<div class='".$koppel_tabel."'>";
         foreach ($koppel_info as $item) {
             $current_item = array();
             echo "<div class='innerCMSBlok ".$koppel_tabel."-".$item['id']."'>";
             $count++;
             echo "<h1>".str_replace(["concept_", "en", "s"], ["", "", ""], $koppel_tabel)." ".$count."</h1>";
+            echo "<div class='outerInput weergevenDeleted'>";
             echo "<i class='fas fa-times ".$koppel_tabel."-".$item['id']."-delete'></i>";
             echo "
                 <script>
@@ -279,7 +279,6 @@ class SiteDatabase extends Database {
             }
             echo "</div>";
         }
-        echo '</div>';
         echo "<input type='button' value='Een nieuwe toevoegen' class='create-".$koppel_tabel."'>";
         echo "
             <script>
@@ -406,7 +405,7 @@ class SiteDatabase extends Database {
                     echo "<label class='JaNeeLabel' for=".$item["editID"].">Ja</label>";
                     echo "<input id='".$item["editID"]."' type='radio' name='weergeven-".$item["editID"]."' value='0' $nee>";
                     echo "<label class='JaNeeLabel' for=".$item["editID"].">Nee</label>";
-                
+                    echo "</div>";
                     echo "
                         <script>
                             $('input[type=radio][name=weergeven-".$item["editID"]."]').on('change', function() {
