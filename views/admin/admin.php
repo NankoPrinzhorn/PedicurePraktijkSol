@@ -46,12 +46,43 @@ include_once "adminSidebar.php";
                 </div>
 
                 <div class="col-md-12">
-                    <h2>Uitleg titel</h2>
+                    <h2>Uitleg tekstarea</h2>
                     <div class="col-md-6">
                     <img src="/images/textarea-cms.png" alt="">
                     </div>
                     <div class="col-md-6">
                         <p>U kunt de tekst onder de titel aanpassen door op het tekst veld velt te klikken met de tekst die u wilt aanpassen. Er zit een limiet van 450 karakters op</p>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <h2>Uitleg items(Behandelingen)</h2>
+                    <div class="col-md-6">
+                    <img src="/images/item-cms.png" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <p>boven elk item(behandelingen op de homepagina) zit de tekst weergeven met daarachter 2 knoppen ja & nee. Hiermee kunt u kiezen of u de gekozen behandeling wilt laten zien op de website of niet. Dit kan handig zijn als u bijvoorbeeld nog niet klaar bent met het aanpassen van de bepaalde behandeling en u wilt deze nog niet live zetten.</p>
+                        <p>Ook kunt u op het kruisje klikken om de desbetreffende item(behandeling) te verwijderen</p>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="col-md-6">
+                    <img src="/images/newItem-cms.png" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <br>
+                        <p>Als u helemaal naar beneden scollt bij de inputs ziet u deze knop hiermee kan u nieuwe items(behandelingen) toevoegen</p>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <h2>Uitleg Images</h2>
+                    <div class="col-md-6">
+                    <img src="/images/afbeelding-cms.png" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <br>
+                        <p>Als u in het cms een afbeelding ziet kunt u daarop klikken U kunt dan op uw computer een andere afbeelding kiezen die dan de orginele afbeelding vervangt</p>
                     </div>
                 </div>
             </div>
