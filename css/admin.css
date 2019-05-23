@@ -21,6 +21,10 @@
     width: calc(100vw - 350px);
 }
 
+.innerCMSBlok {
+    position: relative;
+}
+
 .innerCMSBlok label {
     display: none !important;
 }
@@ -33,8 +37,29 @@
     margin-bottom: 0 !important;
 }
 
+
 .cmsExplanation h1{
     color: #67ABA4;
     text-align: center;
     margin-top: 20px;
+}
+
+.innerCMSBlok i {
+    position: absolute;
+    right: 5px;
+    font-size: 26px;
+    top: 65px;
+    cursor: pointer;
+}
+
+.innerCMSBlok label.weergevenLabel, .innerCMSBlok label.JaNeeLabel {
+    display: block !important;
+    width: 115px;
+    margin-top: 20px;
+    float: left;
+}
+
+.JaNeeLabel {
+    width: 30px !important;
+    margin-left: 10px;
 }
