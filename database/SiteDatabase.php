@@ -401,9 +401,11 @@ class SiteDatabase extends Database {
                     $ja = ($item['text'] == 1) ? "checked" : "";
                     $nee = ($item['text'] == 0) ? "checked" : "";
 
-                    echo "weergeven:";
-                    echo "<input id='".$item["editID"]."' type='radio' name='weergeven-".$item["editID"]."' value='1' $ja>Ja";
-                    echo "<input id='".$item["editID"]."' type='radio' name='weergeven-".$item["editID"]."' value='0' $nee>Nee";
+                    echo "<label class='weergevenLabel' for=".$item["editID"].">Weergeven</label>";
+                    echo "<input id='".$item["editID"]."' type='radio' name='weergeven-".$item["editID"]."' value='1' $ja>";
+                    echo "<label class='JaNeeLabel' for=".$item["editID"].">Ja</label>";
+                    echo "<input id='".$item["editID"]."' type='radio' name='weergeven-".$item["editID"]."' value='0' $nee>";
+                    echo "<label class='JaNeeLabel' for=".$item["editID"].">Nee</label>";
                 
                     echo "
                         <script>
