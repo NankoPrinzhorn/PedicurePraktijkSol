@@ -32,3 +32,9 @@
 .innerCMSBlok h1 {
     margin-bottom: 0 !important;
 }
+
+.cmsExplanation h1{
+    color: #67ABA4;
+    text-align: center;
+    margin-top: 20px;
+}
