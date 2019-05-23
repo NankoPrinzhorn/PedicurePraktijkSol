@@ -28,17 +28,18 @@ include_once "adminSidebar.php";
                 <div class="col-md-12">
                     <h2>Uitleg menu</h2>
                     <div class="col-md-6">
-                    <img src="/images/cmsMenu.jpeg" alt="">
+                    <img class="uitlegImg" src="/images/cmsMenu.jpeg" alt="">
                     </div>
                     <div class="col-md-6">
                         <p> de eerste keer dat u op het plusje drukt krijgt u een preview van de website te zien. Als u daarna nog een keer op het plusje drukt komt er een scherm uitgeschoven waarin u alle informatie kunt aanpassen.<P><p> Ook kunt u links boven op het woord "dashboard" klikken zodat U terug gaat naar de uitleg</p>
+                        <p>U kunt daarna een derde keer op het plusje drukken om het cms weer weg te schuiven</p>                    
                     </div>
                 </div>
 
                 <div class="col-md-12">
                     <h2>Uitleg titel</h2>
                     <div class="col-md-6">
-                    <img src="/images/titel-cms.png" alt="">
+                    <img class="uitlegImg" src="/images/titel-cms.png" alt="">
                     </div>
                     <div class="col-md-6">
                         <p>U kunt de titel aanpassen door op het invoer velt te klikken met de tekst die u wilt aanpassen. Er zit een limiet van 50 karakters op</p>
@@ -48,7 +49,7 @@ include_once "adminSidebar.php";
                 <div class="col-md-12">
                     <h2>Uitleg tekstarea</h2>
                     <div class="col-md-6">
-                    <img src="/images/textarea-cms.png" alt="">
+                    <img class="uitlegImg" src="/images/textarea-cms.png" alt="">
                     </div>
                     <div class="col-md-6">
                         <p>U kunt de tekst onder de titel aanpassen door op het tekst veld velt te klikken met de tekst die u wilt aanpassen. Er zit een limiet van 450 karakters op</p>
@@ -58,7 +59,7 @@ include_once "adminSidebar.php";
                 <div class="col-md-12">
                     <h2>Uitleg items(Behandelingen)</h2>
                     <div class="col-md-6">
-                    <img src="/images/item-cms.png" alt="">
+                    <img class="uitlegImg" src="/images/item-cms.png" alt="">
                     </div>
                     <div class="col-md-6">
                         <p>boven elk item(behandelingen op de homepagina) zit de tekst weergeven met daarachter 2 knoppen ja & nee. Hiermee kunt u kiezen of u de gekozen behandeling wilt laten zien op de website of niet. Dit kan handig zijn als u bijvoorbeeld nog niet klaar bent met het aanpassen van de bepaalde behandeling en u wilt deze nog niet live zetten.</p>
@@ -67,7 +68,7 @@ include_once "adminSidebar.php";
                 </div>
                 <div class="col-md-12">
                     <div class="col-md-6">
-                    <img src="/images/newItem-cms.png" alt="">
+                    <img class="uitlegImg" src="/images/newItem-cms.png" alt="">
                     </div>
                     <div class="col-md-6">
                         <br>
@@ -78,7 +79,7 @@ include_once "adminSidebar.php";
                 <div class="col-md-12">
                     <h2>Uitleg Images</h2>
                     <div class="col-md-6">
-                    <img src="/images/afbeelding-cms.png" alt="">
+                    <img class="uitlegImg" src="/images/afbeelding-cms.png" alt="">
                     </div>
                     <div class="col-md-6">
                         <br>
