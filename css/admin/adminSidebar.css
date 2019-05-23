@@ -166,3 +166,9 @@ body {
 textarea:focus, input:focus {
     outline: none !important;
 }
+
+input[type=radio] {
+    height: 15px;
+    margin-top: 25px;
+    float: left;
+}
