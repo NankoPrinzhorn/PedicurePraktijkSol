@@ -79,9 +79,13 @@
     margin-bottom: 20px;
 }
 
+.explanationtext p{
+    margin-left: -10px;
+}
 
 .uitlegImg{
     height: 100%;
+    margin-bottom: 20px;
 }
 
 .mainHR{
