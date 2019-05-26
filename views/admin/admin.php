@@ -32,7 +32,23 @@ include_once "adminSidebar.php";
                 <a href="">Uitleg afbeeldingen</a>
             </div>
             <div class="container">
-                <div class="col-md-12" id="uitlegMenu">
+            <div class="col-md-12" id="uitlegMenu">
+
+                <div class="col-md-12">
+                    <h2>Uitleg cms(knoppen)</h2>
+                    <div class="col-md-6 explanationtext">
+                        <p>Links onderin ziet u drie knoppen naar website, publiceren en uitloggen. De knop "naar website" zorgt ervoor dat u terug gaat naar de live website</p>
+                        <br>
+                        <p>Alle aanpassingen die u maakt in het cms worden opgeslagen als concept.</p>
+                        <p>Als u op de knop "publiceren" klikt worden al u aanpassingen overgezet naar de live site.</p>                    
+                    </div>
+                    <div class="col-md-6">
+                        <img class="uitlegImg" src="/images/knoppen-cms.png" alt="">
+                    </div>
+                    <hr class="mainHR">
+                </div>
+
+                <div class="col-md-12">
                     <h2>Uitleg menu</h2>
                     <div class="col-md-6 explanationtext">
                         <p> de eerste keer dat u op het plusje drukt krijgt u een preview van de website te zien. Als u daarna nog een keer op het plusje drukt komt er een scherm uitgeschoven waarin u alle informatie kunt aanpassen.<P><p> Ook kunt u links boven op het woord "dashboard" klikken zodat U terug gaat naar de uitleg</p>
