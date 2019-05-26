@@ -25,17 +25,17 @@ include_once "adminSidebar.php";
             <div class="col-md-12 explanation-a">
                 <h1>Handleiding cms Pedicure Praktijk Sol</h1>
                 <hr class="mainHR">
-                <a href="#uitlegMenu">Uitleg menu</a>
-                <a href="">Uitleg titel</a>
-                <a href="">Uitleg tekstarea</a>
-                <a href="">Uitleg items</a>
-                <a href="">Uitleg afbeeldingen</a>
+                <a href="#uitlegMenu">Uitleg menu</a> <span>|</span>
+                <a href="">Uitleg titel</a> <span>|</span>
+                <a href="">Uitleg tekstarea</a> <span>|</span>
+                <a href="">Uitleg items</a> <span>|</span>
+                <a href="">Uitleg afbeeldingen</a> <span>|</span>
             </div>
             <div class="container">
             <div class="col-md-12" id="uitlegMenu">
 
                 <div class="col-md-12">
-                    <h2>Uitleg cms(knoppen)</h2>
+                    <h2>Uitleg cms (knoppen)</h2>
                     <div class="col-md-6 explanationtext">
                         <p>Links onderin ziet u drie knoppen naar website, publiceren en uitloggen. De knop "naar website" zorgt ervoor dat u terug gaat naar de live website</p>
                         <br>
@@ -63,7 +63,7 @@ include_once "adminSidebar.php";
                 <div class="col-md-12">
                     <h2>Uitleg titel</h2>
                     <div class="col-md-6 explanationtext">
-                        <p>U kunt de titel aanpassen door op het invoer velt te klikken met de tekst die u wilt aanpassen. Er zit een limiet van 50 karakters op</p>
+                        <p>U kunt de titel aanpassen door op het invoer veld te klikken met de tekst die u wilt aanpassen. Er zit een limiet van 50 karakters op</p>
                     </div>
                     <div class="col-md-6">
                     <img class="uitlegImg" src="/images/titel-cms.png" alt="">
@@ -83,7 +83,7 @@ include_once "adminSidebar.php";
                 </div>
 
                 <div class="col-md-12">
-                    <h2>Uitleg items(Behandelingen)</h2>
+                    <h2>Uitleg items (Behandelingen)</h2>
                     <div class="col-md-6 explanationtext">
                         <p>boven elk item(behandelingen op de homepagina) zit de tekst weergeven met daarachter 2 knoppen ja & nee. Hiermee kunt u kiezen of u de gekozen behandeling wilt laten zien op de website of niet. Dit kan handig zijn als u bijvoorbeeld nog niet klaar bent met het aanpassen van de bepaalde behandeling en u wilt deze nog niet live zetten.</p>
                         <p>Ook kunt u op het kruisje klikken om de desbetreffende item(behandeling) te verwijderen</p>
