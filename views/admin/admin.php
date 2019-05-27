@@ -25,13 +25,28 @@ include_once "adminSidebar.php";
             <div class="col-md-12 explanation-a">
                 <h1>Handleiding cms Pedicure Praktijk Sol</h1>
                 <hr class="mainHR">
-                <a href="#uitlegMenu">Uitleg menu</a>
-                <a href="">Uitleg titel</a>
-                <a href="">Uitleg tekstarea</a>
-                <a href="">Uitleg items</a>
-                <a href="">Uitleg afbeeldingen</a>
+                <a href="#uitlegCms">Uitleg cms</a> <span>|</span>
+                <a href="#uitlegMenu">Uitleg menu</a> <span>|</span>
+                <a href="#uitlegTitel">Uitleg titel</a> <span>|</span>
+                <a href="#uitlegTextarea">Uitleg tekstarea</a> <span>|</span>
+                <a href="#uitlegItems">Uitleg items</a> <span>|</span>
+                <a href="#uitlegAfbeelding">Uitleg afbeeldingen</a> <span>|</span>
             </div>
             <div class="container">
+                <div class="col-md-12" id="uitlegCms">
+                    <h2>Uitleg cms (knoppen)</h2>
+                    <div class="col-md-6 explanationtext">
+                        <p>Links onderin ziet u drie knoppen naar website, publiceren en uitloggen. De knop "naar website" zorgt ervoor dat u terug gaat naar de live website</p>
+                        <br>
+                        <p>Alle aanpassingen die u maakt in het cms worden opgeslagen als concept.</p>
+                        <p>Als u op de knop "publiceren" klikt worden al u aanpassingen overgezet naar de live site.</p>                    
+                    </div>
+                    <div class="col-md-6">
+                        <img class="uitlegImg" src="/images/knoppen-cms.png" alt="">
+                    </div>
+                    <hr class="mainHR">
+                </div>
+
                 <div class="col-md-12" id="uitlegMenu">
                     <h2>Uitleg menu</h2>
                     <div class="col-md-6 explanationtext">
@@ -44,10 +59,10 @@ include_once "adminSidebar.php";
                     <hr class="mainHR">
                 </div>
 
-                <div class="col-md-12">
+                <div class="col-md-12" id="uitlegTitel">
                     <h2>Uitleg titel</h2>
                     <div class="col-md-6 explanationtext">
-                        <p>U kunt de titel aanpassen door op het invoer velt te klikken met de tekst die u wilt aanpassen. Er zit een limiet van 50 karakters op</p>
+                        <p>U kunt de titel aanpassen door op het invoer veld te klikken met de tekst die u wilt aanpassen. Er zit een limiet van 50 karakters op</p>
                     </div>
                     <div class="col-md-6">
                     <img class="uitlegImg" src="/images/titel-cms.png" alt="">
@@ -55,7 +70,7 @@ include_once "adminSidebar.php";
                     <hr class="mainHR">
                 </div>
 
-                <div class="col-md-12">
+                <div class="col-md-12" id="uitlegTextarea">
                     <h2>Uitleg tekstarea</h2>
                     <div class="col-md-6 explanationtext">
                         <p>U kunt de tekst onder de titel aanpassen door op het tekst veld velt te klikken met de tekst die u wilt aanpassen. Er zit een limiet van 450 karakters op</p>
@@ -66,8 +81,8 @@ include_once "adminSidebar.php";
                     <hr class="mainHR">
                 </div>
 
-                <div class="col-md-12">
-                    <h2>Uitleg items(Behandelingen)</h2>
+                <div class="col-md-12" id="uitlegItems">
+                    <h2>Uitleg items (Behandelingen)</h2>
                     <div class="col-md-6 explanationtext">
                         <p>boven elk item(behandelingen op de homepagina) zit de tekst weergeven met daarachter 2 knoppen ja & nee. Hiermee kunt u kiezen of u de gekozen behandeling wilt laten zien op de website of niet. Dit kan handig zijn als u bijvoorbeeld nog niet klaar bent met het aanpassen van de bepaalde behandeling en u wilt deze nog niet live zetten.</p>
                         <p>Ook kunt u op het kruisje klikken om de desbetreffende item(behandeling) te verwijderen</p>
@@ -87,8 +102,8 @@ include_once "adminSidebar.php";
                     <hr class="mainHR">
                 </div>
 
-                <div class="col-md-12">
-                    <h2>Uitleg Images</h2>
+                <div class="col-md-12" id="uitlegAfbeelding">
+                    <h2>Uitleg afbeelding</h2>
                     <div class="col-md-6 explanationtext">
                         <br>
                         <p>Als u in het cms een afbeelding ziet kunt u daarop klikken U kunt dan op uw computer een andere afbeelding kiezen die dan de orginele afbeelding vervangt</p>
