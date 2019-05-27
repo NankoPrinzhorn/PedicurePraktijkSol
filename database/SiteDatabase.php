@@ -226,7 +226,7 @@ class SiteDatabase extends Database {
             $current_item = array();
             echo "<div class='innerCMSBlok ".$koppel_tabel."-".$item['id']."'>";
             $count++;
-            echo "<h1>".str_replace(["concept_", "en", "s"], ["", "", ""], $koppel_tabel)." ".$count."</h1>";
+            echo "<h1>".str_replace(array("concept_", "en", "s"), array("", "", ""), $koppel_tabel)." ".$count."</h1>";
             echo "<div class='outerInput weergevenDeleted'>";
             echo "<i class='fas fa-times ".$koppel_tabel."-".$item['id']."-delete'></i>";
             echo "
