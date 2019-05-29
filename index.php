@@ -15,7 +15,7 @@ include_once "database/SiteDatabase.php";
 $db = new SiteDatabase();
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 	<head>
 		<title>Pedicure Praktijk Sol</title>
 
