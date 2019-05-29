@@ -24,6 +24,11 @@
 #prijslijst--section {
   padding-top: 100px;
   padding-bottom: 100px; }
+  #PrijslijstH1{
+    color: #9CD1BE;
+    font-size: 5em;
+    font-family: 'Playfair Display', serif;
+  }
   #prijslijst--section .prijs--col:nth-of-type(odd) {
     background: #f4f4f4; }
   #prijslijst--section .prijs--col {
