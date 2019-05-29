@@ -21,7 +21,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/over-mij.php";
 			<p class="<?=$data[3]['editID']?>" style="white-space: pre-line"><?=$data[3]['text']?></p>			
 		</div>
 		<div class="overmij-image col-md-6">
-			<img src="/images/uploads/<?=$data[4]['text']?>" class="<?=$data[4]['editID']?>">
+			<img src="/images/uploads/<?=$data[4]['text']?>" class="<?=$data[4]['editID']?>" alt="loopbaanswitch afbeelding">
 		</div>
 		</div>
 	</div>
@@ -46,7 +46,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/over-mij.php";
 			<h2 class="affiliatedWith">Aangesloten bij:</h2>
 		</div>
 		<div class="col-md-12">
-			<img src="\images/logo-provoet-brancheorganisatie-voor-de-pedicure.png">
+			<img src="\images/logo-provoet-brancheorganisatie-voor-de-pedicure.png" alt="logo provoet">
 		</div>
 		<div class="col-md-12 avgPrivacy">
 			<a class="blabla" href="">Klik hier voor AVG/privacy</a>

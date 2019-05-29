@@ -33,7 +33,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
                 <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                    <a href="/"><img id="navbar-brand-logo" src="/images/logo_w.svg" width="200px" alt=""></a>
+                    <a href="/"><img id="navbar-brand-logo" src="/images/logo_w.svg" width="200px" alt="logo"></a>
 
               
 
