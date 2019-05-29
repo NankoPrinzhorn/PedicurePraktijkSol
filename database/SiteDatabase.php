@@ -222,11 +222,12 @@ class SiteDatabase extends Database {
         $koppel_columns = $this->fetchAll("SHOW COLUMNS FROM `$koppel_tabel`");
         $koppel_info = $this->fetchAll("SELECT * FROM `$koppel_tabel` WHERE deleted = 0 ORDER BY pageOrder ASC");
         $count = 0;
+        echo "<h1 style='border: 0;'>".str_replace("concept_", "", $koppel_tabel)."</h1>";
         foreach ($koppel_info as $item) {
             $current_item = array();
             echo "<div class='innerCMSBlok ".$koppel_tabel."-".$item['id']."'>";
             $count++;
-            echo "<h1>".str_replace(array("concept_", "en", "s"), array("", "", ""), $koppel_tabel)." ".$count."</h1>";
+            echo "<h1>".str_replace(array("concept_", "en", "s", 'z'), array("", "", "", 's'), $koppel_tabel)." ".$count."</h1>";
             echo "<div class='outerInput weergevenDeleted'>";
             echo "<i class='fas fa-times ".$koppel_tabel."-".$item['id']."-delete'></i>";
             echo "
