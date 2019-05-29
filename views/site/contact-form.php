@@ -1,6 +1,4 @@
-
 <link rel="stylesheet" type="text/css" href="/css/site/contact-form.css">
-
 <section id="contactform--section">
 	<div class="container">
 		<div class="row">
@@ -22,14 +20,14 @@
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 						
 					
-					<form  id="form--right">
+					<form  id="form--right" action="/views/site/mail.php" method="post">
 						<h3>Neem contact op</h3>
-						<input name="fname" style="width: 49%; float: left;" type="text" placeholder="Voornaam">
-						<input name="lname" style="width: 49%; float: right;" type="text" placeholder="Achternaam">
-						<input name="email" type="text" placeholder="E-mailadres">
-						<textarea name="msg" cols="30" rows="10" placeholder="Wat wilt u vragen"></textarea>
+						<input name="firstname" style="width: 49%; float: left;" type="text" placeholder="Voornaam" required>
+						<input name="lastname" style="width: 49%; float: right;" type="text" placeholder="Achternaam" required>
+						<input name="email" type="email" placeholder="E-mailadres" required>
+						<textarea name="textarea" cols="30" rows="10" placeholder="Wat wilt u vragen" required></textarea>
 						<p id="form--msg">Door op versturen te drukken gaat u akkoord met onze <a href="#">voorwaarden</a></p>
-						<button class="btn" name="submit">Versturen</button>
+						<button class="btn" id="sendContactForm" name="submit">Versturen</button>
 					</form>
 					</div>
 				</div>
