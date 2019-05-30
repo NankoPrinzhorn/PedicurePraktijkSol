@@ -18,8 +18,8 @@ if (isset($_POST['email'])) {
     $textarea = $_POST['textarea'];
 
 
-$email_message = "Ik ben" . $name . "\n \n" . $textarea . " \n \n van " . $name . " \n Mijn e-mail is". $email;
-$email_response= "Beste " . $name . ",\n \n" . $responseMessage . " \n \n Met vriendelijk groet, \n Joke Sol" ;
+$email_message = "Ik ben " . $name . " " . "\n \n" . $textarea . " \n \n van " . $name . " \n Mijn e-mail is". $email;
+$email_response= "Beste " . $name ." " .  ",\n \n" . $responseMessage . " \n \n Met vriendelijk groet, \n Joke Sol" ;
 
 $headers = 'From: ' . $email . "\r\n" .
     'Reply-To: maurobertozzi11@gmail.com' . "\r\n" .
