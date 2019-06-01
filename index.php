@@ -17,6 +17,8 @@ $db = new SiteDatabase();
 	<head>
 		<title>Pedicure Praktijk Sol</title>
 
+		<meta name="description" content="Pedicure prakrijk Sol, Voor iedereen die verzorgde voeten wilt">
+		<meta name="keywords" content="pedicure prakrijk sol,pedicure,alkmaar,pedicure alkmaar,joke sol,provoet,ortheses,nagelbeugel,voeten">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
 		<!-- CSS -->
