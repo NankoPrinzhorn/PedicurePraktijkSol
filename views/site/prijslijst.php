@@ -31,7 +31,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/prijslijst.php";
 	<div class="container">
 		<div class="row">
 			<div id="title" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" align="center">
-				<h2>Prijslijst</h2>
+				<h1 id="PrijslijstH1">Prijslijst</h1>
 				<a href="/contact"><button id="prijslijst--btn">Maak nu een afspraak</button></a>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-md-offset-2">
@@ -43,7 +43,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/prijslijst.php";
 							<p>Algehele voetverzorging (45 min)</p>
 						</div>
 						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-							<p class="prijs">€35</p>
+							<p class="prijs">&#8364;35</p>
 						</div>
 					</div>
 
@@ -52,7 +52,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/prijslijst.php";
 							<p>1e behandeling met intake/voetonderzoek</p>
 						</div>
 						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-							<p class="prijs">€55</p>
+							<p class="prijs">&#8364;55</p>
 						</div>
 					</div>
 
@@ -61,7 +61,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/prijslijst.php";
 							<p>algehele voetverzorging + scrub/massage</p>
 						</div>
 						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-							<p class="prijs">€45</p>
+							<p class="prijs">&#8364;45</p>
 						</div>
 					</div>
 
@@ -70,7 +70,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/prijslijst.php";
 							<p>algehele voetverzorging + nagels lakken</p>
 						</div>
 						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-							<p class="prijs">€45</p>
+							<p class="prijs">&#8364;45</p>
 						</div>
 					</div>
 
@@ -79,7 +79,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/prijslijst.php";
 							<p>Intake/voetonderzoek</p>
 						</div>
 						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-							<p class="prijs">€20</p>
+							<p class="prijs">&#8364;20</p>
 						</div>
 					</div>
 
@@ -88,7 +88,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/prijslijst.php";
 							<p>Nagels lakken (reinigen, kleurlak, topcoat)</p>
 						</div>
 						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-							<p class="prijs">€15</p>
+							<p class="prijs">&#8364;15</p>
 						</div>
 					</div>
 
@@ -97,7 +97,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/prijslijst.php";
 							<p>Cadeaubonnen vanaf</p>
 						</div>
 						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-							<p class="prijs">€20</p>
+							<p class="prijs">&#8364;20</p>
 						</div>
 					</div>
 
@@ -106,7 +106,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/prijslijst.php";
 							<p>Toeslag per 15 min</p>
 						</div>
 						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-							<p class="prijs">€10</p>
+							<p class="prijs">&#8364;10</p>
 						</div>
 					</div>
 
@@ -115,7 +115,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/prijslijst.php";
 							<p>Toeslag behandeling op locatie</p>
 						</div>
 						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-							<p class="prijs">€10</p>
+							<p class="prijs">&#8364;10</p>
 						</div>
 					</div>
 
