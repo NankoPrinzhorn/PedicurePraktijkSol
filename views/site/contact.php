@@ -1,6 +1,6 @@
 <link rel="stylesheet" type="text/css" href="/css/site/contact.css">
 
-<section class="contact-hero">
+<section class="contact-hero parralax--bg">
   <div class="container">
     <div class="row">
       <div class="intro col-md-12">
@@ -17,16 +17,25 @@
 
 <section class="contact-info">
 	<div class="container">
-		<div class="alkmaar col-md-5">
+		<div class="col-md-6">
+            <div class="alkmaar col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                
+            
             <h4>Alkmaar: praktijk aan huis</h4>
             <p class="adres-alkmaar"><b>Bergerweg 57, 1816 BN</b></p>
             <p class="info-alkmaar">De praktijkruimte bevindt zich op de 1e etage. Er is vrij parkeren aan de Bergerweg en in het Rembrandtkwartier achter de Bergerweg.</p>
-            <a href=""><u>Kijk op de kaart</u></a>	
+            <a href=""><u>Kijk op de kaart</u></a>
+            </div>	
 		</div>
-		<div class="castricum col-md-5 col-md-offset-2">
+
+		<div class="col-md-6">
+            <div class="castricum col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                
+           
             <h4>Castricum</h4> 
             <p class="info-castricum">op <b>dinsdag</b> houdt Pedicurepraktijk Sol praktijk in sfeervolle salon van Cosmo Hairstyling aan het <b>Bakkerspleintje 24</b> in Castricum. U kunt gedurende 2 uur gratis parkeren met een parkeerschijf in de nabije omgeving.</p> 
             <a href=""><u>Kijk op de kaart</u></a>	
+             </div>
         </div>
 	</div>
 </section>

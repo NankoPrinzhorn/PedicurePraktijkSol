@@ -26,7 +26,7 @@
           <p>De praktijkruimte bevindt zich op de 1e etage.
              Er is vrij parkeren aan de Bergerweg en in het Rembrandtkwartier achter de Bergerweg.</p>
              <iframe class="googlemaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2421.2016134793375!2d4.729247215361559!3d52.63827043521052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47cf57bd042af8ad%3A0x7118242ce1a7bec5!2sBergerweg+57%2C+1816+BN+Alkmaar!5e0!3m2!1snl!2snl!4v1557823999388!5m2!1snl!2snl"
-             width="360" height="230" frameborder="0" style="border:0" allowfullscreen></iframe>
+             width="100%"  height="275px" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
 
       <div class="col-md-4">

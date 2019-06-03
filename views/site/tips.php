@@ -3,7 +3,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/tips.php";
 ?>
 <link rel="stylesheet" type="text/css" href="/css/site/tips.css">
 
-<section class="tips-hero">
+<section class="tips-hero parralax--bg" style="background-position: center 0px">
   <div class="container">
     <div class="row">
       <div class="intro col-md-12">
