@@ -1,4 +1,5 @@
 <?php 
+ini_set('display_errors', 1);
 session_start();
 if (strpos($_SERVER['REQUEST_URI'], "?") !== false) {
 	$_SERVER['REQUEST_URI'] = substr($_SERVER['REQUEST_URI'], 0, strpos($_SERVER['REQUEST_URI'], '?'));
