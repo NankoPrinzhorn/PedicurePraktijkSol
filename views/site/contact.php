@@ -64,6 +64,7 @@
                 </div>   
 
                 <div class="col-md-6 contactForm">
+                <form action="/views/site/mail.php" method="post">
                     <h4>Neem contact op</h4>
                     <input type="text" name="firstName" placeholder="Voornaam">
                     <input type="text" name="LastName" placeholder="Achternaam">
@@ -75,6 +76,7 @@
                     <div class="col-md-6">
                         <button type="submit">Versturen</button>
                     </div>
+                    </form>
                 </div>    
 			</div>
 		</div>

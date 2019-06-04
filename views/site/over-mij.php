@@ -1,17 +1,5 @@
 <?php 
 include_once $_SERVER['DOCUMENT_ROOT']."/model/site/over-mij.php";
-var_dump($_SESSION["isMailSend"]);
-if($_SESSION["isMailSend"] == "verzonden"){
-	echo "<sript>setTimeout(function(){
-		alert('U mail is verzonden');
-	}, 3000);</script>";
-	unset($_SESSION["isMailSend"]);
-}elseif($_SESSION["isMailSend"] == "nietVerzonden"){
-    echo "<script>setTimeout(function(){
-		alert('U mail is niet verzonden. Probeer het later opnieuw');
-	}, 3000);</script>";
-    unset($_SESSION["isMailSend"]);
-}
 ?>
 <link rel="stylesheet" type="text/css" href="/css/site/over-mij.css">
 <section class="over-mij-hero parralax--bg" style="background: url(/images/over-mij-background.jpg) center 0px;">
