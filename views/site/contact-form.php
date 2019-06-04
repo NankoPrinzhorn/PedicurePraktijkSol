@@ -18,9 +18,13 @@
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-						
+						<?php
+							$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+
+							$id = substr($actual_link, strrpos($actual_link, '/') + 1);
+						?>
 					
-					<form  id="form--right" action="/views/site/mail.php" method="post">
+					<form  id="form--right" action="" method="post">
 						<h3>Neem contact op</h3>
 						<input name="firstname" style="width: 49%; float: left;" type="text" placeholder="Voornaam" required>
 						<input name="lastname" style="width: 49%; float: right;" type="text" placeholder="Achternaam" required>
@@ -30,6 +34,38 @@
 						<button class="btn" id="sendContactForm" name="submit">Versturen</button>
 					</form>
 					</div>
+					<?php
+
+						$contact = "maurobertozzi11@gmail.com";
+						$responseSubject = "Uw e-mail is ontvangen";
+						$responseMessage = "Ik heb uw e-mail ontvangen.\nU kunt een reactie verwachten binnen 7 werkdagen";
+
+						if (isset($_POST['email'])) {
+							$to = $contact;
+							$subject = "pedicure praktijk sol website";
+							$firstname = $_POST['firstname'];
+							$lastname = $_POST['lastname'];
+							$name = $firstname . " " . $lastname.
+							$email = $_POST['email'];
+							$textarea = $_POST['textarea'];
+
+						$email_message = "Ik ben " . $name . " " . "\n \n" . $textarea . " \n \n van " . $name . " \n Mijn e-mail is". $email;
+						$email_response= "Beste " . $name ." " .  ",\n \n" . $responseMessage . " \n \n Met vriendelijk groet, \n Joke Sol" ;
+
+						$headers = 'From: ' . $email . "\r\n" .
+							'Reply-To: maurobertozzi11@gmail.com' . "\r\n" .
+							'X-Mailer: PHP/' . phpversion();
+
+						$mail = mail($to, $subject, $email_message, $headers);
+						if ($mail) {
+							$response = mail($email, $responseSubject, $email_response, $headers);
+							echo "<script>alert('U mail is verzonden');
+							window.location='/$id'</script>";
+						}else{
+							echo "<script>alert('U mail is niet verzonden probeer het later opnieuw');
+								window.location='/$id'</script>";
+						}};
+						?>
 				</div>
 			</div>
 		</div>
