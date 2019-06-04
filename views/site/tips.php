@@ -7,8 +7,8 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/tips.php";
   <div class="container">
     <div class="row">
       <div class="intro col-md-12">
-				<h1><?=$data[0]['text']?></h1>
-				<p><?=$data[1]['text']?></p>
+				<h1 class="<?=$data[0]['editID']?>"><?=$data[0]['text']?></h1>
+				<p class="<?=$data[1]['editID']?>"><?=$data[1]['text']?></p>
       </div>
   </div>
 </section>
@@ -39,7 +39,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/tips.php";
                 ";
             }
 
-            echo "<li class=\"tips_link\"><a href=\"#tips-".$count."\"><span><u>".$tip[2]['text']."</u></span></a></li>";
+            echo "<li class=\"tips_link\"><a href=\"#tips-".$count."\"><span><u class='".$tip[2]['editID']."'>".$tip[2]['text']."</u></span></a></li>";
 
             
 

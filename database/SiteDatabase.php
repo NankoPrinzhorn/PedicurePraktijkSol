@@ -81,9 +81,7 @@ class SiteDatabase extends Database {
         }
     }
 
-    public function fetchHomeBehandelingen($admin) {
-        $koppel_tabel = "concept_behandelingen";
-
+    public function fetchKoppelTabelInfoForSite($koppel_tabel, $admin) {
         $koppel_columns = $this->fetchAll("SHOW COLUMNS FROM `$koppel_tabel`");
         $koppel_info = $this->fetchAll("SELECT * FROM `$koppel_tabel` WHERE deleted = 0 AND weergeven = 1 ORDER BY pageOrder ASC");
         
@@ -223,6 +221,7 @@ class SiteDatabase extends Database {
         $koppel_info = $this->fetchAll("SELECT * FROM `$koppel_tabel` WHERE deleted = 0 ORDER BY pageOrder ASC");
         $count = 0;
         echo "<h1 style='border: 0;'>".str_replace("concept_", "", $koppel_tabel)."</h1>";
+        echo "<div class='".$koppel_tabel." koppel_tabel_outerBlok'>";
         foreach ($koppel_info as $item) {
             $current_item = array();
             echo "<div class='innerCMSBlok ".$koppel_tabel."-".$item['id']."'>";
@@ -279,7 +278,9 @@ class SiteDatabase extends Database {
                 $this->showCMSHTML($item, true);
             }
             echo "</div>";
+            echo "</div>";
         }
+        echo "</div>";
         echo "<input type='button' value='Een nieuwe toevoegen' class='create-".$koppel_tabel."'>";
         echo "
             <script>
@@ -299,7 +300,6 @@ class SiteDatabase extends Database {
                             count:count
                         },
                         success: function(data) {
-                            console.log(data);
                             $('.".$koppel_tabel."').append(data);
                         }
                     });
@@ -316,7 +316,7 @@ class SiteDatabase extends Database {
                 if ($boolean) {
                     $count = 1500;
                 } else {
-                    $count = 450;
+                    $count = 750;
                 }
                 echo "<div class='outerTextarea'><label for=".$item["editID"].">".$item["htmlID"]."</label><textarea id='".$item["editID"]."' style='width: 100%;'>".$item["text"]."</textarea>";
                 echo "<p class='".$item["editID"]."_counter counter'>".($count - strlen($item['text']))."</p>";
@@ -406,7 +406,6 @@ class SiteDatabase extends Database {
                     echo "<label class='JaNeeLabel' for=".$item["editID"].">Ja</label>";
                     echo "<input id='".$item["editID"]."' type='radio' name='weergeven-".$item["editID"]."' value='0' $nee>";
                     echo "<label class='JaNeeLabel' for=".$item["editID"].">Nee</label>";
-                    echo "</div>";
                     echo "
                         <script>
                             $('input[type=radio][name=weergeven-".$item["editID"]."]').on('change', function() {
@@ -463,10 +462,7 @@ class SiteDatabase extends Database {
                                         if (response != 0) {
                                             $('.image-".$item['editID']."').attr('src', '/images/uploads/'+response);
 
-                                            console.log($('.".$item['editID']."'));
-
                                             if ($('.".$item['editID']."').is('div')) {
-                                                console.log(response);
                                                 $('.".$item['editID']."').css('background-image', 'url(/images/uploads/'+response.replace(' ', '%20')+')');
                                             } else {
                                                 $('.".$item['editID']."').attr('src', '/images/uploads/'+response.replace(' ', '%20'));
