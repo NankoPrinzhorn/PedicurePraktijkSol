@@ -12,8 +12,8 @@
       <div class="col-md-4">
           <p><strong>Wilt u een afspraak maken of heeft u een vraag?</strong></p>
           <p>Pedicurepraktijk sol,</p>
-          <p>Telefoon: 06 51304651</p>
-          <p>Mail: pedicurepraktijksol@gmail.com</p>
+          <a href="tel:+6494461709"><p>Telefoon: 06 51304651</p></a>
+          <a href="mailto:gebruikersnaam@emailadres.nl"><p>Mail: pedicurepraktijksol@gmail.com</p></a>
           <p>Voor een behandeling in Castricum  kunt u ook bij de medewerkers van <a href="https://cosmohairstyling.com/salons/cosmo-hairstyling-castricum" target="_blank">Cosmo Hairstyling</a> een afspraak maken.</p>
           <p>KVK :74382713</p>
           <p>Bank: NL55 ASNB 0781 2720 25</p>
