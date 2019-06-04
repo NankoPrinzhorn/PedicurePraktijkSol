@@ -59,11 +59,11 @@
 						$mail = mail($to, $subject, $email_message, $headers);
 						if ($mail) {
 							$response = mail($email, $responseSubject, $email_response, $headers);
-							echo "<script>alert('U mail is verzonden');
-							window.location='/$id'</script>";
+							header("/" .$id);
+							$_SESSION["isMailSend"] = "verzonden";
 						}else{
-							echo "<script>alert('U mail is niet verzonden probeer het later opnieuw');
-								window.location='/$id'</script>";
+							header("/" .$id);
+							$_SESSION["isMailSend"] = "nietVerzonden";
 						}};
 						?>
 				</div>
