@@ -48,7 +48,7 @@
                 <div class="col-md-6">
                     <h2>Wilt u een afspraak maken of heeft u een vraag?</h2>
                     <p>Pedicurepraktijk Sol,</p>
-                    <a href="href="tel:+6494461709"><p><i class="fas fa-phone"></i>06 51304651</p></a>
+                    <a href="tel:+6494461709"><p><i class="fas fa-phone"></i>06 51304651</p></a>
                     <a href="mailto:gebruikersnaam@emailadres.nl"><p><i class="fas fa-envelope"></i>pedicurepraktijksol@gmail.nl</p></a>
 
                     <div class="reviewInformation">
