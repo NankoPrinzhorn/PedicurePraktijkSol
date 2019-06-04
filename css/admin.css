@@ -23,6 +23,8 @@
 
 .innerCMSBlok {
     position: relative;
+    display: block;
+    float: left;
 }
 
 .innerCMSBlok label {
