@@ -56,14 +56,14 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/home.php";
             <div class="col-md-12">
                 <h2>Behandelingen</h2>
                 <?php
-                
+                $count = 1;
                 foreach ($behandelingen as $behandeling) {
                     echo "
                     <div class=\"col-md-12\">
                         <div class=\"behandeling col-md-12\">
                             <div class=\"behandeling-text col-md-7\">
                                 <div class=\"content\">
-                                    <h3 class='".$behandeling[2]['editID']."'>".$behandeling[2]['text']."</h3>
+                                    <a href='behandelingen#behandeling--".$count."'><h3 class='".$behandeling[2]['editID']."'>".$behandeling[2]['text']."</h3></a>
                                     <p class='".$behandeling[3]['editID']."' style='white-space: pre-line'>".$behandeling[3]['text']."</p>
                                 </div>
                             </div>
@@ -72,6 +72,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/home.php";
                         </div>
                     </div>
                     ";
+                    $count++;
                 }
                 ?>
             </div>
