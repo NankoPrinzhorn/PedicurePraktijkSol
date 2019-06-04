@@ -46,7 +46,9 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/behandelingen.php";
 						echo '<li><a href="#behandeling--'.$count.'"><span class="'.$behandeling[2]['editID'].'">'.$behandeling[2]['text'].'</span></a></li>';
 						$count++;
 					}
+					
 					?>
+					<li><a href="#behandeling--5"><span>SPECIALISTISCHE TECHNIEKEN</span></a></li>
 				</ul>
 			</div>
 		</div>
@@ -74,10 +76,10 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/behandelingen.php";
 					$count++;
 				}
 				?>
-				<div id="behandeling--4" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 behandeling--case">
+				<div id="behandeling--5" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 behandeling--case">
 					<div class="behandeling--left">
 
-						<span style="margin-top: 76px;" class="behandeling--number">4</span>
+						<span style="margin-top: 76px;" class="behandeling--number">5</span>
 						<h3>Specialistische technieken</h3>
 
 						<?php 
