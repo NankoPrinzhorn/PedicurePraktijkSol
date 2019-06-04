@@ -10,8 +10,8 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/home.php";
                 <div class="col-md-12">
                     <h1 class="<?=$data[0]['editID']?>"><?=$data[0]['text']?></h1>
                     <p class="<?=$data[1]['editID']?>" style="white-space: pre-line"><?=$data[1]['text']?></p>
-                    <button>Meer informatie</button>
-                    <button>Neem contact op</button>
+                    <a href="/over-mij"><button>Meer informatie</button></a>
+                    <a href="/contact"><button>Neem contact op</button></a>
                 </div>
             </div>
         </div>
