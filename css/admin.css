@@ -21,10 +21,16 @@
     width: calc(100vw - 350px);
 }
 
+.koppel_tabel_outerBlok {
+    display: block;
+    float: left;
+}
+
 .innerCMSBlok {
     position: relative;
     display: block;
     float: left;
+    width: 100%;
 }
 
 .innerCMSBlok label {
