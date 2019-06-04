@@ -66,10 +66,10 @@
                 <div class="col-md-6 contactForm">
                 <form action="/views/site/mail.php" method="post">
                     <h4>Neem contact op</h4>
-                    <input type="text" name="firstName" placeholder="Voornaam">
-                    <input type="text" name="LastName" placeholder="Achternaam">
-                    <input type="email" name="email" placeholder="E-mailadres">
-                    <textarea name="textArea"rows="4" cols="50" placeholder="Wat wilt u vragen"></textarea>
+                    <input type="text" name="firstName" placeholder="Voornaam" required>
+                    <input type="text" name="LastName" placeholder="Achternaam" required>
+                    <input type="email" name="email" placeholder="E-mailadres" required>
+                    <textarea name="textArea"rows="4" cols="50" placeholder="Wat wilt u vragen" required></textarea>
                     <div class="col-md-6">
                         <p>Door op versturen te drukken gaat u akkoord met onze <u>voorwaarden</u></p>
                     </div>
