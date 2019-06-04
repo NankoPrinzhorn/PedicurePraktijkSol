@@ -1,11 +1,8 @@
 <?php
-echo "je moeder";
 
 $contact = "maurobertozzi11@gmail.com";
 $responseSubject = "Uw e-mail is ontvangen";
 $responseMessage = "Ik heb uw e-mail ontvangen.\nU kunt een reactie verwachten binnen 7 werkdagen";
-
-var_dump($_POST);
 
 if (isset($_POST['email'])) {
     $to = $contact;
@@ -27,9 +24,9 @@ $mail = mail($to, $subject, $email_message, $headers);
 if ($mail) {
     $response = mail($email, $responseSubject, $email_response, $headers);
     echo "<script>alert('U mail is verzonden');
-    window.location='/contact'</script>";
+    window.location='/$id'</script>";
 }else{
     echo "<script>alert('U mail is niet verzonden probeer het later opnieuw');
-        window.location='/contact'</script>";
+        window.location='/$id'</script>";
 }};
 ?>
