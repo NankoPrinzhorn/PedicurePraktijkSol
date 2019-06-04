@@ -1,5 +1,4 @@
 <?php
-
 echo "je moeder";
 
 $contact = "maurobertozzi11@gmail.com";
@@ -17,7 +16,6 @@ if (isset($_POST['email'])) {
     $email = $_POST['email'];
     $textarea = $_POST['textarea'];
 
-
 $email_message = "Ik ben " . $name . " " . "\n \n" . $textarea . " \n \n van " . $name . " \n Mijn e-mail is". $email;
 $email_response= "Beste " . $name ." " .  ",\n \n" . $responseMessage . " \n \n Met vriendelijk groet, \n Joke Sol" ;
 
@@ -31,7 +29,7 @@ if ($mail) {
     echo "<script>alert('U mail is verzonden');
     window.location='/contact'</script>";
 }else{
-echo "<script>alert('U mail is niet verzonden probeer het later opnieuw');
-    window.location='/contact'</script>";
+    echo "<script>alert('U mail is niet verzonden probeer het later opnieuw');
+        window.location='/contact'</script>";
 }};
 ?>
