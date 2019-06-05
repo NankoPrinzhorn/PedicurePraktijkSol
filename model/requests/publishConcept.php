@@ -18,7 +18,7 @@ if ($_GET) {
 
     foreach ($tabellen as $table) {
     //| set concept tabel naar live |\\
-        $ignore = ['id', 'weergeven', 'deleted', 'updated_at'];
+        $ignore = array('id', 'weergeven', 'deleted', 'updated_at');
 
         $tableStucture = $db->fetchAll("SHOW COLUMNS FROM `$table`");
         if ($table == "concept") {
@@ -50,7 +50,7 @@ if ($_GET) {
 
         foreach ($conceptInfo as $item) {
 			$sqlValueString = "";
-			$params = [];
+			$params = array();
 			foreach ($tableStucture as $value) {
 				if (!in_array($value['Field'], $ignore)) {
 					$sqlValueString .= "?,";
