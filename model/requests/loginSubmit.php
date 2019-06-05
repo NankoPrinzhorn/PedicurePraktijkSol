@@ -10,10 +10,15 @@ if (!empty($_GET)) {
     $password = $_GET['password'];
 
     //encript passowrd
+    $peper = "JokeSol";
+    $salt = "PedicureJokePraktijkSol";
 
+    $hash = hash('sha256', $salt.$password.$salt);
+
+    // echo json_encode($hash);
 
     $sql = "SELECT * FROM users WHERE username = ? and password = ?";
-    $params = array($username, $password);
+    $params = array($username, $hash);
 
     $result = $db->fetchAssoc($sql, $params);
 
