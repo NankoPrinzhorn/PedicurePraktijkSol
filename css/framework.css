@@ -38,3 +38,7 @@ p, a {
     margin: 0;
     color: #686868;
 }
+
+a:hover {
+    text-decoration: none !important;
+}

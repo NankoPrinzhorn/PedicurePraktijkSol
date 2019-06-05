@@ -236,6 +236,12 @@
 	opacity: 1 !important;
 }
 
+.mobile-menu-active li:nth-child(6) a{
+	transition-delay: 0.6s !important;
+	padding-left: 0px !important;
+	opacity: 1 !important;
+}
+
 
 #mobile-menu{
 	padding-top: 200px;
