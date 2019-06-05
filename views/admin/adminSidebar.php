@@ -22,9 +22,11 @@
         <p class="page <?=$active?>" id="<?=$page?>"><?=$pageName?><i class="fas fa-plus"></i></p>
         <?php
     }
-    $active = ("VersieBeheer" == $_GET['currentActive']) ? "active" : "";
+    if (!empty($_GET)) {
+        $active = ("versieBeheer" == $_GET['currentActive']) ? "active" : "";
+    }
     ?>
-        <p class="page <?=$active?>" id="VersieBeheer">Versie beheer<i class="fas fa-plus"></i></p>
+        <p class="page <?=$active?>" id="versieBeheer">Versie beheer<i class="fas fa-plus"></i></p>
     </div>
     <div class="showSite">
         <h3>Naar website</h3>
@@ -48,8 +50,21 @@ foreach ($pages as $pageName => $page) {
     <?php
 }
 ?>
-<div class="panel VersieBeheer>">
+<div class="panel versieBeheer">
     <h1>Versie Beheer</h1>
+    <?php 
+    $versions = $db->fetchAll("SELECT `version`, `weergeven`, `updated_at` FROM `live`");
+
+    $array = array();
+    foreach ($versions as $version) {
+        if (!in_array($version['version'], $array)) {
+            $active = ($version['weergeven'] == 1) ? "(huidige versie)" : "";
+            echo "<h2 class='updateVersieBeheer versie-".$version['version']."'>Versie ".$version['version']." from : ".$version['updated_at']." ".$active."</h2>";
+
+            array_push($array, $version['version']);
+        }
+    }
+    ?>
 </div>
 <script type="text/javascript" src="/js/admin/adminSidebar.js"></script>
 <script type="text/javascript" >
@@ -58,7 +73,7 @@ $('#logout').on('click', function() {
         url:'/model/requests/logoutSubmit.php',
         method:'GET',
         data: {
-            value:'logout'  
+            value:'logout'      
         },
         success: function(data) {
             console.log(data);
@@ -67,6 +82,27 @@ $('#logout').on('click', function() {
             }
         }
     })
+});
+
+$('.updateVersieBeheer').on('click', function() {
+    var versie = $(this).attr('class').split(' ')[1].split('-')[1];
+
+    if (confirm("Weet u zeker dat u wilt veranderen van versie? Als u ja drukt zal versie "+versie+" zichtbaar worden voor alle gebruikers")) {
+        ajaxListRequest = $.ajax({
+            url:'/model/requests/changeVersion.php',
+            data: {
+                versie: versie
+            },
+            success: function(response) {
+                if (response) {
+                    alert("Versie is successvol aangepast!");
+                    window.location.href = "/admin";
+                } else {
+                    alert("Er is iets fout gegaan, probeer het later nog eens");
+                }
+            }
+        });
+    }
 });
 
 $('.showSite').on('click', function () {
@@ -78,11 +114,16 @@ $('.showSite').on('click', function () {
 $('.saveChanges').on('click', function () {
     console.log('lets publish!');
     if (confirm("Weet je zeker dat je de huidige veranderingen wilt publiceren?")) {
-        console.log('EY');
         ajaxListRequest = $.ajax({
             url:'/model/requests/publishConcept.php',
             data: {
                 publish: true
+            }, 
+            success: function(response) {
+                if (response) {
+                    alert("Successvol gepubliceerd!");
+                    window.location.href = "/admin";
+                }
             }
         });
     } 

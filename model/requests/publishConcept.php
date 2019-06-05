@@ -4,7 +4,7 @@ include_once "../../database/Database.php";
 include_once "../../database/SiteDatabase.php";
 $db = new SiteDatabase();
 if ($_GET) {
-    $koppelTabellen = array( 
+    $tabellen = array( 
                     'concept',
                     'concept_behandelingen',
                     'concept_prijzen',
@@ -16,7 +16,7 @@ if ($_GET) {
 
     //| update current livesite |\\
 
-    foreach ($koppelTabellen as $table) {
+    foreach ($tabellen as $table) {
     //| set concept tabel naar live |\\
         $ignore = ['id', 'weergeven', 'deleted'];
 
