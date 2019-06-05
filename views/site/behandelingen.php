@@ -90,7 +90,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/behandelingen.php";
 								<p class="'.$techniek[3]['editID'].'">'.$techniek[3]['text'].'</p>
 								<a class="behandeling--left-link" href="#">Bekijk het informatieblad over deze
 									behandeling</a>
-								<div class="behandeling--case--img" style="background-image: url(/images/uploads/'.$techniek[4]['text'].');">
+								<div class="behandeling--case--img '.$techniek[4]['editID'].'" style="background-image: url(/images/uploads/'.$techniek[4]['text'].');">
 								</div>
 							</div>
 							';
