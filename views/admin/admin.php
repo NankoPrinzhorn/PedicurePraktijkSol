@@ -17,6 +17,8 @@ include_once "adminSidebar.php";
     <?php
     }
     ?>
+    <div class="fake_body versieBeheer">
+    </div>
 </div>
 <div class="fake_body active_panel full cmsExplanation">
     <link rel="stylesheet" href="/css/site/framework.css">    
