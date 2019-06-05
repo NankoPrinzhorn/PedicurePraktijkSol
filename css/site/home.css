@@ -1,235 +1,250 @@
 @charset "UTF-8";
 
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
-  font-family: "Josefin Sans", sans-serif;
-  background: #eee;
+    font-family: "Josefin Sans", sans-serif;
+    background: #eee;
 }
 
 /* Hero Section */
 .home-hero {
-  width: 100%;
-  /* min-height: 90vh; */
-  /*background-image: url(/images/home-background.png);*/
-  background-size: cover !important;
-  /*background-position: center;*/
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  padding: 250px 0;
+    width: 100%;
+    /* min-height: 90vh; */
+    /*background-image: url(/images/home-background.png);*/
+    background-size: cover !important;
+    /*background-position: center;*/
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 250px 0;
 }
 
 .home-hero .intro h1 {
-  color: white;
-  /* font-family: 'Playfair Display', serif; */
-  max-width: 600px;
+    color: white;
+    /* font-family: 'Playfair Display', serif; */
+    max-width: 600px;
 }
 
 .home-hero .intro h1::before {
-  content: '“';
-  font-size: 400px;
-  position: absolute;
-  top: -140px;
-  opacity: 0.2;
-  left: -50px;
+    content: '“';
+    font-size: 400px;
+    position: absolute;
+    top: -140px;
+    opacity: 0.2;
+    left: -50px;
 }
 
 @media only screen and (max-width: 992px) {
 
-  .home-hero .intro h1::before {
-    content: "" !important;
-  }
+    .home-hero .intro h1::before {
+        content: "" !important;
+    }
 
 }
 
 
 .home-hero .intro p {
-  margin: 40px 0 0 0;
-  max-width: 880px;
-  color: white;
-  font-size: 18px;
+    margin: 40px 0 0 0;
+    max-width: 880px;
+    color: white;
+    font-size: 18px;
 }
 
 .home-hero button {
-  margin-top: 40px;
-  margin-right: 40px;
-  background: white;
-  color: #67ABA4;
-  border: none;
-  padding: 16px 50px;
-  border-radius: 100px;
-  text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  outline: none !important;
+    margin-top: 40px;
+    margin-right: 40px;
+    background: white;
+    color: #67ABA4;
+    border: none;
+    padding: 16px 50px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    outline: none !important;
 }
 
 /* Home Blocks */
 .home-blocks {
-  margin-top: -100px;
+    margin-top: -100px;
 }
 
 .home-blocks .case {
-  background: white;
-  padding: 50px 20px;
-  text-align: center;
-  min-height: 300px;
-  border-bottom: 3px solid #9CD1BE;
+    background: white;
+    padding: 50px 20px;
+    text-align: center;
+    min-height: 300px;
+    border-bottom: 3px solid #9CD1BE;
 }
 
 .home-blocks .case img {
-  display: block;
-  margin: auto;
-  height: 70px;
+    display: block;
+    margin: auto;
+    height: 70px;
 }
 
 .home-blocks .case p {
-  margin-top: 30px;
+    margin-top: 30px;
 }
 
 @media only screen and (max-width: 992px) {
-  .home-blocks .case {
-    margin-bottom: 50px;
-  }
+    .home-blocks .case {
+        margin-bottom: 50px;
+    }
 }
 
 /* Behandelingen Section */
 .home-behandelingen {
-  padding-bottom: 100px;
+    padding-bottom: 100px;
 }
 
 .home-behandelingen h2 {
-  text-align: center;
-  color: #67ABA4;
-  margin: 100px 0;
+    text-align: center;
+    color: #67ABA4;
+    margin: 100px 0;
 }
 
 .home-behandelingen .behandeling {
-  height: auto;
-  background: white;
-  border-bottom: 3px solid #9CD1BE;
-  padding: 0;
-  margin-bottom: 50px;
-  padding-top: 50px;
-  padding-bottom: 50px !important;
-  position: relative;
+    height: auto;
+    background: white;
+    border-bottom: 3px solid #9CD1BE;
+    padding: 0;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px !important;
+    position: relative;
 }
 
 .home-behandelingen .behandeling-text {
-  min-height: 350px;
-  display: flex;
-  align-items: center;
-  padding: 0 80px;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    padding: 0 80px;
 }
 
 @media only screen and (max-width: 992px) {
-  .home-behandelingen .behandeling-text {
-    padding: 20px 20px;
-  }
+    .home-behandelingen .behandeling-text {
+        padding: 20px 20px;
+    }
 }
 
 .home-behandelingen .behandeling-text h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 36px;
-  color: #67ABA4;
-  z-index: 2;
-  position: relative;
-  font-weight: 400;
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: #67ABA4;
+    z-index: 2;
+    position: relative;
+    font-weight: 400;
 }
 
 .home-behandelingen .behandeling-text:before {
-  font-family: 'Playfair Display', serif;
-  position: absolute;
-  color: #E9F9F1;
-  font-size: 250px;
-  top: -80px;
-  left: 40px;
-  z-index: 0;
+    font-family: 'Playfair Display', serif;
+    position: absolute;
+    color: #E9F9F1;
+    font-size: 250px;
+    top: -80px;
+    left: 40px;
+    z-index: 0;
 }
 
+.behandelingbutton {
+    background: #67ABA4;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 40px;
+    float: left;
+    margin-top: 15px;
+    position: relative;
+}
 
 @media only screen and (max-width: 992px) {
 
-  .home-behandelingen .behandeling-text:before {
-    content: "" !important;
-  }
+    .home-behandelingen .behandeling-text:before {
+        content: "" !important;
+    }
 
 }
 
 .home-behandelingen .behandeling-text p {
-  margin-top: 30px;
-  font-size: 16px;
-  z-index: 2;
-  position: relative;
+    margin-top: 30px;
+    font-size: 16px;
+    z-index: 2;
+    position: relative;
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .home-behandelingen .behandeling-img {
-  background-image: url(../../images/behandeling.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  min-height: 350px;
-  height: 100%;
-  position: absolute;
-  right: 0;
-  top: 0;
+    background-image: url(../../images/behandeling.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 350px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 /* Home Tip Section */
 .home-tip {
-  height: auto;
-  background: white;
-  padding: 20px;
-  position: relative;
+    height: auto;
+    background: white;
+    padding: 20px;
+    position: relative;
 }
 
 .home-tip .inner-tip {
-  border: 3px solid #9CD1BE;
-  padding: 200px 0;
+    border: 3px solid #9CD1BE;
+    padding: 200px 0;
 }
 
 .home .tip {
-  position: relative;
+    position: relative;
 }
 
 .home-tip .tip:before {
-  content: "Tip";
-  font-family: 'Playfair Display', serif;
-  position: absolute;
-  color: #E9F9F1;
-  font-size: 160px;
-  top: -120px;
-  left: 100px;
-  z-index: 0;
+    content: "Tip";
+    font-family: 'Playfair Display', serif;
+    position: absolute;
+    color: #E9F9F1;
+    font-size: 160px;
+    top: -120px;
+    left: 100px;
+    z-index: 0;
 }
 
 @media only screen and (max-width: 992px) {
 
-  .home-tip .tip:before {
-    content: "" !important;
-  }
+    .home-tip .tip:before {
+        content: "" !important;
+    }
 
 }
 
 .home-tip .inner-tip h4 {
-  text-align: center;
-  position: relative;
-  max-width: 800px;
-  display: block;
-  margin: auto;
-  font-family: 'Playfair Display', serif;
-  font-size: 24px;
-  line-height: 34px;
-  font-weight: 300;
+    text-align: center;
+    position: relative;
+    max-width: 800px;
+    display: block;
+    margin: auto;
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 300;
 }
 
 .home-tip .inner-tip p {
-  text-align: center;
-  margin-top: 30px;
+    text-align: center;
+    margin-top: 30px;
 }

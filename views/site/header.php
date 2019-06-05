@@ -43,6 +43,7 @@
 
                 
                     <ul id="desktop-menu">
+                        <li><a class="<?php echo ($page_url1 == '') ? 'menu-item-active' : "" ?>" href="/">Home</a></li>
                         <li><a class="<?php echo ($page_url1 == 'over-mij') ? 'menu-item-active' : "" ?>" href="/over-mij">Over mij</a></li>
                         <!-- geef class="menu-item-active" voor active statement aan de <a> -->
                         <li><a class="<?php echo ($page_url1 == 'behandelingen') ? 'menu-item-active' : "" ?>" href="/behandelingen">Behandelingen</a></li>

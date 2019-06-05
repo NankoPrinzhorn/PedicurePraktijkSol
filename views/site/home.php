@@ -69,6 +69,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/home.php";
                                 <div class=\"content\">
                                     <a href='behandelingen#behandeling--".$count."'><h3 class='".$behandeling[0]['editID']."'>".$behandeling[0]['text']."</h3></a>
                                     <p class='".$behandeling[1]['editID']."' style='white-space: pre-line'>".$behandeling[1]['text']."</p>
+                                    <a href='behandelingen#behandeling--".$count."' class='behandelingbutton'>Meer informatie</a>
                                 </div>
                             </div>
                             <div class=\"behandeling-img col-md-5 ".$behandeling[2]['editID']."\" style='background-image: url(/images/uploads/".str_replace(" ", "%20", $behandeling[2]['text']).")'>
