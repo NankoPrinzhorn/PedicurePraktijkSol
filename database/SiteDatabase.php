@@ -83,11 +83,9 @@ class SiteDatabase extends Database {
 
     public function fetchKoppelTabelInfoForSite($koppel_tabel, $admin) {
         if (!$admin) {
-            echo "JA";
             $koppel_columns = $this->fetchAll("SHOW COLUMNS FROM `$koppel_tabel`");
             $koppel_info = $this->fetchAll("SELECT * FROM `$koppel_tabel` WHERE weergeven = 1 ORDER BY pageOrder ASC");
         } else {
-            echo "NEE!0";
             $koppel_tabel = str_replace('live', 'concept', $koppel_tabel);
             $koppel_columns = $this->fetchAll("SHOW COLUMNS FROM `$koppel_tabel`");
             $koppel_info = $this->fetchAll("SELECT * FROM `$koppel_tabel` WHERE weergeven = 1 AND deleted = 0 ORDER BY pageOrder ASC");
