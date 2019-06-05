@@ -20,50 +20,41 @@
 }
 
 @media screen and (max-width: 1000px) {
-.googlemaps {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;}
-}
+    .googlemaps {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
 
-@media screen and (max-width: 1000px) {
-.provoet_logo {
-  width: 40%;
-  padding: 15px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-}
+    .provoet_logo {
+    width: 40%;
+    padding: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
 
-@media screen and (max-width: 1000px) {
-.honk_logo {
-  width: 40%;
-  padding: 15px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-}
+    .honk_logo {
+    width: 40%;
+    padding: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
 
-@media screen and (max-width: 1000px) {
-.ruimte_boven1 {
-padding: 10px;
-}
-}
+    .ruimte_boven1 {
+    padding: 10px;
+    }
 
-@media screen and (max-width: 1000px) {
-.ruimte_boven2 {
-padding: 10px
-}
-}
+    .ruimte_boven2 {
+    padding: 10px
+    }
 
-@media screen and (max-width: 1000px) {
-.footer p {
-  text-align: center;
-  color: #ffffff;
-  padding:1px;
-}
+    .footer p {
+        text-align: center;
+        color: #ffffff;
+        padding:1px;
+    }
 }
 
 footer a{
@@ -86,4 +77,8 @@ footer a::after{
 
 footer a:hover::after{
   width: 100% !important;
+}
+
+.footerimg:hover{
+  text-decoration: none;
 }
