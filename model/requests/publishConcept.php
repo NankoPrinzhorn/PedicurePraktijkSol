@@ -64,7 +64,6 @@ if ($_GET) {
             array_push($params, $newestVersion);
 
             $sqlValueString = rtrim($sqlValueString, ",");
-            echo "aa";
 			$db->performQuery("INSERT INTO `$table` ($sqlColumnString) VALUES ($sqlValueString)", $params);
 		}
     //| end concept table naar live |\\
