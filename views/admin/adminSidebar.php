@@ -1,10 +1,3 @@
-<?php
-/**
- * TODO MAC TESTING!!!!!!!!!!!!!!!!!!!!!!
- * TODO toggleEdit not working
- */
-?>
-
 <link rel="stylesheet" type="text/css" href="/css/admin/adminSidebar.css">
 <script type="text/javascript">
     var ajaxListRequest;
@@ -29,7 +22,9 @@
         <p class="page <?=$active?>" id="<?=$page?>"><?=$pageName?><i class="fas fa-plus"></i></p>
         <?php
     }
+    $active = ("VersieBeheer" == $_GET['currentActive']) ? "active" : "";
     ?>
+        <p class="page <?=$active?>" id="VersieBeheer">Versie beheer<i class="fas fa-plus"></i></p>
     </div>
     <div class="showSite">
         <h3>Naar website</h3>
@@ -53,10 +48,12 @@ foreach ($pages as $pageName => $page) {
     <?php
 }
 ?>
+<div class="panel VersieBeheer>">
+    <h1>Versie Beheer</h1>
+</div>
 <script type="text/javascript" src="/js/admin/adminSidebar.js"></script>
 <script type="text/javascript" >
 $('#logout').on('click', function() {
-    console.log('TEST');
     $.ajax({
         url:'/model/requests/logoutSubmit.php',
         method:'GET',
@@ -72,6 +69,25 @@ $('#logout').on('click', function() {
     })
 });
 
+$('.showSite').on('click', function () {
+    console.log(window.location.search.substr(1).split('=')[1]);
+    var currentPage = window.location.search.substr(1).split('=')[1].toLowerCase();
+    window.location.href = "/" + currentPage;
+});
+
+$('.saveChanges').on('click', function () {
+    console.log('lets publish!');
+    if (confirm("Weet je zeker dat je de huidige veranderingen wilt publiceren?")) {
+        console.log('EY');
+        ajaxListRequest = $.ajax({
+            url:'/model/requests/publishConcept.php',
+            data: {
+                publish: true
+            }
+        });
+    } 
+});
+
 $('.page').on('click', function() {
     var currentActive = $(this).attr('id');
     if (currentActive != null) {
@@ -79,7 +95,7 @@ $('.page').on('click', function() {
     } else {
         history.pushState({}, null, "/admin");
     }
-})
+});
 </script>
 
 
