@@ -48,7 +48,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/behandelingen.php";
 					}
 					
 					?>
-					<li><a href="#behandeling--5"><span>SPECIALISTISCHE TECHNIEKEN</span></a></li>
+					<li><a href="#behandeling--5"><span>Specialistische technieken</span></a></li>
 				</ul>
 			</div>
 		</div>
