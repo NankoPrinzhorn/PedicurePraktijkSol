@@ -17,7 +17,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/footer.php";
           <p>Pedicurepraktijk sol,</p>
           <a href="tel:<?=$footerdata[5]['text']?>"><p><i class="<?=$footerdata[5]['editID']?>"></i>Telefoon: <?=$footerdata[5]['text']?></p></a>
           <a href="mailto:<?=$footerdata[6]['text']?>"><p><i class="<?=$footerdata[6]['editID']?>"></i>Mail: <?=$footerdata[6]['text']?></p></a>
-          <p class="<?=$footerdata[9]['editID']?>"><?=$data[9]['text']?></p>
+          <p class="<?=$footerdata[9]['editID']?>"><?=$footerdata[9]['text']?></p>
           <p><b>KVK: </b class="<?=$footerdata[7]['editID']?>"><?=$footerdata[7]['text']?></p>
           <p><b>Bank: </b class="<?=$footerdata[8]['editID']?>"><?=$footerdata[8]['text']?></p>
       </div>
