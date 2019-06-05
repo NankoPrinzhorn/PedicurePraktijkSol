@@ -13,7 +13,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/contact.php";
 
         <div class="header-buttons col-md-12">
             <a href="https://tinyurl.com/y6fh4xwv"><button>Bekijk de locatie</button></a>
-            <a href="mailto:gebruikersnaam@emailadres.nl"><button>Neem direct contact op</button></a>
+            <!-- <a href="mailto:gebruikersnaam@emailadres.nl"><button>Neem direct contact op</button></a> -->
         </div>
       </div>
   </div>
