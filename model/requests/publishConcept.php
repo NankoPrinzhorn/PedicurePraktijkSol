@@ -18,7 +18,7 @@ if ($_GET) {
 
     foreach ($tabellen as $table) {
     //| set concept tabel naar live |\\
-        $ignore = ['id', 'weergeven', 'deleted'];
+        $ignore = ['id', 'weergeven', 'deleted', 'updated_at'];
 
         $tableStucture = $db->fetchAll("SHOW COLUMNS FROM `$table`");
         if ($table == "concept") {

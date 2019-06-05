@@ -43,7 +43,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/behandelingen.php";
 					<?php 
 					$count = 1;
 					foreach ($behandelingen as $behandeling) {
-						echo '<li><a href="#behandeling--'.$count.'"><span class="'.$behandeling[2]['editID'].'">'.$behandeling[2]['text'].'</span></a></li>';
+						echo '<li><a href="#behandeling--'.$count.'"><span class="'.$behandeling[0]['editID'].'">'.$behandeling[0]['text'].'</span></a></li>';
 						$count++;
 					}
 					
@@ -65,8 +65,8 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/behandelingen.php";
 					<div id="behandeling--'.$count.'" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 behandeling--case">
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 behandeling--left">
 							<span class="behandeling--number">'.$count.'</span>
-							<h3 class="'.$behandeling[2]['editID'].'">'.$behandeling[2]['text'].'</h3>
-							<p class="'.$behandeling[3]['editID'].'">'.$behandeling[3]['text'].'</p>
+							<h3 class="'.$behandeling[0]['editID'].'">'.$behandeling[0]['text'].'</h3>
+							<p class="'.$behandeling[1]['editID'].'">'.$behandeling[1]['text'].'</p>
 						</div>
 
 						<div class="image--big" style="background-image: url(/images/behandeling.png);"></div>
@@ -84,9 +84,9 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/behandelingen.php";
 
 						<?php 
 						foreach ($technieken as $techniek) {
-							$pdfFile = str_replace(' ', '%20', $techniek[5]['text']);
+							$pdfFile = str_replace(' ', '%20', $techniek[3]['text']);
 							if(!empty($pdfFile)){
-								$pdfLink = 	'<a class="behandeling--left-link '.$techniek[5]['editID'].'" href="/images/uploads/'.$pdfFile.'.pdf" target=blank>Bekijk het informatieblad over deze
+								$pdfLink = 	'<a class="behandeling--left-link '.$techniek[3]['editID'].'" href="/images/uploads/'.$pdfFile.'.pdf" target=blank>Bekijk het informatieblad over deze
 								behandeling</a>';
 							}else{
 								$pdfLink = '';
@@ -94,10 +94,10 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/behandelingen.php";
 
 							echo '
 							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-								<h4 class="'.$techniek[2]['editID'].'">'.$techniek[2]['text'].'</h4>
-								<p class="'.$techniek[3]['editID'].'">'.$techniek[3]['text'].'</p>
+								<h4 class="'.$techniek[0]['editID'].'">'.$techniek[0]['text'].'</h4>
+								<p class="'.$techniek[1]['editID'].'">'.$techniek[1]['text'].'</p>
 								'.$pdfLink.'
-								<div class="behandeling--case--img '.$techniek[4]['editID'].'" style="background-image: url(/images/uploads/'.$techniek[4]['text'].');">
+								<div class="behandeling--case--img '.$techniek[2]['editID'].'" style="background-image: url(/images/uploads/'.$techniek[2]['text'].');">
 								</div>
 							</div>
 							';

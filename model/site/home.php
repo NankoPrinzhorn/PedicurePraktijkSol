@@ -1,5 +1,5 @@
 <?php 
 $data = $db->getPageData("home", $admin);
 
-$behandelingen = $db->fetchKoppelTabelInfoForSite('concept_behandelingen', $admin);
+$behandelingen = $db->fetchKoppelTabelInfoForSite('live_behandelingen', $admin);
 ?>

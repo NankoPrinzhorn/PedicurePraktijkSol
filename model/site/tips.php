@@ -1,5 +1,5 @@
 <?php 
 $data = $db->getPageData("tips", $admin);
 
-$tips = $db->fetchTips($admin);
+$tips = $db->fetchKoppelTabelInfoForSite('live_tips', $admin);
 ?>
