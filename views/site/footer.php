@@ -33,8 +33,8 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/footer.php";
       <div class="col-md-4">
         <div class="ruimte_boven2"></div>
           <p><strong>Aangesloten bij:</strong></p>
-          <img class="provoet_logo" src="images/logo-provoet.svg" alt="ProVoet logo";>
-          <img class="honk_logo" src="images/logo-honk.svg" alt="Honk logo";>
+          <a class="footerimg" href="https://www.provoet.nl" target="blank"><img class="provoet_logo" src="images/logo-provoet.svg" alt="ProVoet logo";></a>
+          <a class="footerimg" href="https://www.honk.nu" target="blank"><img class="honk_logo" src="images/logo-honk.svg" alt="Honk logo";></a>
       </div>
 
         </div>
