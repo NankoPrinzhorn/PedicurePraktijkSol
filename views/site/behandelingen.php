@@ -89,13 +89,14 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/behandelingen.php";
 								$pdfLink = 	'<a class="behandeling--left-link '.$techniek[3]['editID'].'" href="/images/uploads/'.$pdfFile.'.pdf" target=blank>Bekijk het informatieblad over deze
 								behandeling</a>';
 							}else{
-								$pdfLink = '';
+								$pdfLink = '<a class="behandeling--left-link dontShow" href="" target=blank>Bekijk het informatieblad over deze
+								behandeling</a>';
 							}
 
 							echo '
 							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 								<h4 class="'.$techniek[0]['editID'].'">'.$techniek[0]['text'].'</h4>
-								<p class="'.$techniek[1]['editID'].'">'.$techniek[1]['text'].'</p>
+								<p class="techniektext--case '.$techniek[1]['editID'].'">'.$techniek[1]['text'].'</p>
 								'.$pdfLink.'
 								<div class="behandeling--case--img '.$techniek[2]['editID'].'" style="background-image: url(/images/uploads/'.$techniek[2]['text'].');">
 								</div>

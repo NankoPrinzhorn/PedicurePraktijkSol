@@ -110,14 +110,15 @@ section {
   border-bottom: 2px #9CD1BE solid;
   margin-bottom: 5px;
   position: relative;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+ }
   .behandeling--case .behandeling--case--img {
     height: 250px;
     background-size: cover;
     background-position: center;
     margin-top: 20px; }
   .behandeling--case a {
-    color: #9CD1BE !important;
+    color: #9CD1BE;
     font-size: 12px !important;
     position: relative; }
   .behandeling--case hr {
@@ -179,5 +180,15 @@ section {
     padding-bottom: 10px;
     color: #9CD1BE;
     padding-top: 50px; }
+    .techniektext--case{
+      min-height: 150px;
+    }
+    .dontShow{
+      /* display: none; */
+      min-height: 50px;
+      color:rgba(0, 0, 0, 0.0) !important;
+      cursor: default;
+      pointer-events: none;      
+    }
 
 /*# sourceMappingURL=behandelingen.css.map */
