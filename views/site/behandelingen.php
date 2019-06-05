@@ -84,7 +84,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/behandelingen.php";
 
 						<?php 
 						foreach ($technieken as $techniek) {
-							$pdfFile = str_replace(' ', '%20', $techniek[5]['text']);
+							$pdfFile = str_replace(' ', '%20', $techniek[3]['text']);
 							if(!empty($pdfFile)){
 								$pdfLink = 	'<a class="behandeling--left-link '.$techniek[3]['editID'].'" href="/images/uploads/'.$pdfFile.'.pdf" target=blank>Bekijk het informatieblad over deze
 								behandeling</a>';
