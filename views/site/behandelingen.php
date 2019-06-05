@@ -86,14 +86,11 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/behandelingen.php";
 						foreach ($technieken as $techniek) {
 							echo '
 							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-								<h4>'.$techniek[2]['text'].'</h4>
-								<p>Een nagelbeugel is een op maat gemaakt hulpmiddel om uw nagelgroei te reguleren. Ze
-									begeleidt als het ware de groei van de nagel in de juiste richting. Er zijn
-									verschillende typen nagelbeugels. Afhankelijk van uw nagels en uw situatie wordt voor de
-									meest geschikte beugel gekozen.</p>
+								<h4 class="'.$techniek[2]['editID'].'">'.$techniek[2]['text'].'</h4>
+								<p class="'.$techniek[3]['editID'].'">'.$techniek[3]['text'].'</p>
 								<a class="behandeling--left-link" href="#">Bekijk het informatieblad over deze
 									behandeling</a>
-								<div class="behandeling--case--img" style="background-image: url(/images/behandeling.png);">
+								<div class="behandeling--case--img" style="background-image: url(/images/uploads/'.$techniek[4]['text'].');">
 								</div>
 							</div>
 							';
