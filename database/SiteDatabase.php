@@ -21,7 +21,7 @@ class SiteDatabase extends Database {
                     `page`,
                     `content` as text,
                     CONCAT(`id`, '-', Replace(`htmlID`, ' ', '_'), 'text') as editID
-                    FROM concept WHERE page = ? ORDER BY pageOrder ASC";
+                    FROM live WHERE page = ? AND weergeven = 1 ORDER BY pageOrder ASC ";
             $params = array($page);
         } else {
             //concept
@@ -82,44 +82,17 @@ class SiteDatabase extends Database {
     }
 
     public function fetchKoppelTabelInfoForSite($koppel_tabel, $admin) {
-        $koppel_columns = $this->fetchAll("SHOW COLUMNS FROM `$koppel_tabel`");
-        $koppel_info = $this->fetchAll("SELECT * FROM `$koppel_tabel` WHERE deleted = 0 AND weergeven = 1 ORDER BY pageOrder ASC");
-        
-        $items = array();
-
-        foreach ($koppel_info as $item) {
-            $current_item = array();
-
-            foreach($koppel_columns as $column) {
-                if ($column["Type"] == "text" || 
-                    $column["Type"] == "varchar(255)" ||
-                    $column["Type"] == "int(1)" ||
-                    $column["Type"] == "longtext") {
-
-                    $array = array(
-                        'id' => $item['id'],
-                        'inputType' => $column["Type"],
-                        'Field' => $column["Field"],
-                        'editID' => $item['id']."-".$koppel_tabel."-".$column['Field'].'text',
-                        'htmlID' => str_replace("concept_", "", $koppel_tabel),
-                        'text' => $item[$column['Field']],
-                        'koppel_tabel' => $koppel_tabel
-                    );
-                    array_push($current_item, $array);
-                }
-            }
-
-            array_push($items, $current_item);
+        if (!$admin) {
+            echo "JA";
+            $koppel_columns = $this->fetchAll("SHOW COLUMNS FROM `$koppel_tabel`");
+            $koppel_info = $this->fetchAll("SELECT * FROM `$koppel_tabel` WHERE weergeven = 1 ORDER BY pageOrder ASC");
+        } else {
+            echo "NEE!0";
+            $koppel_tabel = str_replace('live', 'concept', $koppel_tabel);
+            $koppel_columns = $this->fetchAll("SHOW COLUMNS FROM `$koppel_tabel`");
+            $koppel_info = $this->fetchAll("SELECT * FROM `$koppel_tabel` WHERE weergeven = 1 AND deleted = 0 ORDER BY pageOrder ASC");
         }
-
-        return $items;
-    }
-
-    public function fetchTips($admin) {
-        $koppel_tabel = "concept_tips";
-
-        $koppel_columns = $this->fetchAll("SHOW COLUMNS FROM `$koppel_tabel`");
-        $koppel_info = $this->fetchAll("SELECT * FROM `$koppel_tabel` WHERE deleted = 0 AND weergeven = 1 ORDER BY pageOrder ASC");
+        
         
         $items = array();
 
@@ -129,7 +102,6 @@ class SiteDatabase extends Database {
             foreach($koppel_columns as $column) {
                 if ($column["Type"] == "text" || 
                     $column["Type"] == "varchar(255)" ||
-                    $column["Type"] == "int(1)" ||
                     $column["Type"] == "longtext") {
 
                     $array = array(

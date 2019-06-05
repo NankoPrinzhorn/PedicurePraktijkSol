@@ -41,10 +41,10 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/prijslijst.php";
 					echo '
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 prijs--col">
 						<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-							<p class="'.$prijs[2]['editID'].'">'.$prijs[2]['text'].'</p>
+							<p class="'.$prijs[0]['editID'].'">'.$prijs[0]['text'].'</p>
 						</div>
 						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-							<p class="prijs">&#8364;<span class="'.$prijs[3]['editID'].'">'.$prijs[3]['text'].'</span></p>
+							<p class="prijs">&#8364;<span class="'.$prijs[1]['editID'].'">'.$prijs[1]['text'].'</span></p>
 						</div>
 					</div>
 					';
