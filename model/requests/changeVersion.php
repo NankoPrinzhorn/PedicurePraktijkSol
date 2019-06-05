@@ -48,7 +48,7 @@ if ($_GET) {
         $db->performQuery("TRUNCATE `$updateTable`");
         foreach ($liveInfo as $item) {
 			$sqlValueString = "";
-			$params = [];
+			$params = array();
 			foreach ($liveColumns as $value) {
 				if (!in_array($value['Field'], $ignore)) {
                     $sqlValueString .= "?,";
