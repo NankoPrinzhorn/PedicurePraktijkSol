@@ -179,3 +179,7 @@ input[type=radio] {
     margin-top: 25px;
     float: left;
 }
+
+.panel.versieBeheer {
+    width: 0px;
+}
