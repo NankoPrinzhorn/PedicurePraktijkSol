@@ -23,6 +23,10 @@ $db = new SiteDatabase();
 		<meta name="description" content="Pedicure prakrijk Sol, Voor iedereen die verzorgde voeten wilt">
 		<meta name="keywords" content="pedicure prakrijk sol,pedicure,alkmaar,pedicure alkmaar,joke sol,provoet,ortheses,nagelbeugel,voeten">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Favicon -->
+		<link rel="icon" href="favicon.png" type="image/x-icon"/>
+    	<link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
 		
 		<!-- CSS -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -31,6 +35,7 @@ $db = new SiteDatabase();
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="/css/framework.css">
+
 
 		<?php 
 		if (file_exists($_SERVER['DOCUMENT_ROOT']."/css".$_SERVER['REQUEST_URI'].".css")) {
