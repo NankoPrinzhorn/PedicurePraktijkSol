@@ -18,22 +18,22 @@ console.log(window.location.pathname);
 if (window.location.pathname == "/404") {
     $("#navbar-brand-logo").attr("src","/images/logo.svg");
     $('#navbar').addClass('navbar-scrolled'); 
+} else {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 80) { // this refers to window
+            if ($("#navbar-brand-logo").attr("src") != "/images/logo.svg") { //fix netwerk issue
+                $("#navbar-brand-logo").attr("src","/images/logo.svg");
+                $('#navbar').addClass('navbar-scrolled');    
+            }      
+        } else {
+            if ($("#navbar-brand-logo").attr("src") != "/images/logo_w.svg") { //fix netwerk issue
+                $("#navbar-brand-logo").attr("src","/images/logo_w.svg");
+                $('#navbar').removeClass('navbar-scrolled');
+            }
+        }
+    });
 }
 
-
-$(window).scroll(function () {
-    if ($(this).scrollTop() > 80) { // this refers to window
-        if ($("#navbar-brand-logo").attr("src") != "/images/logo.svg") { //fix netwerk issue
-            $("#navbar-brand-logo").attr("src","/images/logo.svg");
-            $('#navbar').addClass('navbar-scrolled');    
-        }      
-    } else {
-        if ($("#navbar-brand-logo").attr("src") != "/images/logo_w.svg") { //fix netwerk issue
-            $("#navbar-brand-logo").attr("src","/images/logo_w.svg");
-            $('#navbar').removeClass('navbar-scrolled');
-        }
-    }
-});
 
 $(window).on("load", function () {
     $('#preload').addClass('preload-complete')
