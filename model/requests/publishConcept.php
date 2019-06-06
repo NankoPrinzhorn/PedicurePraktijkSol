@@ -67,6 +67,7 @@ if ($_GET) {
 			$db->performQuery("INSERT INTO `$table` ($sqlColumnString) VALUES ($sqlValueString)", $params);
 		}
     //| end concept table naar live |\\
-    }
+        echo json_encode(true);
+    }   
 }
 ?>

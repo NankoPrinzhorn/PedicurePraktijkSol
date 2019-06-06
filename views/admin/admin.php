@@ -28,14 +28,17 @@ include_once "adminSidebar.php";
                 $active = ($version['weergeven'] == 1) ? "(huidige versie)" : "";
                 echo "
                 <div class='row'>
-                    <div class='col-md-4'>
-                    <h2 class='updateVersieBeheer versie-".$version['version']."'>Versie ".$version['version']."
+                    <div class='col-md-3'>
+                    <h3>Versie ".$version['version']."</h3>
                     </div>
-                    <div class='col-md-4'>
-a
+                    <div class='col-md-3'>
+                    <h3>".$version['updated_at']."</h3>
                     </div>
-                    <div class='col-md-4'>
-a
+                    <div class='col-md-3'>
+                    <h3>".$active."</h3>
+                    </div>
+                    <div class='col-md-3'>
+                    <button class='updateVersieBeheer versie-".$version['version']."'>verander van versie</button>
                     </div>
                 </div>
                 ";
@@ -49,6 +52,28 @@ a
         ?>
     </div>
 </div>
+<script>
+$('.updateVersieBeheer').on('click', function() {
+    var versie = $(this).attr('class').split(' ')[1].split('-')[1];
+    console.log(versie);
+    if (confirm("Weet u zeker dat u wilt veranderen van versie? Als u ja drukt zal versie "+versie+" zichtbaar worden voor alle gebruikers")) {
+        ajaxListRequest = $.ajax({
+            url:'/model/requests/changeVersion.php',
+            data: {
+                versie: versie
+            },
+            success: function(response) {
+                if (response) {
+                    alert("Versie is successvol aangepast!");
+                    window.location.href = "/admin";
+                } else {
+                    alert("Er is iets fout gegaan, probeer het later nog eens");
+                }
+            }
+        });
+    }
+});
+</script>
 <div class="fake_body active_panel full cmsExplanation">
     <link rel="stylesheet" href="/css/site/framework.css">    
     <div class="menuExplanation">

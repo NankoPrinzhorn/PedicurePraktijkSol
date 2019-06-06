@@ -7,7 +7,6 @@
     left: 100%;
     transition: .5s;
     overflow-y: auto;
-    z-index: 1;
     background-color: #eee;
 }
 
@@ -113,6 +112,18 @@
     margin-bottom: 40px;
 }
 
-.versieBeheer h2 {
-    
+.versieBeheer h3 {
+    font-size: 25px !important;
+    margin-top: 10px;
+}
+
+.versieBeheer button {
+    background: #67ABA4;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 40px;
+    float: left;
+    margin-top: 10px;
+    border: 0;
+    position: relative;
 }

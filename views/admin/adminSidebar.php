@@ -70,27 +70,6 @@ $('#logout').on('click', function() {
     })
 });
 
-$('.updateVersieBeheer').on('click', function() {
-    var versie = $(this).attr('class').split(' ')[1].split('-')[1];
-
-    if (confirm("Weet u zeker dat u wilt veranderen van versie? Als u ja drukt zal versie "+versie+" zichtbaar worden voor alle gebruikers")) {
-        ajaxListRequest = $.ajax({
-            url:'/model/requests/changeVersion.php',
-            data: {
-                versie: versie
-            },
-            success: function(response) {
-                if (response) {
-                    alert("Versie is successvol aangepast!");
-                    window.location.href = "/admin";
-                } else {
-                    alert("Er is iets fout gegaan, probeer het later nog eens");
-                }
-            }
-        });
-    }
-});
-
 $('.showSite').on('click', function () {
     console.log(window.location.search.substr(1).split('=')[1]);
     var currentPage = window.location.search.substr(1).split('=')[1].toLowerCase();
