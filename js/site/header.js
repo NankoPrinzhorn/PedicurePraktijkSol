@@ -14,6 +14,13 @@ $('#mobile-nav-btn').on("click", function () {
     $('body, html').toggleClass('no-scroll');
 })
 
+console.log(window.location.pathname);
+if (window.location.pathname == "/404") {
+    $("#navbar-brand-logo").attr("src","/images/logo.svg");
+    $('#navbar').addClass('navbar-scrolled'); 
+}
+
+
 $(window).scroll(function () {
     if ($(this).scrollTop() > 80) { // this refers to window
         if ($("#navbar-brand-logo").attr("src") != "/images/logo.svg") { //fix netwerk issue
