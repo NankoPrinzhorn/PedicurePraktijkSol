@@ -51,20 +51,6 @@ foreach ($pages as $pageName => $page) {
 }
 ?>
 <div class="panel versieBeheer">
-    <h1>Versie Beheer</h1>
-    <?php 
-    $versions = $db->fetchAll("SELECT `version`, `weergeven`, `updated_at` FROM `live`");
-
-    $array = array();
-    foreach ($versions as $version) {
-        if (!in_array($version['version'], $array)) {
-            $active = ($version['weergeven'] == 1) ? "(huidige versie)" : "";
-            echo "<h2 class='updateVersieBeheer versie-".$version['version']."'>Versie ".$version['version']." from : ".$version['updated_at']." ".$active."</h2>";
-
-            array_push($array, $version['version']);
-        }
-    }
-    ?>
 </div>
 <script type="text/javascript" src="/js/admin/adminSidebar.js"></script>
 <script type="text/javascript" >
