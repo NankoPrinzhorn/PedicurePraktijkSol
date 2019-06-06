@@ -66,6 +66,10 @@ $db = new SiteDatabase();
 					include_once "views/site/home.php";
 				} else {
 					//404
+					var_dump($Structure.$_SERVER['REQUEST_URI']);
+					if ($Structure.$_SERVER['REQUEST_URI'] !== "/site/404") {
+					header("location: /404");
+					}
 					include_once "views/404.php";
 				}
 			}

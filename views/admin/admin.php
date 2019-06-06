@@ -17,7 +17,36 @@ include_once "adminSidebar.php";
     <?php
     }
     ?>
-    <div class="fake_body versieBeheer">
+    <div class="fake_body versieBeheer" style="padding: 100px;">
+        <h1>Versie Beheer</h1>
+        <?php 
+        $versions = $db->fetchAll("SELECT `version`, `weergeven`, `updated_at` FROM `live`");
+
+        $array = array();
+        foreach ($versions as $version) {
+            if (!in_array($version['version'], $array)) {
+                $active = ($version['weergeven'] == 1) ? "(huidige versie)" : "";
+                echo "
+                <div class='row'>
+                    <div class='col-md-4'>
+                    <h2 class='updateVersieBeheer versie-".$version['version']."'>Versie ".$version['version']."
+                    </div>
+                    <div class='col-md-4'>
+a
+                    </div>
+                    <div class='col-md-4'>
+a
+                    </div>
+                </div>
+                ";
+
+
+                // echo "<h2 class='updateVersieBeheer versie-".$version['version']."'>Versie ".$version['version']." from : ".$version['updated_at']." ".$active."</h2>";
+
+                array_push($array, $version['version']);
+            }
+        }
+        ?>
     </div>
 </div>
 <div class="fake_body active_panel full cmsExplanation">
