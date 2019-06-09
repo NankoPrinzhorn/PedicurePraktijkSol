@@ -401,7 +401,13 @@ class SiteDatabase extends Database {
             
             case "longtext":
                 echo "<label for=".$item["editID"].">".$item["htmlID"]."</label>";
-                echo "<img class='image-".$item['editID']."' style='width: 100%; margin-bottom: 20px;' src='/images/uploads/".$item['text']."'>";
+                if ($item['Field'] == "pdf") {
+                    echo "<img class='image-".$item['editID']."' style='width: 20%; margin-bottom: 20px;' src='/images/pdf.png'>";
+                    $type = "pdf";
+                } else {
+                    echo "<img class='image-".$item['editID']."' style='width: 100%; margin-bottom: 20px;' src='/images/uploads/".$item['text']."'>";
+                    $type = "image";
+                }
                 echo "<input type='file' name='image' id='image-".$item['editID']."' style='display:none;'>";
                 echo "<br>";
 
@@ -421,6 +427,7 @@ class SiteDatabase extends Database {
                                 fd.append('id', ".$item['id'].");
                                 fd.append('koppel_tabel', '".$item['koppel_tabel']."');
                                 fd.append('image',files);
+                                fd.append('fileType','".$type."');
 
                                 $.ajax({
                                     url:'/model/requests/updateConcept.php',
@@ -430,15 +437,19 @@ class SiteDatabase extends Database {
                                     processData: false,
                                     success: function(response) {
                                         if (response != 0) {
-                                            $('.image-".$item['editID']."').attr('src', '/images/uploads/'+response);
+                                            if ('".$type."' == 'image') {
+                                                $('.image-".$item['editID']."').attr('src', '/images/uploads/'+response);
 
-                                            if ($('.".$item['editID']."').is('div')) {
-                                                $('.".$item['editID']."').css('background-image', 'url(/images/uploads/'+response.replace(' ', '%20')+')');
+                                                if ($('.".$item['editID']."').is('div')) {
+                                                    $('.".$item['editID']."').css('background-image', 'url(/images/uploads/'+response.replace(' ', '%20')+')');
+                                                } else {
+                                                    $('.".$item['editID']."').attr('src', '/images/uploads/'+response.replace(' ', '%20'));
+                                                } 
                                             } else {
-                                                $('.".$item['editID']."').attr('src', '/images/uploads/'+response.replace(' ', '%20'));
-                                            }
+                                                alert('PDF successvol geupload!');
+                                            }                                        
                                         } else {
-                                            alert('image is niet geupload! probeer het later nog eens');
+                                            alert('er is iets fout gegaan! probeer het later nog eens');
                                         }
                                     }
                                 });

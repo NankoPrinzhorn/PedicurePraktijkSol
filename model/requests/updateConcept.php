@@ -36,7 +36,12 @@ if(!empty($_FILES)) {
     $imageFileType = pathinfo($location,PATHINFO_EXTENSION);
 
     /* Valid Extensions */
-    $valid_extensions = array("jpg","jpeg","png");
+    if ($_POST['fileType'] == "image") {
+        $valid_extensions = array("jpg","jpeg","png");
+    } else {
+        $valid_extensions = array("pdf");
+    }
+    echo $imageFileType;    
     /* Check file extension */
     if(!in_array(strtolower($imageFileType),$valid_extensions) ) {
         $uploadOk = 0;
@@ -53,7 +58,11 @@ if(!empty($_FILES)) {
 
         if(move_uploaded_file($_FILES['image']['tmp_name'],$location)){
             if(!empty($_POST['koppel_tabel'])) {
-                $db->performQuery("UPDATE `".$_POST['koppel_tabel']."` SET image = '$htmlLocation' WHERE id = ".$_POST['id']);
+                if ($_POST['fileType'] == "image") {
+                    $db->performQuery("UPDATE `".$_POST['koppel_tabel']."` SET image = '$htmlLocation' WHERE id = ".$_POST['id']);
+                } else {
+                    $db->performQuery("UPDATE `".$_POST['koppel_tabel']."` SET pdf = '$htmlLocation' WHERE id = ".$_POST['id']);
+                }
             } else {
                 $db->performQuery("UPDATE `concept` SET content = '$htmlLocation' WHERE id = ".$_POST['id']);
 
