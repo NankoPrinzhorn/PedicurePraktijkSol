@@ -199,3 +199,8 @@ body {
 .avgPrivacy {
     text-align: center;
 }
+
+.avgPrivacy .avgPrivacyLink{
+    color: #9CD1BE;
+    text-decoration: underline;
+}

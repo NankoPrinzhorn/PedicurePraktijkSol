@@ -28,6 +28,8 @@
     color: #9CD1BE;
     font-size: 5em;
     font-family: 'Playfair Display', serif;
+    margin-top: -100px;
+    margin-bottom: 20px;
   }
   #prijslijst--section .prijs--col:nth-of-type(odd) {
     background: #f4f4f4; }
