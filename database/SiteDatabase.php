@@ -251,7 +251,7 @@ class SiteDatabase extends Database {
             echo "</div>";
         }
         echo "</div>";
-        echo "<input type='button' value='Een nieuwe toevoegen' class='create-".$koppel_tabel."'>";
+        echo "<input type='button' value='Een nieuwe toevoegen' class='create-".$koppel_tabel."' style='0 20px 0 20px'>";
         echo "
             <script>
                 $('.create-".$koppel_tabel."').on('click', function() {
