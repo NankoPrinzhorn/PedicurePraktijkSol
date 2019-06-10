@@ -269,17 +269,16 @@ section {
 
 @media screen and (max-width: 992px) {
   .tips-box .tips-titel p {
-    left: 0;
-    right: 0;
-    margin: auto;
-    font-size: 50px;
-    text-align: center !important;
     opacity: 0.3;
-    top: -20px;
     color: #9CD1BE;
     font-family: 'playfair';
     font-weight: bold;
     z-index: 0;
+    font-size: 20px !important;
+  }
+  .tip-title-parent {
+    width: calc(100% - 30px);
+    margin-left: 15px; 
   }
 }
 
