@@ -111,7 +111,7 @@ $('.updateVersieBeheer').on('click', function() {
                         <p>U kunt daarna een derde keer op het plusje drukken om het cms weer weg te schuiven</p>                    
                     </div>
                     <div class="col-md-6">
-                    <img class="uitlegImg" src="/images/cmsMenu.jpeg" alt="">
+                    <img class="uitlegImg" src="/images/test.jpg" alt="">
                     </div>
                     <hr class="mainHR">
                 </div>
