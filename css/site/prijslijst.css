@@ -28,11 +28,11 @@
     color: #9CD1BE;
     font-size: 5em;
     font-family: 'Playfair Display', serif;
-    margin-top: -100px;
+    margin-top: -110px;
     margin-bottom: 20px;
   }
   #prijslijst--section .prijs--col:nth-of-type(odd) {
-    background: #f4f4f4; }
+    background: #F0F0F0; }
   #prijslijst--section .prijs--col {
     padding-bottom: 10px;
     padding-top: 10px; }
