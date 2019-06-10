@@ -30,7 +30,10 @@
     font-family: 'Playfair Display', serif;
     margin-top: -110px;
     margin-bottom: 20px;
-  }
+  }  @media (max-width: 600px) {
+    #PrijslijstH1{
+      font-size: 50px !important; }
+     }
   #prijslijst--section .prijs--col:nth-of-type(odd) {
     background: #F0F0F0; }
   #prijslijst--section .prijs--col {
