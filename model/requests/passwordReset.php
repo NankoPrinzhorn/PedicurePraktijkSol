@@ -29,7 +29,23 @@ if (!empty($_GET)) {
         //send mail
         $link = "http://pedicurepraktijksol.nl/model/requests/updatePassword.php?key=".$key;
 
+        $contact = "maurobertozzi11@gmail.com";
+        $message = "We hebben gehoord dat je een wachtwoordreset nodig hebt. Klik op de onderstaande link en je wordt doorgestuurd naar een beveiligde site waar je een nieuw wachtwoord kunt instellen.";
+        $name = $result['name'];
 
+        if (isset($email)) {
+            $to = $contact;
+            $subject = "pedicure praktijk sol wachtwoord reset";
+    
+
+        $email_message = "Beste, " . $name . " " . "\n \n" . $message . " \n \n" . $link;
+
+        $headers = 'From: ' . $to . "\r\n" .
+            'Reply-To: maurobertozzi11@gmail.com' . "\r\n" .
+            'X-Mailer: PHP/' . phpversion();
+
+        $mail = mail($to, $subject, $email_message, $headers);
+        }
         echo true;
     } else {
         echo false;
