@@ -49,7 +49,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/over-mij.php";
 			<img src="\images/logo-provoet-brancheorganisatie-voor-de-pedicure.png" alt="logo provoet">
 		</div>
 		<div class="col-md-12 avgPrivacy">
-			<a class="blabla" href="">Klik hier voor AVG/privacy</a>
+			<a class="avgPrivacyLink" href="">Klik hier voor AVG/privacy</a>
 		</div>
 	</div>
 </section>
