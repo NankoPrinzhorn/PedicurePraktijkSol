@@ -49,7 +49,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/tips.php";
 	</div>
 </section>
 
-<div class="row">
+<div class="row tip-title-parent">
   <div class="col-md-12 tips-titel">
     <h1>Tips</h1>
   </div>
