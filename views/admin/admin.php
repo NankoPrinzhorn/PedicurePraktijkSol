@@ -83,6 +83,7 @@ $('.updateVersieBeheer').on('click', function() {
                 <hr class="mainHR">
                 <a href="#uitlegCms">Uitleg cms</a> <span>|</span>
                 <a href="#uitlegMenu">Uitleg menu</a> <span>|</span>
+                <a href="#uitlegVersieBeheer">Uitleg versie beheer</a> <span>|</span>
                 <a href="#uitlegTitel">Uitleg titel</a> <span>|</span>
                 <a href="#uitlegTextarea">Uitleg tekstarea</a> <span>|</span>
                 <a href="#uitlegItems">Uitleg items</a> <span>|</span>
@@ -106,11 +107,22 @@ $('.updateVersieBeheer').on('click', function() {
                 <div class="col-md-12" id="uitlegMenu">
                     <h2>Uitleg menu</h2>
                     <div class="col-md-6 explanationtext">
-                        <p> de eerste keer dat u op het plusje drukt krijgt u een preview van de website te zien. Als u daarna nog een keer op het plusje drukt komt er een scherm uitgeschoven waarin u alle informatie kunt aanpassen.<P><p> Ook kunt u links boven op het woord "dashboard" klikken zodat U terug gaat naar de uitleg</p>
+                        <p> de eerste keer dat u op het plusje drukt krijgt u een preview van de website te zien. Als u daarna nog een keer op het plusje drukt komt er een scherm uitgeschoven waarin u alle informatie kunt aanpassen.<p><p> Ook kunt u links boven op het woord "dashboard" klikken zodat U terug gaat naar de uitleg</p>
                         <p>U kunt daarna een derde keer op het plusje drukken om het cms weer weg te schuiven</p>                    
                     </div>
                     <div class="col-md-6">
                     <img class="uitlegImg" src="/images/cmsMenu.jpeg" alt="">
+                    </div>
+                    <hr class="mainHR">
+                </div>
+
+                <div class="col-md-12" id="uitlegVersieBeheer">
+                    <h2>Uitleg versiebeheer</h2>
+                    <div class="col-md-6 explanationtext">
+                        <p> de eerste keer dat u op het plusje drukt krijgt u een preview van de website te zien. Als u daarna nog een keer op het plusje drukt komt er een scherm uitgeschoven waarin u alle informatie kunt aanpassen.<p>
+                    </div>
+                    <div class="col-md-6">
+                    <img class="uitlegImg" src="/images/versiebeheer-cms.png" alt="">
                     </div>
                     <hr class="mainHR">
                 </div>
