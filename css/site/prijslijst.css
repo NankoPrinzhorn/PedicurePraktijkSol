@@ -28,9 +28,14 @@
     color: #9CD1BE;
     font-size: 5em;
     font-family: 'Playfair Display', serif;
-  }
+    margin-top: -110px;
+    margin-bottom: 20px;
+  }  @media (max-width: 600px) {
+    #PrijslijstH1{
+      font-size: 50px !important; }
+     }
   #prijslijst--section .prijs--col:nth-of-type(odd) {
-    background: #f4f4f4; }
+    background: #F0F0F0; }
   #prijslijst--section .prijs--col {
     padding-bottom: 10px;
     padding-top: 10px; }
@@ -56,6 +61,11 @@
       list-style: none;
       padding-left: 0px;
       font-family: 'Montserrat', sans-serif; }
+      
+      .prijzenDisclaimer{
+        padding-top: 30px;
+        font-size: 1.3em;
+      }
 
 #zorgverzekering--section {
   background: white;

@@ -83,6 +83,7 @@ $('.updateVersieBeheer').on('click', function() {
                 <hr class="mainHR">
                 <a href="#uitlegCms">Uitleg cms</a> <span>|</span>
                 <a href="#uitlegMenu">Uitleg menu</a> <span>|</span>
+                <a href="#uitlegVersieBeheer">Uitleg versie beheer</a> <span>|</span>
                 <a href="#uitlegTitel">Uitleg titel</a> <span>|</span>
                 <a href="#uitlegTextarea">Uitleg tekstarea</a> <span>|</span>
                 <a href="#uitlegItems">Uitleg items</a> <span>|</span>
@@ -98,7 +99,7 @@ $('.updateVersieBeheer').on('click', function() {
                         <p>Als u op de knop "publiceren" klikt worden al u aanpassingen overgezet naar de live site.</p>                    
                     </div>
                     <div class="col-md-6">
-                        <img class="uitlegImg" src="/images/knoppen-cms.png" alt="">
+                        <img class="uitlegImg" src="/images/uitlegCmsImages/cmsknoppen.png" alt="">
                     </div>
                     <hr class="mainHR">
                 </div>
@@ -106,11 +107,22 @@ $('.updateVersieBeheer').on('click', function() {
                 <div class="col-md-12" id="uitlegMenu">
                     <h2>Uitleg menu</h2>
                     <div class="col-md-6 explanationtext">
-                        <p> de eerste keer dat u op het plusje drukt krijgt u een preview van de website te zien. Als u daarna nog een keer op het plusje drukt komt er een scherm uitgeschoven waarin u alle informatie kunt aanpassen.<P><p> Ook kunt u links boven op het woord "dashboard" klikken zodat U terug gaat naar de uitleg</p>
+                        <p> de eerste keer dat u op het plusje drukt krijgt u een preview van de website te zien. Als u daarna nog een keer op het plusje drukt komt er een scherm uitgeschoven waarin u alle informatie kunt aanpassen.<p><p> Ook kunt u links boven op het woord "dashboard" klikken zodat U terug gaat naar de uitleg</p>
                         <p>U kunt daarna een derde keer op het plusje drukken om het cms weer weg te schuiven</p>                    
                     </div>
                     <div class="col-md-6">
-                    <img class="uitlegImg" src="/images/cmsMenu.jpeg" alt="">
+                    <img class="uitlegImg" src="/images/uitlegCmsImages/cmsmenu.png" alt="">
+                    </div>
+                    <hr class="mainHR">
+                </div>
+
+                <div class="col-md-12" id="uitlegVersieBeheer">
+                    <h2>Uitleg versiebeheer</h2>
+                    <div class="col-md-6 explanationtext">
+                        <p> de eerste keer dat u op het plusje drukt krijgt u een preview van de website te zien. Als u daarna nog een keer op het plusje drukt komt er een scherm uitgeschoven waarin u alle informatie kunt aanpassen.<p>
+                    </div>
+                    <div class="col-md-6">
+                    <img class="uitlegImg" src="/images/uitlegCmsImages/cmsversie-beheer.png" alt="">
                     </div>
                     <hr class="mainHR">
                 </div>
@@ -121,7 +133,7 @@ $('.updateVersieBeheer').on('click', function() {
                         <p>U kunt de titel aanpassen door op het invoer veld te klikken met de tekst die u wilt aanpassen. Er zit een limiet van 50 karakters op</p>
                     </div>
                     <div class="col-md-6">
-                    <img class="uitlegImg" src="/images/titel-cms.png" alt="">
+                    <img class="uitlegImg" src="/images/uitlegCmsImages/cmstitel.png" alt="">
                     </div>
                     <hr class="mainHR">
                 </div>
@@ -132,7 +144,7 @@ $('.updateVersieBeheer').on('click', function() {
                         <p>U kunt de tekst onder de titel aanpassen door op het tekst veld velt te klikken met de tekst die u wilt aanpassen. Er zit een limiet van 450 karakters op</p>
                     </div>
                     <div class="col-md-6">
-                    <img class="uitleg Img" src="/images/textarea-cms.png" alt="">
+                    <img class="uitleg Img" src="/images/uitlegCmsImages/cmstekst-titel.png" alt="">
                     </div>
                     <hr class="mainHR">
                 </div>
@@ -144,7 +156,7 @@ $('.updateVersieBeheer').on('click', function() {
                         <p>Ook kunt u op het kruisje klikken om de desbetreffende item(behandeling) te verwijderen</p>
                     </div>
                     <div class="col-md-6">
-                    <img class="uitlegImg" src="/images/item-cms.png" alt="">
+                    <img class="uitlegImg" src="/images/uitlegCmsImages/cmsweergeven.png" alt="">
                     </div>
                 </div>
                 <div class="col-md-12">
@@ -153,7 +165,7 @@ $('.updateVersieBeheer').on('click', function() {
                         <p>Als u helemaal naar beneden scollt bij de inputs ziet u deze knop hiermee kan u nieuwe items(behandelingen) toevoegen</p>
                     </div>
                     <div class="col-md-6">
-                    <img class="uitlegImg" src="/images/newItem-cms.png" alt="">
+                    <img class="uitlegImg" src="/images/uitlegCmsImages/cmsnieuwe-toevoegen.png" alt="">
                     </div>
                     <hr class="mainHR">
                 </div>
@@ -165,7 +177,7 @@ $('.updateVersieBeheer').on('click', function() {
                         <p>Als u in het cms een afbeelding ziet kunt u daarop klikken U kunt dan op uw computer een andere afbeelding kiezen die dan de orginele afbeelding vervangt</p>
                     </div>
                     <div class="col-md-6">
-                    <img class="uitlegImg" src="/images/afbeelding-cms.png" alt="">
+                    <img class="uitlegImg" src="/images/uitlegCmsImages/cmsfoto-joke.png" alt="">
                     </div>
                     <hr class="mainHR">
                 </div>

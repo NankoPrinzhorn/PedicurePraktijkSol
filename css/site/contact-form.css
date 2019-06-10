@@ -1,98 +1,146 @@
 @charset "UTF-8";
+
 #contactform--section {
   position: relative;
   margin-top: 150px;
   background: #ffffff;
   padding-top: 75px;
-  padding-bottom: 75px; }
-  #contactform--section h2 {
-    color: #67ABA4; }
-  #contactform--section ul {
-    padding-left: 0px;
-    padding-top: 10px; }
-    #contactform--section ul a {
-      font-size: 15px;
-      color: black;
-      text-decoration: none; }
-    #contactform--section ul li {
-      list-style: none;
-      font-family: 'Montserrat', sans-serif;
-      color: black; }
-  #contactform--section #slogan--contactform h3 {
-    font-size: 20px;
-    font-weight: lighter;
-    margin-top: 40px;
-    position: relative; }
-    #contactform--section #slogan--contactform h3:before {
-      content: '“';
-      color: black;
-      font-size: 200px;
-      position: absolute;
-      top: -70px;
-      left: -20px;
-      opacity: 0.1; }
-  #contactform--section #slogan--contactform #slogan--name {
-    font-family: 'Montserrat', sans-serif;
-    opacity: 0.2;
-    padding-left: 25px;
-    color: black;
-    top: 10px;
-    position: relative; }
-    #contactform--section #slogan--contactform #slogan--name::before {
-      content: '';
-      width: 20px;
-      height: 1px;
-      background: black;
-      position: absolute;
-      margin-left: -25px;
-      margin-top: 9px; }
+  padding-bottom: 75px;
+}
+
+#contactform--section h2 {
+  color: #67ABA4;
+}
+
+#contactform--section ul {
+  padding-left: 0px;
+  padding-top: 10px;
+}
+
+#contactform--section ul a {
+  font-size: 15px;
+  color: black;
+  text-decoration: none;
+}
+
+#contactform--section ul li {
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+}
+
+#contactform--section #slogan--contactform h3 {
+  font-size: 20px;
+  font-weight: lighter;
+  margin-top: 40px;
+  position: relative;
+}
+
+#contactform--section #slogan--contactform h3:before {
+  content: '“';
+  color: black;
+  font-size: 200px;
+  position: absolute;
+  top: -70px;
+  left: -20px;
+  opacity: 0.1;
+}
+
+#contactform--section #slogan--contactform #slogan--name {
+  font-family: 'Montserrat', sans-serif;
+  opacity: 0.2;
+  padding-left: 25px;
+  color: black;
+  top: 10px;
+  position: relative;
+}
+
+#contactform--section #slogan--contactform #slogan--name::before {
+  content: '';
+  width: 20px;
+  height: 1px;
+  background: black;
+  position: absolute;
+  margin-left: -25px;
+  margin-top: 9px;
+}
+
+#contactform--section #form--right {
+  background: white;
+  padding: 50px 50px;
+  border-bottom: 2px #67ABA4 solid;
+  position: absolute;
+  top: -125px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  z-index: 0;
+}
+
+@media screen and (max-width: 992px) {
   #contactform--section #form--right {
-    background: white;
-    padding: 50px 50px;
-    border-bottom: 2px #67ABA4 solid;
-    position: absolute;
-    top: -125px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-    z-index: 0; }
-    @media screen and (max-width: 992px) {
-      #contactform--section #form--right {
-        position: relative;
-        top: 50px; } }
-    #contactform--section #form--right h3 {
-      color: #67ABA4;
-      padding-bottom: 30px; }
-    #contactform--section #form--right input, #contactform--section #form--right textarea {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: bold;
-      width: 100%;
-      padding: 10px 15px;
-      background: #F6F7F7;
-      border-style: none;
-      margin-bottom: 10px;
-      outline: none; }
-      @media screen and (max-width: 992px) {
-        #contactform--section #form--right input, #contactform--section #form--right textarea {
-          width: 100% !important; } }
-    #contactform--section #form--right .btn {
-      background: #67ABA4;
-      color: white;
-      border-radius: 50px;
-      padding: 10px 40px;
-      float: right;
-      margin-top: 10px;
-      position: relative; }
-      @media screen and (max-width: 992px) {
-        #contactform--section #form--right .btn {
-          width: 100%; } }
-    #contactform--section #form--right #form--msg {
-      width: 55%;
-      font-size: 10px;
-      float: left; }
-      #contactform--section #form--right #form--msg a {
-        color: #67ABA4;
-        font-size: 10px; }
-      @media screen and (max-width: 992px) {
-        #contactform--section #form--right #form--msg {
-          width: 100%; } }
+    position: relative;
+    top: 50px;
+    padding-bottom: 80px;
+    padding: 20px;
+    padding-bottom: 100px;
+  }
+}
+
+#contactform--section #form--right h3 {
+  color: #67ABA4;
+  padding-bottom: 30px;
+}
+
+#contactform--section #form--right input,
+#contactform--section #form--right textarea {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  width: 100%;
+  padding: 10px 15px;
+  background: #F6F7F7;
+  border-style: none;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+@media screen and (max-width: 992px) {
+
+  #contactform--section #form--right input,
+  #contactform--section #form--right textarea {
+    width: 100% !important;
+  }
+}
+
+#contactform--section #form--right .btn {
+  background: #67ABA4;
+  color: white;
+  border-radius: 50px;
+  padding: 10px 40px;
+  float: right;
+  margin-top: 10px;
+  position: relative;
+}
+
+@media screen and (max-width: 992px) {
+  #contactform--section #form--right .btn {
+    width: 100%;
+  }
+}
+
+#contactform--section #form--right #form--msg {
+  width: 55%;
+  font-size: 10px;
+  float: left;
+}
+
+#contactform--section #form--right #form--msg a {
+  color: #67ABA4;
+  font-size: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  #contactform--section #form--right #form--msg {
+    width: 100%;
+  }
+}
 
 /*# sourceMappingURL=contact-form.css.map */

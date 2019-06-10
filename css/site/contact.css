@@ -28,6 +28,10 @@
         content: "" !important;
     }
 
+    .contact-hero .intro h1 {
+        font-size: 30px;
+    }
+
 }
 
 .header-buttons{
@@ -138,14 +142,6 @@
     top: -80px;
 }
 
-@media only screen and (max-width: 992px) {
-
-    .reviewInformation:before {
-        content: "" !important;
-    }
-
-} 
-
 .reviewInformation h4 {
     position: relative;
     display: block;
@@ -234,13 +230,29 @@
     float: right;
 }
 
+@media only screen and (max-width: 992px) {
 
+    .reviewInformation:before {
+        content: "" !important;
+    }
 
- 
+    .contactForm {
+        padding: 20px;
+        padding-bottom: 50px;
+    }
+    .contactForm h4 {
+        font-size: 30px;
+    }
 
+    .contactForm input[type=text] {
+        width: 100%;
+        margin-top: 10px;
+    }
 
-
-
-
-
-
+    .contactForm button {
+        float: unset;
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+} 

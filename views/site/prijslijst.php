@@ -32,7 +32,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/prijslijst.php";
 	<div class="container">
 		<div class="row">
 			<div id="title" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" align="center">
-				<h1 id="PrijslijstH1">Prijslijst</h1>
+				<h1 id="PrijslijstH1">PRIJSLIJST</h1>
 				<a href="/contact"><button id="prijslijst--btn">Maak nu een afspraak</button></a>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-md-offset-2">
@@ -52,6 +52,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/prijslijst.php";
 				?>
 			</div>
 		</div>
+		<p class="prijzenDisclaimer col-md-offset-2">* Prijzen zijn inclusief BTW</p>
 	</div>
 </section>
 
@@ -61,7 +62,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/prijslijst.php";
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-md-offset-2" align="center">
 					<h2 class="<?=$data[4]['editID']?>"><?=$data[4]['text']?></h2>
-					<p class="<?=$data[5]['editID']?>" style="white-space: pre-line"><?=$data[5]['text']?></p>
+					<p class="<?=$data[5]['editID']?>" style="white-space: pre-line"><?=str_replace("www.zorgwijzer.nl/vergoedingen/pedicure", "<a href='www.zorgwijzer.nl/vergoedingen/pedicure'>zorgwijzer.nl</a>", $data[5]['text'])?></p>
 				</div>
 			</div>
 		</div>
