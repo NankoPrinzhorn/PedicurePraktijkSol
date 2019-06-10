@@ -185,10 +185,9 @@ body {
 }
 
 .home-behandelingen .behandeling-img {
-    background-image: url(../../images/behandeling.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: top center;
     min-height: 350px;
     height: 100%;
     position: absolute;
@@ -230,6 +229,9 @@ body {
         content: "" !important;
     }
 
+    .home-behandelingen .behandeling-img {
+        position: unset;
+    }
 }
 
 .home-tip .inner-tip h4 {

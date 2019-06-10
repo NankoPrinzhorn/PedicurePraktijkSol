@@ -41,7 +41,7 @@ if(!empty($_FILES)) {
     } else {
         $valid_extensions = array("pdf");
     }
-    echo $imageFileType;    
+    
     /* Check file extension */
     if(!in_array(strtolower($imageFileType),$valid_extensions) ) {
         $uploadOk = 0;
