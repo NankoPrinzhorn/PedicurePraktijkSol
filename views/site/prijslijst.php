@@ -50,6 +50,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/prijslijst.php";
 					';
 				}
 				?>
+				<p class="prijzenDisclaimer">* Prijzen zijn inclusief BTW</p>
 			</div>
 		</div>
 	</div>
