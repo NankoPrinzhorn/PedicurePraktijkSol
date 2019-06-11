@@ -12,7 +12,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/contact.php";
 
 
         <div class="header-buttons col-md-12">
-            <a href="https://tinyurl.com/y6fh4xwv"><button>Bekijk de locatie</button></a>
+            <a href="https://tinyurl.com/y6fh4xwv" target="blank"><button>Bekijk de locatie</button></a>
             <!-- <a href="mailto:gebruikersnaam@emailadres.nl"><button>Neem direct contact op</button></a> -->
         </div>
       </div>
@@ -27,7 +27,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/contact.php";
             
             <h4 class="<?=$data[1]['editID']?>"><?=$data[1]['text']?></h4>
             <p class="info-alkmaar <?=$data[2]['editID']?>" style='white-space: pre-line'><?=$data[2]['text']?></p>
-            <a href="https://tinyurl.com/y6fh4xwv"><u>Kijk op de kaart</u></a>
+            <a href="https://tinyurl.com/y6fh4xwv" target="blank"><u>Kijk op de kaart</u></a>
             </div>	
 		</div>
 
@@ -37,7 +37,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/contact.php";
            
             <h4 class="<?=$data[3]['editID']?>"><?=$data[3]['text']?></h4> 
             <p class="info-castricum <?=$data[4]['editID']?>"><?=$data[4]['text']?></p> 
-            <a href="https://tinyurl.com/y3g5urow"><u>Kijk op de kaart</u></a>	
+            <a href="https://tinyurl.com/y3g5urow" target="blank"><u>Kijk op de kaart</u></a>	
              </div>
         </div>
 	</div>
@@ -74,7 +74,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/contact.php";
                     <input type="email" name="email" placeholder="E-mailadres" required>
                     <textarea name="textArea"rows="4" cols="50" placeholder="Wat wilt u vragen" required></textarea>
                     <div class="col-md-6">
-                        <p>Door op versturen te drukken gaat u akkoord met onze <a href="/images/privacy-verklaring.pdf">voorwaarden</a></p>
+                        <p>Door op versturen te drukken gaat u akkoord met onze <a href="/images/privacy-verklaring.pdf" target="blank">voorwaarden</a></p>
                     </div>
                     <div class="col-md-6">
                         <button type="submit">Versturen</button>
