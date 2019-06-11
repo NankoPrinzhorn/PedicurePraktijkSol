@@ -21,7 +21,10 @@
 	    }());
 
 	$.fn.smoothScroll = function(speed) {
+
 		speed = ~~speed || 400;
+		headerHeight = $('nav').height() + 70;
+
 		// Look for links to anchors (on any page)
 		return this.find('a[href*="#"]').click(function(event) {
 			var hash = this.hash,
@@ -33,8 +36,7 @@
 					// …don’t jump to the link right away…
 					event.preventDefault();
 					// …and smoothly scroll to it
-					$scrollElement.stop().animate({ 'scrollTop': $hash.offset().top }, speed, function() {
-						location.hash = hash;
+					$scrollElement.stop().animate({ 'scrollTop': $hash.offset().top - headerHeight}, speed, function() {
 					});
 				}
 			}
