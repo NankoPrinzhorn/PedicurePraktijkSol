@@ -112,3 +112,4 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/behandelingen.php";
 </section>
 
 <script src="/js/site/behandelingen.js"></script>
+<script src="/js/site/smoothscroll.js"></script>
