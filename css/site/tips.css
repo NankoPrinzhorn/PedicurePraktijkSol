@@ -121,6 +121,7 @@
 
 .tipsBlock span {
   color: #9CD1BE;
+  font-size: 18px !important;
 }
 
 @media only screen and (max-width: 992px) {
@@ -153,11 +154,9 @@ section {
     background: white;
     padding-top: 100px;
     padding-bottom: 100px;
-    transition: all 1s ease;
     border-bottom: 2px #9CD1BE solid;
-    margin-bottom: 5px;
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .tips-box a {
@@ -173,11 +172,6 @@ section {
     background: #9CD1BE;
     border-style: none;
     margin-left: -20px;
-}
-
-.tips-box:hover {
-    transform: scale(1.02) !important;
-    transition: all 0.3s ease;
 }
 
 .tips-box p {
@@ -232,7 +226,6 @@ section {
     color: #9CD1BE;
     font-weight: lighter;
     font-size: 20px !important;
-    text-transform: uppercase;
     position: relative;
     z-index: 1 !important;
   }
@@ -274,7 +267,6 @@ section {
     font-family: 'playfair';
     font-weight: bold;
     z-index: 0;
-    font-size: 20px !important;
   }
   .tip-title-parent {
     width: calc(100% - 30px);

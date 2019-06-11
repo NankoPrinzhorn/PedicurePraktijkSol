@@ -25,13 +25,14 @@ section {
       color: white; }
     @media (max-width: 992px) {
       #behandelingen-hero h1 {
-        font-size: 35px !important; } }
+        font-size: 50px !important; } }
   #behandelingen-hero p {
     padding-top: 20px;
+    font-size: 18px;
     color: white !important; }
     @media (max-width: 992px) {
       #behandelingen-hero p {
-        font-size: 12px !important; } }
+        font-size: 18px !important; } }
 
 #section-2 {
   text-align: center;
@@ -46,7 +47,7 @@ section {
     border-bottom: 2px #9CD1BE solid; }
   @media (max-width: 992px) {
     #section-2 p {
-      font-size: 12px !important; } }
+      font-size: 16px !important; } }
 
 #behandelingen--section {
   outline: 2px #9CD1BE solid;
@@ -59,7 +60,7 @@ section {
     position: absolute !important;
     font-size: 100px !important;
     color: #9CD1BE;
-    opacity: 0.2;
+    opacity: 0.4;
     top: -30px; }
     @media (max-width: 992px) {
       #behandelingen--section .g-txt {
@@ -83,7 +84,7 @@ section {
         position: relative; }
         @media (max-width: 992px) {
           #behandelingen--section #behandelingen--items li a {
-            font-size: 13px !important; } }
+            font-size: 18px !important; } }
         #behandelingen--section #behandelingen--items li a:hover {
           opacity: 1 !important;
           color: #9CD1BE !important; }
@@ -99,8 +100,7 @@ section {
           left: 0;
           right: 0;
           bottom: -10px;
-          margin: auto;
-          transition: all 0.5s ease; }
+          margin: auto; }
 
 .behandeling--case {
   background: white;
@@ -110,7 +110,7 @@ section {
   border-bottom: 2px #9CD1BE solid;
   margin-bottom: 5px;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
  }
   .behandeling--case .behandeling--case--img {
     height: 250px;
@@ -119,7 +119,7 @@ section {
     margin-top: 20px; }
   .behandeling--case a {
     color: #9CD1BE;
-    font-size: 12px !important;
+    font-size: 16px !important;
     position: relative; }
   .behandeling--case hr {
     width: 50px;
@@ -128,17 +128,15 @@ section {
     background: #9CD1BE;
     border-style: none;
     margin-left: -20px; }
-  .behandeling--case:hover {
-    transform: scale(1.02) !important;
-    transition: all 0.3s ease; }
   .behandeling--case p {
     color: #686868 !important;
-    font-size: 15px !important;
+    font-size: 16px !important;
     z-index: 1;
+    margin-bottom: 20px;
     position: relative; }
     @media (max-width: 992px) {
       .behandeling--case p {
-        font-size: 12px !important; } }
+        font-size: 16px !important; } }
   .behandeling--case .behandeling--left {
     padding: 0px 50px; }
     @media (max-width: 992px) {
@@ -155,10 +153,9 @@ section {
     z-index: 0 !important; }
   .behandeling--case h3 {
     padding-bottom: 10px;
-    color: #9CD1BE;
+    color: #67ABA4;
     font-weight: lighter;
-    font-size: 20px !important;
-    text-transform: uppercase;
+    font-size: 26px !important;
     position: relative;
     z-index: 1 !important; }
   .behandeling--case .image--big {
@@ -176,7 +173,7 @@ section {
   .behandeling--case h4 {
     z-index: 1;
     position: relative;
-    font-size: 15px !important;
+    font-size: 18px !important;
     padding-bottom: 10px;
     color: #9CD1BE;
     padding-top: 50px; }

@@ -4,32 +4,38 @@
   background-size: cover !important; }
   #hero--prijslijst h1 {
     color: white;
-    text-transform: uppercase; }
+    text-transform: none; }
     @media (max-width: 992px) {
       #hero--prijslijst h1 {
         font-size: 25px !important; } }
   #hero--prijslijst p {
     color: white;
-    padding-top: 15px; }
+    padding-top: 15px;
+    font-size: 18px; }
 
 #underheader--prijslijst {
   padding-top: 0px;
   padding-bottom: 0px; }
   #underheader--prijslijst #header--box {
     background: white;
-    padding: 50px 70px;
+    padding: 50px 40px;
     border-bottom: 2px #9CD1BE solid;
+    text-align: center;
     top: -80px; }
+
+    #underheader--prijslijst #header--box p {
+      white-space: unset !important;
+    }
 
 #prijslijst--section {
   padding-top: 100px;
   padding-bottom: 100px; }
   #PrijslijstH1{
     color: #9CD1BE;
-    font-size: 5em;
+    font-size: 55px;
     font-family: 'Playfair Display', serif;
     margin-top: -110px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }  @media (max-width: 600px) {
     #PrijslijstH1{
       font-size: 50px !important; }
