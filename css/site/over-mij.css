@@ -106,6 +106,10 @@ body {
         width: 100%;
         margin-bottom: 50px;
     }
+    .loopbaanswitch h2 {
+        font-size: 28px;
+    }
+    
 }
 
 .review {
