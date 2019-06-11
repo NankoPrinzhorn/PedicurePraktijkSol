@@ -77,3 +77,5 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/tips.php";
 <?php
 	include_once $_SERVER['DOCUMENT_ROOT']."/views/site/contact-form.php";
 ?>
+
+<script src="/js/site/smoothscroll.js"></script>
