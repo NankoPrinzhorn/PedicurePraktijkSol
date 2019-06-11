@@ -67,12 +67,12 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/contact.php";
                 </div>   
 
                 <div class="col-md-6 contactForm">
-                <form action="/views/site/mail.php" method="post">
+                <form id="form--right" action="/views/site/mail.php" method="post">
                     <h4>Neem contact op</h4>
-                    <input type="text" name="firstName" placeholder="Voornaam" required>
-                    <input type="text" name="LastName" placeholder="Achternaam" required>
-                    <input type="email" name="email" placeholder="E-mailadres" required>
-                    <textarea name="textArea"rows="4" cols="50" placeholder="Wat wilt u vragen" required></textarea>
+                    <input class="firstname" type="text" name="firstName" placeholder="Voornaam" required>
+                    <input class="lastname" type="text" name="LastName" placeholder="Achternaam" required>
+                    <input class="email" type="email" name="email" placeholder="E-mailadres" required>
+                    <textarea class="textarea" name="textArea"rows="4" cols="50" placeholder="Wat wilt u vragen" required></textarea>
                     <div class="col-md-6">
                         <p>Door op versturen te drukken gaat u akkoord met onze <u>voorwaarden</u></p>
                     </div>
@@ -85,3 +85,35 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/contact.php";
 		</div>
 	</div>
 </section>
+<script>
+$('#form--right').submit(function(e) {
+	//check if all fields are filled
+	var firstName = $('.firstname');
+	var lastName = $('.lastname');
+	var email = $('.email');
+	var textArea = $('.textarea');
+	var bool = true;
+
+	if (firstName.val() == "") {
+		bool = false;
+		firstName.css('border', '1px solid red');	
+	}
+
+	if (lastName.val() == "") {
+		bool = false;
+		lastName.css('border', '1px solid red');	
+	}
+
+	if (email.val() == "") {
+		bool = false;
+		email.css('border', '1px solid red');	
+	}
+
+	if (textArea.val() == "") {
+		bool = false;
+		textArea.css('border', '1px solid red');	
+	}
+
+	return bool;
+});
+</script>
