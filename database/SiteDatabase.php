@@ -422,7 +422,7 @@ class SiteDatabase extends Database {
             
             case "longtext":
                 echo "<label for=".$item["editID"].">".$item["htmlID"]."</label>";
-                if ($item['Field'] == "pdf") {
+                if ($item['Field'] === "pdf") {
                     echo "<img class='image-".$item['editID']."' style='width: 20%; margin-bottom: 20px;' src='/images/pdf.png'>";
                     $type = "pdf";
                 } else {

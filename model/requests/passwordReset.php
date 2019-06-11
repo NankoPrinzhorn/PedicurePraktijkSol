@@ -27,7 +27,7 @@ if (!empty($_GET)) {
         $db->performQuery($sql, $params);
     
         //send mail
-        $link = "http://pedicurepraktijksol.nl/model/requests/updatePassword.php?key=".$key;
+        $link = "https://pedicurepraktijksol.nl/model/requests/updatePassword.php?key=".$key;
 
         $contact = "maurobertozzi11@gmail.com";
         $message = "We hebben gehoord dat je een wachtwoordreset nodig hebt. Klik op de onderstaande link en je wordt doorgestuurd naar een beveiligde site waar je een nieuw wachtwoord kunt instellen.";

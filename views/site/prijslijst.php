@@ -62,7 +62,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/prijslijst.php";
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-md-offset-2" align="center">
 					<h2 class="<?=$data[4]['editID']?>"><?=$data[4]['text']?></h2>
-					<p class="<?=$data[5]['editID']?>" style="white-space: pre-line"><?=str_replace("www.zorgwijzer.nl/vergoedingen/pedicure", "<a href='www.zorgwijzer.nl/vergoedingen/pedicure'>zorgwijzer.nl</a>", $data[5]['text'])?></p>
+					<p class="<?=$data[5]['editID']?>" style="white-space: pre-line"><?=str_replace(array("www.zorgwijzer.nl/vergoedingen/pedicure", "https://mijn.provoet.nl/vergoedingen-voetzorg-2019"), array("<a href='www.zorgwijzer.nl/vergoedingen/pedicure'>zorgwijzer.nl</a>", "<a href='https://mijn.provoet.nl/vergoedingen-voetzorg-2019'>Vergoedingen voetzorg 2019</a>"), $data[5]['text'])?></p>
 				</div>
 			</div>
 		</div>
