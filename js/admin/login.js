@@ -1,9 +1,15 @@
+/**
+ * ga naar wachtwoord vergeten tab
+ */
 $('#forgotPassword').click(function(){
 	 $('#loginForm').css("left","-100%");
 	 $('#forgotPasswordForm').css("left","calc(50vw - 325px)");
 
 });
 
+/**
+ * ga naar feeback tab wanneer data correct is
+ */
 $('#iGotIt').click(function(){
 	//check data ();
 	$.ajax({
@@ -28,6 +34,9 @@ $('#iGotIt').click(function(){
 	});
 });
 
+/**
+ * ga terug naar login tab
+ */
 $('#confirmButton').click(function(){
 	$('#forgotPasswordForm').css("left","100%");
 	$('#emailSends').css("left","100%");

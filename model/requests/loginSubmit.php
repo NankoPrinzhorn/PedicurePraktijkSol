@@ -9,10 +9,11 @@ if (!empty($_GET)) {
     $username = $_GET['username'];
     $password = $_GET['password'];
 
-    //encript passowrd
+    //encript password
     $peper = "JokeSol";
     $salt = "PedicureJokePraktijkSol";
 
+    //hash it
     $hash = hash('sha256', $salt.$password.$salt);
 
     // echo json_encode($hash);

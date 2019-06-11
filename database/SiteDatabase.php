@@ -14,6 +14,9 @@ class SiteDatabase extends Database {
     //     }
     // }
 
+    /**
+     * haal alle data op van de pagina | check daarbij of het de admin is of een gebruiker
+     */
     public function getPageData($page, $admin) {
         if(!$admin) {
             //actual pagina
@@ -43,6 +46,9 @@ class SiteDatabase extends Database {
         }
     }
 
+    /**
+     * haal de informatie voor het CMS
+     */
     public function getPageInfo($page) {
         $sql = "SELECT
             `id`,
@@ -64,6 +70,9 @@ class SiteDatabase extends Database {
         }
     }
 
+    /**
+     * heef alle informatie weer voor het CMS
+     */
     public function generateCMSHTML($data) {
         foreach ($data as $item) {
             $item['koppel_tabel'] = 0;
@@ -81,6 +90,9 @@ class SiteDatabase extends Database {
         }
     }
 
+    /**
+     * Haal de informatie op van de koppeltabellen in het CMS
+     */
     public function fetchKoppelTabelInfoForSite($koppel_tabel, $admin) {
         if (!$admin) {
             $koppel_columns = $this->fetchAll("SHOW COLUMNS FROM `$koppel_tabel`");
@@ -121,6 +133,9 @@ class SiteDatabase extends Database {
         return $items;
     }
 
+    /**
+     * Maak een nieuwe row aan in db van de koppeltabel
+     */
     public function createKoppelCMSHTML($koppel_tabel, $count) {
         $order = $this->fetchAssoc("SELECT MAX(pageOrder) as nummer FROM `$koppel_tabel` WHERE deleted = 0");
         $order = $order['nummer']+1;
@@ -185,6 +200,9 @@ class SiteDatabase extends Database {
 
     }
 
+    /**
+     * Laat de koppeltabellen zien in het CMS
+     */
     public function showKoppelCMSHTML($item) {
         $koppel_tabel = substr($item["inputType"], 7);
         $koppel_columns = $this->fetchAll("SHOW COLUMNS FROM `$koppel_tabel`");
@@ -280,6 +298,9 @@ class SiteDatabase extends Database {
         ";
     }
 
+    /**
+     * Laat de inputs zien binnen de tabellen aan de hand van db gegevens
+     */
     public function showCMSHTML($item, $boolean = false) {
         switch ($item["inputType"]) {
             case "text":
