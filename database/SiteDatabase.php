@@ -458,7 +458,7 @@ class SiteDatabase extends Database {
                                     processData: false,
                                     success: function(response) {
                                         if (response != 0) {
-                                            if ('".$type."' == 'image' || '".$type."' == 0) {
+                                            if ('".$type."' == 'image') {
                                                 $('.image-".$item['editID']."').attr('src', '/images/uploads/'+response);
 
                                                 if ($('.".$item['editID']."').is('div')) {
