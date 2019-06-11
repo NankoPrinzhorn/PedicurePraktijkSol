@@ -52,7 +52,9 @@ if (!empty($_GET)) {
     }
 }
 
-
+/**
+ * create random string voor key password reset
+ */
 function generateRandomString($length = 10) {
     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
     $charactersLength = strlen($characters);

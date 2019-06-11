@@ -9,7 +9,7 @@ if (isset($_POST['email'])) {
     $subject = "pedicure praktijk sol website";
     $firstname = $_POST['firstname'];
     $lastname = $_POST['lastname'];
-    $name = $firstname . " " . $lastname.
+    $name = $firstname . " " . $lastname. " ";
     $email = $_POST['email'];
     $textarea = $_POST['textarea'];
 
