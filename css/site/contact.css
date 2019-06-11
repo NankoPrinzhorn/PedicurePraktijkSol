@@ -216,8 +216,10 @@
     font-size: 12px;
 }
 
-.contactForm u{
+.contactForm a{
     color: #9CD1BE;
+    text-decoration: underline;
+    font-size: 12px;
 }
 
 .contactForm button{

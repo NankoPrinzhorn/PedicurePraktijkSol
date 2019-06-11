@@ -30,7 +30,7 @@
 						<input name="lastname" style="width: 49%; float: right;" type="text" placeholder="Achternaam" required>
 						<input name="email" type="email" placeholder="E-mailadres" required>
 						<textarea name="textarea" cols="30" rows="10" placeholder="Wat wilt u vragen" required></textarea>
-						<p id="form--msg">Door op versturen te drukken gaat u akkoord met onze <a href="#">voorwaarden</a></p>
+						<p id="form--msg">Door op versturen te drukken gaat u akkoord met onze <a href="/images/privacy-verklaring.pdf">voorwaarden</a></p>
 						<button class="btn" id="sendContactForm" name="submit">Versturen</button>
 					</form>
 					</div>

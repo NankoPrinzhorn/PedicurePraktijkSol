@@ -74,7 +74,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/contact.php";
                     <input type="email" name="email" placeholder="E-mailadres" required>
                     <textarea name="textArea"rows="4" cols="50" placeholder="Wat wilt u vragen" required></textarea>
                     <div class="col-md-6">
-                        <p>Door op versturen te drukken gaat u akkoord met onze <u>voorwaarden</u></p>
+                        <p>Door op versturen te drukken gaat u akkoord met onze <a href="/images/privacy-verklaring.pdf">voorwaarden</a></p>
                     </div>
                     <div class="col-md-6">
                         <button type="submit">Versturen</button>
