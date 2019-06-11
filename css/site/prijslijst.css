@@ -23,9 +23,9 @@
     text-align: center;
     top: -80px; }
 
-    #underheader--prijslijst #header--box p {
+    /* #underheader--prijslijst #header--box p {
       white-space: unset !important;
-    }
+    } */
 
 #prijslijst--section {
   padding-top: 100px;
