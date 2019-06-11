@@ -19,7 +19,7 @@
 				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 						<?php
-							$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+							$actual_link = "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
 							$id = substr($actual_link, strrpos($actual_link, '/') + 1);
 						?>
