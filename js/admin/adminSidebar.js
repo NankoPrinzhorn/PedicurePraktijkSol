@@ -5,6 +5,9 @@ $(".page").on("click", function() {
     }
 });
 
+/**
+ * open of sluit het edit menu / site weergave
+ */
 function toggleSideBar(el) {
     disable = true;
     var className = $(el).attr("id");
@@ -13,12 +16,12 @@ function toggleSideBar(el) {
         var currentClass = $(this).attr('class').split(' ')[1];
         if($(this).hasClass(className)) {
             if(!$('.fake_body.'+className).hasClass('active_panel') && !$('.fake_body.'+className).hasClass('full')) {
-                makeActive(this, currentClass);
+                makeActive(currentClass);
             } else {
-                toggleEdit(this, currentClass)
+                toggleEdit(currentClass)
             }
         } else {
-            removeActive(this, currentClass);
+            removeActive(currentClass);
         }
 
 
@@ -27,7 +30,10 @@ function toggleSideBar(el) {
     setTimeout(disable = false, 1000);
 }
 
-function makeActive(current, className) {
+/**
+ * maak de huidige site zichtbaar
+ */
+function makeActive(className) {
     $('.fake_body.'+className).css('z-index', '5')
     $('#'+className).addClass('active');
     $('.fake_body.'+className).addClass('active_panel full');
@@ -36,7 +42,10 @@ function makeActive(current, className) {
     }, 1000)
 }
 
-function removeActive(current, className) {
+/**
+ * Haal de huidige site weg van het zicht
+ */
+function removeActive(className) {
     $('.fake_body.'+className).css('z-index', '3');
     setTimeout(function() {
         //listing
@@ -54,7 +63,10 @@ function removeActive(current, className) {
     }, 500);
 }
 
-function toggleEdit(current, className) {
+/**
+ * open of sluit het edit scherm
+ */
+function toggleEdit(className) {
     if ($('.panel.'+className).hasClass('active_panel')) {
         setTimeout(function() {
             $('.panel.'+className).removeClass('active_panel');

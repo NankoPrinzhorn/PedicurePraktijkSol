@@ -45,6 +45,7 @@ if ($_GET) {
 
         $updateTable = str_replace("live", "concept", $table);
 
+        //emty concept table
         $db->performQuery("TRUNCATE `$updateTable`");
         foreach ($liveInfo as $item) {
 			$sqlValueString = "";
@@ -66,6 +67,7 @@ if ($_GET) {
             }
             $sqlValueString = rtrim($sqlValueString, ",");
 
+            //insert new data in concept
             $db->performQuery("INSERT INTO `$updateTable` ($sqlColumnString) VALUES ($sqlValueString)", $params);
 		}
     }
