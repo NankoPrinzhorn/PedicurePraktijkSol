@@ -32,7 +32,7 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/prijslijst.php";
 	<div class="container">
 		<div class="row">
 			<div id="title" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" align="center">
-				<h1 id="PrijslijstH1">PRIJSLIJST</h1>
+				<h1 id="PrijslijstH1">Prijslijst</h1>
 				<a href="/contact"><button id="prijslijst--btn">Maak nu een afspraak</button></a>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-md-offset-2">
