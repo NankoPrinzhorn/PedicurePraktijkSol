@@ -9,12 +9,12 @@ if (isset($_POST['email'])) {
     $subject = "pedicure praktijk sol website";
     $firstname = $_POST['firstname'];
     $lastname = $_POST['lastname'];
-    $name = $firstname . " " . $lastname. " ";
+    $name = $firstname . " " . $lastname. ", ";
     $email = $_POST['email'];
     $textarea = $_POST['textarea'];
 
 $email_message = "Ik ben " . $name . " " . "\n \n" . $textarea . " \n \n van " . $name . " \n Mijn e-mail is". $email;
-$email_response= "Beste " . $name ." " .  ",\n \n" . $responseMessage . " \n \n Met vriendelijk groet, \n Joke Sol" ;
+$email_response= "Beste " . $name ." " .  "\n \n" . $responseMessage . " \n \n Met vriendelijk groet, \n Joke Sol" ;
 
 $headers = 'From: ' . $email . "\r\n" .
     'Reply-To: maurobertozzi11@gmail.com' . "\r\n" .
