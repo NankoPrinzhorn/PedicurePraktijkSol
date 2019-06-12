@@ -50,15 +50,19 @@
   #prijslijst--section #title {
     padding-bottom: 100px; }
   #prijslijst--section #prijslijst--btn {
-    padding: 12px 30px;
-    background: #9CD1BE;
+    padding: 15px 50px;
     border-radius: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
     border-style: none;
-    color: #ffffff;
+    color: white;
+    background: #67ABA4;
     outline: none;
-    transition: all 0.5s ease; }
+    transition: all 0.4s ease; }
     #prijslijst--section #prijslijst--btn:hover {
-      transform: scale(0.99); }
+      background: white;
+      color: #67ABA4; }
   #prijslijst--section h2 {
     padding-bottom: 20px; }
   #prijslijst--section ul {
