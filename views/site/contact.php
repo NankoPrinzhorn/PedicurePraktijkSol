@@ -69,10 +69,10 @@ include_once $_SERVER['DOCUMENT_ROOT']."/model/site/contact.php";
                 <div class="col-md-6 contactForm">
                 <form id="form--right" action="/views/site/mail.php" method="post">
                     <h4>Neem contact op</h4>
-                    <input class="firstname" type="text" name="firstName" placeholder="Voornaam" required>
-                    <input class="lastname" type="text" name="LastName" placeholder="Achternaam" required>
+                    <input class="firstname" type="text" name="firstname" placeholder="Voornaam" required>
+                    <input class="lastname" type="text" name="lastname" placeholder="Achternaam" required>
                     <input class="email" type="email" name="email" placeholder="E-mailadres" required>
-                    <textarea class="textarea" name="textArea"rows="4" cols="50" placeholder="Wat wilt u vragen" required></textarea>
+                    <textarea class="textarea" name="textarea"rows="4" cols="50" placeholder="Wat wilt u vragen" required></textarea>
                     <div class="col-md-6">
                         <p>Door op versturen te drukken gaat u akkoord met onze <a href="/images/privacy-verklaring.pdf" target="blank">voorwaarden</a></p>
                     </div>
