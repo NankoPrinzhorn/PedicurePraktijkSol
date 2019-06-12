@@ -243,7 +243,7 @@ if (isset($_POST['email'])) {
     $emailForJoke = mail($to, $subject, $emailForJoke, $headers);
 
     $emailForUser = mail($email, $subject, $emailForUser, $headers);
-    
+
     if ($emailForUser) {
         echo "<script>alert('U mail is verzonden');
         window.location='/$id'</script>";
