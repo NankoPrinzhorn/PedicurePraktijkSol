@@ -3,7 +3,7 @@ error_reporting(-1);
 ini_set('display_errors', 'On');
 set_error_handler("var_dump");
 if (isset($_POST['email'])) {
-    $to = "maurobertozzi11@gmail.com";
+    $to = "20367@ma-web.nl";
 
     $subject = "Pedicure Praktijk Sol";
     $firstname = $_POST['firstname'];
