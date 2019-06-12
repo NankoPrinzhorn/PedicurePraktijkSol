@@ -37,16 +37,23 @@
 .header-buttons{
     margin-top: 40px;
 }
-.header-buttons button{
-    background-color: #ffffff;
+.header-buttons button {
+    background: white;
     color: #67ABA4;
     border: none;
-    padding: 20px 10px 20px 10px;
-    font-size: 18px;
+    padding: 16px 50px;;
     font-family: 'Montserrat', sans-serif;
-    border-radius: 50px;
-    width: 250px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 100px;
+    transition: 0.4s ease;
 }
+
+.header-buttons button:hover {
+    color: white;
+    background: #67ABA4;
+}
+
 
 .header-buttons button:first-child { 
     margin-right: 20px;
@@ -220,14 +227,21 @@
     font-size: 12px;
 }
 
-.contactForm button{
-    font-size: 17px;
-    background-color: #9CD1BE;
+.contactForm button {
+    font-size: 14px;
     border-radius: 50px;
     border: none;
-    padding: 10px 40px 10px 40px;
-    color: #ffffff;
+    padding: 15px 50px;
+    background: #67ABA4;
+    color: white;
+    transition: 0.4s ease;
+    font-family: 'Montserrat', sans-serif;
     float: right;
+}
+
+.contactForm button:hover {
+    color: #67ABA4;
+  background: rgb(247, 247, 247);
 }
 
 @media only screen and (max-width: 992px) {
