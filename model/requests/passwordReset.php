@@ -29,7 +29,7 @@ if (!empty($_GET)) {
         //send mail
         $link = "https://pedicurepraktijksol.nl/model/requests/updatePassword.php?key=".$key;
 
-        $contact = "maurobertozzi11@gmail.com";
+        $contact = "pedicurepraktijksol@gmail.com";
         $message = "We hebben gehoord dat je een wachtwoordreset nodig hebt. Klik op de onderstaande link en je wordt doorgestuurd naar een beveiligde site waar je een nieuw wachtwoord kunt instellen.";
         $name = $result['name'];
 
@@ -41,7 +41,7 @@ if (!empty($_GET)) {
         $email_message = "Beste, " . $name . " " . "\n \n" . $message . " \n \n" . $link;
 
         $headers = 'From: ' . $to . "\r\n" .
-            'Reply-To: maurobertozzi11@gmail.com' . "\r\n" .
+            'Reply-To: pedicurepraktijksol@gmail.com' . "\r\n" .
             'X-Mailer: PHP/' . phpversion();
 
         $mail = mail($to, $subject, $email_message, $headers);
